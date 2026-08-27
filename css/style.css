@@ -24,7 +24,6 @@ body {
   font-family: 'Noto Sans KR', 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: #1A1D24;
-  line-height: 1.5;
   overflow-x: hidden;
 }
 
@@ -32,10 +31,6 @@ a {
   color: inherit;
   text-decoration: none;
   transition: color 0.15s ease, opacity 0.15s ease;
-}
-
-a:hover {
-  color: #00479D;
 }
 
 input, select, button, textarea {
@@ -211,7 +206,7 @@ button {
   min-width: 1280px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 88px;
+  padding-bottom: 72px;
 }
 
 /* Page Loading Overlay */
@@ -577,8 +572,7 @@ button {
   transition: color .15s ease, border-bottom-color .15s ease;
 }
 
-.gnb-item.active .gnb-link,
-.gnb-item:hover .gnb-link {
+.gnb-item.active .gnb-link{
   color: #00479D;
   border-bottom-color: #00479D;
 }
@@ -675,8 +669,7 @@ button {
   transition: background-color .15s ease;
 }
 
-.megamenu-col.highlight,
-.megamenu-col:hover {
+.megamenu-col.highlight{
   background: #F2F6FB;
 }
 
@@ -691,8 +684,10 @@ button {
 }
 
 .megamenu-link:hover {
-  color: #00479D;
-  background: #E9F2FB;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(16,24,40,0.10);
+  color: rgba(0,71,157);
+  background-color: rgb(242, 246, 251);
 }
 
 /* 4. 히어로 슬라이더 컨테이너 */
@@ -794,14 +789,14 @@ button {
 
 .hero-badge-stamp {
   position: absolute;
-  right: 830px;
+  right: 42%;
   top: 85px;
   width: 80px;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scale(1.2);
+  transform: scale(1.2) translateX(-50%);
   transform-origin: top left;
 }
 
@@ -851,7 +846,7 @@ button {
 .hero-gift-hand-deco {
   position: absolute;
   left: 589px;
-  bottom: 64px;
+  bottom: 26px;
   height: 137px;
   width: auto;
   pointer-events: none;
@@ -886,17 +881,17 @@ button {
 
 /* 0.5초 뒤 1번째 텍스트 (제목) 상승 */
 .hero-slide-content.active .slide-title-group > *:nth-child(1) {
-  animation-delay: 0.5s;
+  animation-delay: 0.4s;
 }
 
 /* 0.75초 뒤 2번째 텍스트 (설명) 순차 상승 */
 .hero-slide-content.active .slide-title-group > *:nth-child(2) {
-  animation-delay: 0.75s;
+  animation-delay: 0.6s;
 }
 
 /* 추가 요소가 있을 경우 순차 상승 */
 .hero-slide-content.active .slide-title-group > *:nth-child(3) {
-  animation-delay: 1.0s;
+  animation-delay: 0.8s;
 }
 
 /* 상단 태그 및 하단 바 순차 연출 */
@@ -904,6 +899,7 @@ button {
   animation: slideTextRise 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.25s both;
 }
 
+/*
 .hero-slide-content.active .slide-specs-bar {
   animation: slideTextRise 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.95s both;
 }
@@ -911,7 +907,7 @@ button {
 .hero-slide-content.active .slide-btn-row {
   animation: slideTextRise 0.6s cubic-bezier(0.22, 1, 0.36, 1) 1.1s both;
 }
-
+*/
 .slide-tag-row {
   display: inline-flex;
   align-items: baseline;
@@ -1030,6 +1026,7 @@ button {
 
 .btn-slide-outline:hover {
   border-color: #FFFFFF;
+  color:#fff;
 }
 
 .slide-hakgom-character {

@@ -111,10 +111,8 @@ function initGnbMegaMenu() {
     item.addEventListener('mouseenter', () => {
       if (closeTimer) clearTimeout(closeTimer);
 
-      gnbItems.forEach(el => el.classList.remove('active'));
       megaCols.forEach(col => col.classList.remove('highlight'));
 
-      item.classList.add('active');
       if (megaCols[index]) {
         megaCols[index].classList.add('highlight');
       }
@@ -124,7 +122,6 @@ function initGnbMegaMenu() {
 
     item.addEventListener('mouseleave', () => {
       closeTimer = setTimeout(() => {
-        gnbItems.forEach(el => el.classList.remove('active'));
         megaCols.forEach(col => col.classList.remove('highlight'));
         megaMenu.classList.remove('active');
       }, 150);
@@ -137,7 +134,6 @@ function initGnbMegaMenu() {
 
   megaMenu.addEventListener('mouseleave', () => {
     closeTimer = setTimeout(() => {
-      gnbItems.forEach(el => el.classList.remove('active'));
       megaCols.forEach(col => col.classList.remove('highlight'));
       megaMenu.classList.remove('active');
     }, 150);
@@ -198,6 +194,16 @@ function initHeroSlider() {
       timer = null;
     }
   }
+
+  // 슬라이드 컨텐츠에 마우스가 올라가면 롤링 멈춤, 벗어나면 재개
+  slides.forEach((slide) => {
+    slide.addEventListener('mouseenter', () => {
+      stopAuto();
+    });
+    slide.addEventListener('mouseleave', () => {
+      startAuto();
+    });
+  });
 
   // 탭 클릭
   tabItems.forEach((tab, idx) => {

@@ -1,0 +1,1439 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   1. 메인 공통 스타일 Import (main.html과 100% 동일한 헤더/GNB/유틸바/푸터/위젯 스타일)
+   ========================================================================== */
+@import url('style.css');
+
+/* ==========================================================================
+   2. 서브페이지 공통 및 교육원안내 (sub01_01) 전용 스타일
+   - 1_01_교육원안내.html의 적용값과 100% 일치
+   ========================================================================== */
+
+/* 브레드크럼 바 */
+.sub-breadcrumb-bar {
+  background: #F7F8FA;
+  border-bottom: 1px solid #ECEEF2;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-breadcrumb-container {
+  width: 1200px;
+  padding: 11px 0;
+  font-size: 12.5px;
+  color: #8A90A0;
+}
+
+.sub-breadcrumb-container a {
+  color: #8A90A0;
+  transition: color 0.15s ease;
+}
+
+.sub-breadcrumb-container a:hover {
+  color: #00479D;
+}
+
+.sub-breadcrumb-sep {
+  margin: 0 5px;
+}
+
+.sub-breadcrumb-current {
+  color: #00479D;
+  font-weight: 700;
+}
+
+/* 서브페이지 메인 레이아웃 */
+.sub-main-layout {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 64px;
+}
+
+.sub-container {
+  width: 1200px;
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+/* 좌측 사이드바 (240px) */
+.sub-sidebar {
+  width: 240px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sub-sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sub-menu-item {
+  padding: 14px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #3A4152;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ECEEF2;
+  transition: all 0.18s ease;
+}
+
+.sub-menu-item:hover {
+  color: #00479D;
+}
+
+.sub-menu-item.active {
+  background: #00479D;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FFFFFF !important;
+  border-bottom: none;
+}
+
+.sub-menu-item .msi {
+  font-size: 18px;
+  color: #C4C9D2;
+}
+
+.sub-menu-item.active .msi {
+  color: #FFFFFF;
+}
+
+/* 사이드바 위젯: 자주 찾는 서비스 */
+.sub-sidebar-widget {
+  border: 1px solid #ECEEF2;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #FFFFFF;
+}
+
+.sub-sidebar-widget .widget-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: #1A1D24;
+}
+
+.sub-sidebar-widget .widget-link-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background-color 0.18s ease;
+}
+
+.sub-sidebar-widget .widget-link-item:hover {
+  background: #F7F8FA;
+}
+
+.sub-sidebar-widget .widget-link-item .msi {
+  font-size: 22px;
+  color: #00479D;
+  flex: none;
+}
+
+.sub-sidebar-widget .widget-link-item .widget-link-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1A1D24;
+}
+
+/* 사이드바 위젯: 상담 문의 */
+.sub-sidebar-tel {
+  border: 1px solid #ECEEF2;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #FFFFFF;
+}
+
+.sub-sidebar-tel .sidebar-tel-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #6B7280;
+}
+
+.sub-sidebar-tel .sidebar-tel-num {
+  font-family: 'Archivo', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.sub-sidebar-tel .sidebar-tel-num.blue {
+  color: #00479D;
+}
+
+.sub-sidebar-tel .sidebar-tel-num.dark {
+  color: #1A1D24;
+}
+
+.sub-sidebar-tel .sidebar-tel-sep {
+  height: 1px;
+  background: #ECEEF2;
+  margin: 2px 0;
+}
+
+/* 우측 본문 콘텐츠 영역 */
+.sub-content-area {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  min-width: 0;
+  width: 746px;
+}
+
+/* Section 1: Intro */
+.content-intro-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.content-intro-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content-intro-badge {
+  font-family: 'Archivo', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  color: #1D9ADD;
+}
+
+.content-intro-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -.03em;
+  color: #1A1D24;
+}
+
+.content-intro-subtitle {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  color: #00479D;
+}
+
+.content-hero-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.content-intro-desc-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #ECEEF2;
+}
+
+.content-intro-desc-group p.lead {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #3A4152;
+}
+
+.content-intro-desc-group p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.85;
+  color: #3A4152;
+}
+
+/* Section 2: 브랜드 가치 */
+.content-section-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-section-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  color: #1A1D24;
+}
+
+.brand-callout-box {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  background: #F7F9FB;
+  border-radius: 12px;
+  padding: 28px 30px;
+}
+
+.brand-callout-bar {
+  width: 3px;
+  flex: none;
+  align-self: stretch;
+  background: #00479D;
+  border-radius: 2px;
+}
+
+.brand-callout-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.brand-callout-texts p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.85;
+  color: #3A4152;
+}
+
+/* Section 3: 믿을 수 있는 학점은행제 교육기관 */
+.content-section-creditbank {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-section-desc {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.85;
+  color: #3A4152;
+}
+
+.features-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.feature-grid-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 4px 0;
+}
+
+.feature-grid-col .mso {
+  font-size: 26px;
+  color: #00479D;
+}
+
+.feature-grid-col .feature-col-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1A1D24;
+}
+
+.feature-grid-col .feature-col-desc {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: #6B7280;
+}
+
+/* Section 4: 다양한 목표를 위한 전문 교육과정 */
+.content-section-courses {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.courses-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.course-card-item {
+  border: 1px solid #ECEEF2;
+  border-radius: 10px;
+  padding: 22px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.course-card-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(16, 24, 40, .08);
+}
+
+.course-card-item .mso {
+  font-size: 26px;
+  color: #00479D;
+}
+
+.course-card-item .course-card-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1A1D24;
+}
+
+.course-card-item .course-card-desc {
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: #6B7280;
+}
+
+/* Section 5: 시작부터 목표 달성까지 함께합니다 */
+.content-section-process {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.process-flow-container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 8px;
+}
+
+.process-step-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.process-step-badge {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #00479D;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Archivo', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.process-step-box:last-child .process-step-badge {
+  background: #1D9ADD;
+}
+
+.process-step-name {
+  font-size: 14px;
+  font-weight: 800;
+  color: #1A1D24;
+}
+
+.process-step-info {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #8A90A0;
+  padding: 0 6px;
+}
+
+.process-flow-divider {
+  width: 32px;
+  height: 1px;
+  background: #DCE1E8;
+  margin-top: 19px;
+  flex: none;
+}
+
+/* Section 6: 학습자를 생각한 교육환경 */
+.content-section-env {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.env-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 28px;
+}
+
+.env-feature-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.env-feature-item .mso {
+  font-size: 24px;
+  color: #00479D;
+  flex: none;
+  margin-top: 2px;
+}
+
+.env-feature-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.env-feature-title {
+  font-size: 14.5px;
+  font-weight: 800;
+  color: #1A1D24;
+}
+
+.env-feature-desc {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: #8A90A0;
+}
+
+/* Section 7: 하단 슬로건 배너 */
+.bottom-slogan-box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  text-align: center;
+  padding: 44px 20px;
+  background: #F7F9FB;
+  border-radius: 12px;
+}
+
+.bottom-slogan-title {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  color: #1A1D24;
+}
+
+.bottom-slogan-desc {
+  margin: 0;
+  max-width: 520px;
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: #6B7280;
+}
+
+.bottom-slogan-sub {
+  font-size: 15.5px;
+  font-weight: 800;
+  color: #00479D;
+  margin-top: 6px;
+}
+
+/* ==========================================================================
+   3. 인사말 (sub01_02) 전용 스타일
+   - 1_02_인사말.html의 적용값과 100% 일치
+   ========================================================================== */
+
+/* 상단 YOUR TRAINING PARTNER 3원 다이어그램 섹션 */
+.greeting-partner-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+  padding: 13px 0 0px;
+}
+
+.greeting-partner-title {
+  font-family: 'Archivo', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: .01em;
+  color: #1A1D24;
+}
+
+.greeting-partner-title .highlight {
+  color: #1D9ADD;
+}
+
+.greeting-circles-row {
+  display: flex;
+  align-items: center;
+}
+
+.greeting-circle-item {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+}
+
+.greeting-circle-item.circle-blue {
+  border: 7px solid #00479D;
+}
+
+.greeting-circle-item.circle-midblue {
+  border: 7px solid #0E6FC2;
+}
+
+.greeting-circle-item.circle-skyblue {
+  border: 7px solid #1D9ADD;
+}
+
+.greeting-circle-text {
+  font-size: 19px;
+  font-weight: 800;
+  color: #1A1D24;
+}
+
+.greeting-circle-plus {
+  width: 24px;
+  height: 24px;
+  margin: 0 -14px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid #ECEEF2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 800;
+  color: #B7BEC9;
+  z-index: 2;
+}
+
+/* 인사말 본문 텍스트 단락 그룹 */
+.greeting-content-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #ECEEF2;
+  margin-top: -12px;
+}
+
+.greeting-welcome-lead {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  color: #00479D;
+}
+
+.greeting-paragraph {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.9;
+  color: #3A4152;
+}
+
+/* 교육원이 지키는 약속 섹션 */
+.greeting-promises-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: -24px;
+}
+
+.greeting-promises-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.greeting-promise-card {
+  border: 1px solid #ECEEF2;
+  border-radius: 12px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: #FFFFFF;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.greeting-promise-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(16, 24, 40, .08);
+}
+
+.greeting-promise-card .mso {
+  font-size: 28px;
+  color: #00479D;
+}
+
+.greeting-promise-card .promise-card-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #1A1D24;
+  letter-spacing: -.01em;
+}
+
+.greeting-promise-card .promise-card-desc {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #6B7280;
+}
+
+/* ==========================================================================
+   4. 이용약관 (sub01_03) 전용 스타일
+   - 1_03_이용약관.html의 적용값과 100% 일치
+   ========================================================================== */
+
+.terms-container {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-top: -20px;
+}
+
+.terms-article-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.terms-article-title {
+  font-size: 15.5px;
+  font-weight: 800;
+  color: #1A1D24;
+}
+
+.terms-article-body {
+  font-size: 13.5px;
+  line-height: 1.9;
+  color: #3A4152;
+  white-space: pre-line;
+}
+
+/* ==========================================================================
+   5. 개인정보처리방침 (sub01_04) 전용 스타일
+   - 1_04_개인정보처리방침.html의 적용값과 100% 일치
+   ========================================================================== */
+
+.privacy-container {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-top: -20px;
+}
+
+.privacy-article-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.privacy-article-title {
+  font-size: 15.5px;
+  font-weight: 800;
+  color: #1A1D24;
+}
+
+.privacy-article-body {
+  font-size: 13.5px;
+  line-height: 1.9;
+  color: #3A4152;
+  white-space: pre-line;
+}
+
+/* ==========================================================================
+   6. 관련법규 (sub01_05) 전용 스타일
+   - 1_05_관련법규.html의 적용값과 100% 일치
+   ========================================================================== */
+
+.laws-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.laws-section-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.laws-section-title-row .msi {
+  font-size: 20px;
+  color: #00479D;
+}
+
+.laws-section-title {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  color: #1A1D24;
+}
+
+.laws-table-card {
+  border: 1px solid #ECEEF2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.laws-table-header {
+  display: flex;
+  background: #F7F8FA;
+  font-weight: 700;
+  font-size: 13px;
+  color: #3A4152;
+}
+
+.laws-table-header-col1 {
+  flex: 2;
+  padding: 12px 14px;
+}
+
+.laws-table-header-col2 {
+  flex: 1;
+  padding: 12px 14px;
+  border-left: 1px solid #ECEEF2;
+  text-align: center;
+}
+
+.laws-table-row {
+  display: flex;
+  font-size: 13px;
+  color: #3A4152;
+  border-top: 1px solid #ECEEF2;
+  align-items: center;
+}
+
+.laws-table-col-title {
+  flex: 2;
+  padding: 12px 14px;
+  font-weight: 500;
+}
+
+.laws-table-col-action {
+  flex: 1;
+  padding: 10px 14px;
+  border-left: 1px solid #ECEEF2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-laws-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 32px;
+  padding: 0 14px;
+  background: #00479D;
+  border-radius: 6px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #FFFFFF;
+  white-space: nowrap;
+  transition: background-color .15s ease;
+}
+
+.btn-laws-link:hover {
+  background: #00387D;
+}
+
+.btn-laws-link .msi {
+  font-size: 15px;
+}
+
+/* ==========================================================================
+   7. 학점은행제 소개 (sub02_01) 전용 스타일
+   - 2_01_학점은행소개.html의 적용값과 100% 일치
+   ========================================================================== */
+
+.cb-intro-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cb-definition-box {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 26px 28px;
+  background: #F7F9FB;
+  border-radius: 12px;
+}
+
+.cb-definition-bar {
+  width: 3px;
+  flex: none;
+  align-self: stretch;
+  background: #00479D;
+  border-radius: 2px;
+}
+
+.cb-definition-text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #1A1D24;
+}
+
+.cb-flow-diagram-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 40px 20px;
+  background: #FFFFFF;
+  border: 1px solid #ECEEF2;
+  border-radius: 12px;
+}
+
+.cb-flow-circle-group {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.cb-flow-circle {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+.cb-flow-circle.blue {
+  background: #00479D;
+}
+
+.cb-flow-circle.cyan {
+  background: #1D9ADD;
+}
+
+.cb-flow-circle-plus {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid #ECEEF2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -17px;
+  z-index: 2;
+  font-size: 15px;
+  font-weight: 800;
+  color: #00479D;
+}
+
+.cb-flow-arrow {
+  font-size: 28px;
+  color: #C4C9D2;
+}
+
+.cb-flow-box {
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+.cb-flow-box.green {
+  background: #0E8F84;
+}
+
+.cb-flow-box.orange {
+  background: #D9541E;
+}
+
+.cb-sub-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cb-section-heading {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  color: #1A1D24;
+}
+
+.cb-section-desc {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.85;
+  color: #3A4152;
+}
+
+.cb-background-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.cb-background-card {
+  border: 1px solid #ECEEF2;
+  border-radius: 10px;
+  padding: 18px 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3A4152;
+  font-weight: 600;
+  background: #FFFFFF;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.cb-background-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(16, 24, 40, .06);
+}
+
+.cb-target-banner {
+  padding: 20px 24px;
+  background: #F7F9FB;
+  border-radius: 10px;
+}
+
+.cb-target-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.cb-target-card {
+  border: 1px solid #ECEEF2;
+  border-radius: 10px;
+  padding: 18px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #FFFFFF;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.cb-target-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(16, 24, 40, .06);
+}
+
+.cb-target-card .card-num {
+  font-family: 'Archivo', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  color: #B7BEC9;
+}
+
+.cb-target-card .card-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.55;
+  color: #1A1D24;
+}
+
+/* ==========================================================================
+   8. 학점인정대상 (sub02_02) 전용 스타일
+   - 2_02_학점인정대상.html의 적용값과 100% 일치
+   ========================================================================== */
+
+.credit-target-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.credit-target-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.credit-target-tab-btn {
+  padding: 9px 15px;
+  border-radius: 100px;
+  font-size: 13.5px;
+  font-weight: 700;
+  white-space: nowrap;
+  background: #F2F4F7;
+  color: #3A4152;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all .18s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.credit-target-tab-btn:hover {
+  background: #E5E7EB;
+  color: #1A1D24;
+}
+
+.credit-target-tab-btn.active {
+  background: #00479D !important;
+  color: #FFFFFF !important;
+}
+
+.credit-target-tab-pane {
+  display: none;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.credit-target-tab-pane.active {
+  display: flex;
+}
+
+.target-pane-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.target-pane-title-row .msi {
+  font-size: 20px;
+  color: #00479D;
+}
+
+.target-pane-title {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  color: #1A1D24;
+}
+
+.target-pane-desc {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.85;
+  color: #3A4152;
+}
+
+.target-sub-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.target-sub-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.target-sub-title-row .msi {
+  font-size: 18px;
+  color: #00479D;
+}
+
+.target-sub-title-row .msi.orange {
+  color: #D9541E;
+}
+
+.target-sub-title {
+  font-size: 15.5px;
+  font-weight: 800;
+  color: #1A1D24;
+}
+
+.target-highlight-box {
+  border: 1px solid #ECEEF2;
+  border-radius: 10px;
+  padding: 16px 18px;
+  background: #F7F9FB;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.target-warning-box {
+  border: 1px solid #ECEEF2;
+  border-radius: 10px;
+  padding: 18px 20px;
+  background: #FFF9F2;
+}
+
+.target-warning-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: #B05A1E;
+  margin-bottom: 6px;
+}
+
+.target-numbered-item {
+  display: flex;
+  gap: 10px;
+}
+
+.target-number-badge {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #00479D;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+.target-number-badge.orange {
+  background: #D9541E;
+}
+
+.target-item-text {
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: #3A4152;
+}
+
+.target-item-note {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #8A90A0;
+}
+
+.target-table-card {
+  border: 1px solid #ECEEF2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.target-table-header {
+  display: flex;
+  background: #F7F8FA;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #3A4152;
+}
+
+.target-table-row {
+  display: flex;
+  font-size: 12.5px;
+  color: #3A4152;
+  border-top: 1px solid #ECEEF2;
+}
+
+.target-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.target-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.target-stat-card {
+  border: 1px solid #ECEEF2;
+  border-radius: 8px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+}
+
+.target-stat-num {
+  font-size: 20px;
+  font-weight: 800;
+  color: #00479D;
+}
+
+.target-stat-label {
+  font-size: 12.5px;
+  color: #6B7280;
+  margin-top: 4px;
+}
+
+.target-stat-step-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6B7280;
+}
+
+.target-stat-step-val {
+  font-size: 14px;
+  font-weight: 800;
+  color: #00479D;
+  margin-top: 4px;
+}
+
+.target-stat-step-max {
+  font-size: 11px;
+  color: #98A2B3;
+  margin-top: 2px;
+}
+
+.btn-target-link {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 34px;
+  padding: 0 14px;
+  background: #00479D;
+  border-radius: 6px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #FFFFFF;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background-color .15s ease;
+}
+
+.btn-target-link:hover {
+  background: #00387D;
+}
+
+/* ==========================================================================
+   9. 신청방법안내 (sub02_03) 전용 스타일
+   - 2_03_신청방법안내.html의 적용값과 100% 일치
+   ========================================================================== */
+
+.apply-guide-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.apply-guide-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.apply-guide-tab-btn {
+  padding: 9px 15px;
+  border-radius: 100px;
+  font-size: 13.5px;
+  font-weight: 700;
+  white-space: nowrap;
+  background: #F2F4F7;
+  color: #3A4152;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all .18s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apply-guide-tab-btn:hover {
+  background: #E5E7EB;
+  color: #1A1D24;
+}
+
+.apply-guide-tab-btn.active {
+  background: #00479D !important;
+  color: #FFFFFF !important;
+}
+
+.apply-guide-tab-pane {
+  display: none;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.apply-guide-tab-pane.active {
+  display: flex;
+}
+
+/* 서브페이지 표준 table 스타일 */
+.sub-table-container {
+  width: 100%;
+  border: 1px solid #ECEEF2;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+
+.sub-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  color: #3A4152;
+  text-align: left;
+}
+
+.sub-table th,
+.sub-table td {
+  padding: 10px 12px;
+  border: 1px solid #ECEEF2;
+  line-height: 1.65;
+  vertical-align: middle;
+}
+
+.sub-table thead th {
+  background: #F7F8FA;
+  font-weight: 700;
+  color: #3A4152;
+  text-align: center;
+  border-top: none;
+}
+
+.sub-table th:first-child,
+.sub-table td:first-child {
+  border-left: none;
+}
+
+.sub-table th:last-child,
+.sub-table td:last-child {
+  border-right: none;
+}
+
+.sub-table tbody tr:last-child th,
+.sub-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.sub-table .text-center {
+  text-align: center;
+}
+
+.sub-table .text-left {
+  text-align: left;
+}
+
+.sub-table .font-bold {
+  font-weight: 700;
+}
+
+
+
+
+
