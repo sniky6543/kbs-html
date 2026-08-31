@@ -1,0 +1,577 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>결제확인 - KBS아카데미 원격평생교육원</title>
+  <meta name="description" content="KBS아카데미 원격평생교육원 결제확인 - 수강신청 교과목의 결제내역, 결제 상세내역 및 환불규정안내를 확인하세요.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo/kbs-symbol.png">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/sub.css">
+</head>
+<body>
+
+  <!-- Page Loading Overlay (1초 뒤 사라짐) -->
+  <div id="page-loading" class="page-loading-overlay">
+    <div class="page-loading-logo-group">
+      <img src="assets/kbs-academy-logo-white.png" alt="KBS아카데미" class="page-loading-logo-img">
+      <div class="page-loading-divider"></div>
+      <div class="page-loading-title">원격평생교육원</div>
+    </div>
+    <div class="page-loading-spinner"></div>
+    <div class="page-loading-text">KBS아카데미원격평생교육원 · 조금만 기다려주세요</div>
+  </div>
+
+  <div class="page-wrapper">
+
+    <!-- 1. 상단 유틸바 (Utility Bar) -->
+    <div class="top-util-bar">
+      <div class="top-util-container">
+        <div class="desk-status-group">
+          <div id="desk-dot" class="desk-status-dot"></div>
+          <div id="desk-label" class="desk-status-label">지금 상담 가능</div>
+          <div id="desk-note" class="desk-status-note">평일 09:30~18:30 · 점심 12:30~13:30</div>
+        </div>
+        <div class="top-util-links">
+          <a href="/kbs-html/index.html" class="top-util-link">HOME</a>
+          <div class="top-util-sep"></div>
+          <a href="#" class="top-util-link">즐겨찾기 추가</a>
+          <div class="top-util-sep"></div>
+          <a href="http://as82.kr/ledu/" class="top-util-link">원격지원센터</a>
+          <div class="top-util-sep"></div>
+          <a href="#" class="top-util-link">회원가입</a>
+          <a href="https://www.lcyber.co.kr/ssl/login/InstallVestCert.html" class="btn-header-login">로그인</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. 메인 헤더 (Header) -->
+    <header class="main-header">
+      <div class="header-container">
+        <div class="header-logo-group">
+          <a href="/kbs-html/index.html" class="header-brand-link">
+            <div class="header-logo-col">
+              <img src="assets/kbs-academy-logo.png" alt="KBS아카데미" class="header-logo-img">
+              <div class="header-moe-row">
+                <img src="assets/moe-mark.png" alt="교육부" class="header-moe-icon">
+                <div class="header-moe-text">교육부 인증 학점은행제 원격교육기관</div>
+              </div>
+            </div>
+            <div class="header-brand-divider"></div>
+            <div class="header-brand-sub">원격평생교육원</div>
+          </a>
+        </div>
+        <div class="header-right-group">
+          <!-- 롤링 티커 배너 -->
+          <div class="header-ticker-box">
+            <div id="header-ticker" class="header-ticker-track">
+              <div class="ticker-item ticker-item-voucher">
+                <img src="assets/voucher-logo-white.png" alt="평생교육이용권" class="ticker-item-img">
+                <div class="ticker-item-divider"></div>
+                <div class="ticker-item-text">사용가능기관</div>
+              </div>
+              <div class="ticker-item ticker-item-loan">
+                <span class="msi" style="font-size:18px; color:#FFFFFF;">support_agent</span>
+                <div class="ticker-item-text">학자금 대출지원 가능기관</div>
+              </div>
+              <div class="ticker-item ticker-item-veteran">
+                <img src="assets/gov-emblem-white.png" alt="국가보훈처" class="ticker-item-img">
+                <div class="ticker-item-text">국가보훈처 학습비지원기관</div>
+              </div>
+            </div>
+          </div>
+          <a href="https://www.cb.or.kr/creditbank/eduOrg/eduOrg1_1.do?m_szOrgId=2013B031" target="_blank" rel="noopener noreferrer" class="header-cb-link">
+            <img src="assets/cb-mark.png" alt="학점은행제 국가평생교육진흥원" class="header-cb-img">
+          </a>
+          <div class="header-v-divider"></div>
+          <div class="header-tel-group">
+            <div class="header-tel-col">
+              <div class="header-tel-label">입학상담문의</div>
+              <div class="header-tel-num blue">1661-6723</div>
+            </div>
+            <div class="header-tel-sep"></div>
+            <div class="header-tel-col">
+              <div class="header-tel-label">학습지원센터</div>
+              <div class="header-tel-num dark">1661-6726</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 3. GNB (Global Navigation Bar) & 메가메뉴 -->
+    <nav class="main-nav">
+      <div class="gnb-container">
+        <div class="gnb-list">
+          <div class="gnb-item" data-index="0">
+            <a href="https://www.lcyber.co.kr/html/m1/m1s1.asp" class="gnb-link">교육원소개</a>
+          </div>
+          <div class="gnb-item" data-index="1">
+            <a href="https://www.lcyber.co.kr/html/m2/m2s1.asp" class="gnb-link">학점은행제</a>
+          </div>
+          <div class="gnb-item" data-index="2">
+            <a href="https://www.lcyber.co.kr/html/event/event2.asp" class="gnb-link">교육과정</a>
+          </div>
+          <div class="gnb-item active" data-index="3">
+            <a href="https://www.lcyber.co.kr/html/m4/m4s1.asp" class="gnb-link">수강신청
+              <div class="badge-closing-wrapper">
+                <div class="badge-closing-bob">
+                  <div class="badge-closing-pill">
+                    <div class="badge-closing-dot"></div>
+                    <div class="badge-closing-text">정원마감예정</div>
+                  </div>
+                  <div class="badge-closing-arrow"></div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gnb-item" data-index="4">
+            <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=notice" class="gnb-link">학습지원센터</a>
+          </div>
+          <div class="gnb-item" data-index="5">
+            <a href="https://www.lcyber.co.kr/html/m6/m6s1.asp" class="gnb-link">온라인강의실</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 메가메뉴 드롭다운 -->
+      <div id="gnb-megamenu" class="gnb-megamenu">
+        <div class="megamenu-container">
+          <!-- 1열: 교육원소개 -->
+          <div class="megamenu-col">
+            <a href="/kbs-html/sub01_01.html" class="megamenu-link">교육원안내</a>
+            <a href="/kbs-html/sub01_02.html" class="megamenu-link">인사말</a>
+            <a href="/kbs-html/sub01_03.html" class="megamenu-link">이용약관</a>
+            <a href="/kbs-html/sub01_04.html" class="megamenu-link">개인정보처리방침</a>
+          </div>
+          <!-- 2열: 학점은행제 -->
+          <div class="megamenu-col">
+            <a href="/kbs-html/sub02_01.html" class="megamenu-link">학점은행제란?</a>
+            <a href="/kbs-html/sub02_02.html" class="megamenu-link">학점인정대상</a>
+            <a href="/kbs-html/sub02_03.html" class="megamenu-link">신청방법안내</a>
+            <a href="/kbs-html/sub02_04.html" class="megamenu-link">관련법규</a>
+            <a href="/kbs-html/sub02_05.html" class="megamenu-link">학점인정신청</a>
+          </div>
+          <!-- 3열: 교육과정 -->
+          <div class="megamenu-col">
+            <a href="/kbs-html/sub03_01.html" class="megamenu-link">사회복지사</a>
+            <a href="/kbs-html/sub03_02.html" class="megamenu-link">사회복지사 현장실습</a>
+            <a href="/kbs-html/sub03_03.html" class="megamenu-link">한국어교원</a>
+            <a href="/kbs-html/sub03_04.html" class="megamenu-link">건강가정사</a>
+            <a href="/kbs-html/sub03_05.html" class="megamenu-link">학위과정</a>
+            <a href="/kbs-html/sub03_06.html" class="megamenu-link">민간자격증</a>
+          </div>
+          <!-- 4열: 수강신청 -->
+          <div class="megamenu-col">
+            <a href="/kbs-html/sub04_01.html" class="megamenu-link">개설과목안내</a>
+            <a href="/kbs-html/sub04_02.html" class="megamenu-link">결제확인</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s2.asp" class="megamenu-link">등록절차안내</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s3.asp" class="megamenu-link">수강신청</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s4.asp" class="megamenu-link">수강료결제</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s7.asp" class="megamenu-link">환불신청</a>
+          </div>
+          <!-- 5열: 학습지원센터 -->
+          <div class="megamenu-col">
+            <a href="/kbs-html/sub05_01.html" class="megamenu-link">공지사항</a>
+            <a href="/kbs-html/sub05_02.html" class="megamenu-link">자주하는질문</a>
+            <a href="/kbs-html/sub05_03.html" class="megamenu-link">질문과답변</a>
+            <a href="/kbs-html/sub05_04.html" class="megamenu-link">장학생 수강후기</a>
+            <a href="/kbs-html/sub05_05.html" class="megamenu-link">교수진 칼럼</a>
+            <a href="/kbs-html/sub05_06.html" class="megamenu-link">원격지원</a>
+            <a href="/kbs-html/sub05_07.html" class="megamenu-link">모바일학습가이드</a>
+          </div>
+          <!-- 6열: 온라인강의실 -->
+          <div class="megamenu-col">
+            <a href="/kbs-html/sub06_01.html" class="megamenu-link">강의실입장</a>
+            <a href="/kbs-html/sub06_02.html" class="megamenu-link">증명서발급</a>
+            <a href="/kbs-html/sub06_03.html" class="megamenu-link">교육비납입증명서</a>
+            <a href="/kbs-html/sub06_04.html" class="megamenu-link">강의교안 다운로드</a>
+            <a href="/kbs-html/sub06_05.html" class="megamenu-link">학습자료실</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 4. 브레드크럼 (Breadcrumb) -->
+    <div class="sub-breadcrumb-bar">
+      <div class="sub-breadcrumb-container">
+        <a href="/kbs-html/index.html">HOME</a>
+        <span class="sub-breadcrumb-sep">&gt;</span>
+        <a href="https://www.lcyber.co.kr/html/m4/m4s1.asp">수강신청</a>
+        <span class="sub-breadcrumb-sep">&gt;</span>
+        <span class="sub-breadcrumb-current">결제확인</span>
+      </div>
+    </div>
+
+    <!-- 5. 서브 메인 레이아웃 (Sidebar + Content) -->
+    <main class="sub-main-layout">
+      <div class="sub-container">
+
+        <!-- 좌측 사이드바 (Sidebar: 240px) -->
+        <aside class="sub-sidebar">
+          <!-- 서브메뉴 그룹 -->
+          <div class="sub-sidebar-menu">
+            <a href="/kbs-html/sub04_01.html" class="sub-menu-item">
+              <span>개설과목안내</span>
+              <span class="msi">chevron_right</span>
+            </a>
+            <a href="/kbs-html/sub04_02.html" class="sub-menu-item active">
+              <span>결제확인</span>
+              <span class="msi">chevron_right</span>
+            </a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s2.asp" class="sub-menu-item">
+              <span>등록절차안내</span>
+              <span class="msi">chevron_right</span>
+            </a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s3.asp" class="sub-menu-item">
+              <span>수강신청</span>
+              <span class="msi">chevron_right</span>
+            </a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s4.asp" class="sub-menu-item">
+              <span>수강료결제</span>
+              <span class="msi">chevron_right</span>
+            </a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s7.asp" class="sub-menu-item">
+              <span>환불신청</span>
+              <span class="msi">chevron_right</span>
+            </a>
+          </div>
+
+          <!-- 자주 찾는 서비스 위젯 -->
+          <div class="sub-sidebar-widget">
+            <div class="widget-title">자주 찾는 서비스</div>
+            <a href="https://www.welfare.net/prm/find-training-center/current-stat" target="_blank" rel="noopener noreferrer" class="widget-link-item hv">
+              <span class="msi">search</span>
+              <div class="widget-link-text">실습기관검색</div>
+            </a>
+            <a href="https://www.lcyber.co.kr/html/m6/m6s11.asp" class="widget-link-item hv">
+              <span class="msi">verified</span>
+              <div class="widget-link-text">증명서 발급센터</div>
+            </a>
+            <a href="https://www.lcyber.co.kr/html/m6/m6s10_StudyBook.asp" class="widget-link-item hv">
+              <span class="msi">download</span>
+              <div class="widget-link-text">강의교안 다운로드</div>
+            </a>
+            <a href="https://www.lcyber.co.kr/html/m6/m6s10.asp" class="widget-link-item hv">
+              <span class="msi">key</span>
+              <div class="widget-link-text">공동인증서 복사</div>
+            </a>
+          </div>
+
+          <!-- 상담 안내 위젯 -->
+          <div class="sub-sidebar-tel">
+            <div class="sidebar-tel-label">입학상담문의</div>
+            <div class="sidebar-tel-num blue">1661-6723</div>
+            <div class="sidebar-tel-sep"></div>
+            <div class="sidebar-tel-label">학습지원센터</div>
+            <div class="sidebar-tel-num dark">1661-6726</div>
+          </div>
+        </aside>
+
+        <!-- 우측 메인 콘텐츠 (Content Area) -->
+        <article class="sub-content-area area2">
+
+          <!-- Section 1: Header (결제확인 타이틀) -->
+          <section class="content-intro-header">
+            <div class="content-intro-badge">ENROLLMENT</div>
+            <h1 class="content-intro-title">결제확인</h1>
+          </section>
+
+          <!-- Section 2: 결제내역 -->
+          <section class="laws-section">
+            <div class="laws-section-title-row">
+              <span class="msi">arrow_circle_right</span>
+              <h2 class="laws-section-title">결제내역</h2>
+            </div>
+            
+            <div class="payment-table-card">
+              <div class="payment-table-header">
+                <div class="payment-col-num">순번</div>
+                <div class="payment-col-term">학기</div>
+                <div class="payment-col-count">과목수</div>
+                <div class="payment-col-method">결제방식</div>
+                <div class="payment-col-status">결제상태</div>
+                <div class="payment-col-date">결제일시</div>
+                <div class="payment-col-price">결제금액</div>
+              </div>
+              <div class="payment-table-row">
+                <div class="payment-col-num">1</div>
+                <div class="payment-col-term">2026년 2학기 4기</div>
+                <div class="payment-col-count">1 과목</div>
+                <div class="payment-col-method">신용카드</div>
+                <div class="payment-col-status">
+                  <span class="badge-payment-done">결제완료</span>
+                </div>
+                <div class="payment-col-date">2026-08-27 17:39</div>
+                <div class="payment-col-price">
+                  <span style="font-weight:800; color:#D9541E">1,500원</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 3: 결제 상세 내역 -->
+          <section class="laws-section area2">
+            <div class="laws-section-title-row">
+              <span class="msi">arrow_circle_right</span>
+              <h2 class="laws-section-title">결제 상세 내역</h2>
+            </div>
+
+            <!-- 결제 기본 정보 테이블 -->
+            <div class="payment-detail-info-table">
+              <div class="payment-detail-info-row">
+                <div class="payment-detail-info-th">결제방식</div>
+                <div class="payment-detail-info-td">신용카드</div>
+              </div>
+              <div class="payment-detail-info-row">
+                <div class="payment-detail-info-th">결제상품</div>
+                <div class="payment-detail-info-td">2026년 2학기(4차) KBS아카데미 수강료 - 1 과목</div>
+              </div>
+              <div class="payment-detail-info-row">
+                <div class="payment-detail-info-th">결제금액</div>
+                <div class="payment-detail-info-td highlight">1,500원</div>
+              </div>
+              <div class="payment-detail-info-row">
+                <div class="payment-detail-info-th">결제일시</div>
+                <div class="payment-detail-info-td">2026-08-27 17:39</div>
+              </div>
+            </div>
+
+            <!-- 과목별 결제 상세 테이블 -->
+            <div class="payment-table-card">
+              <div class="payment-table-header">
+                <div class="payment-sub-col-num">순번</div>
+                <div class="payment-sub-col-term">학기</div>
+                <div class="payment-sub-col-subject">과목</div>
+                <div class="payment-sub-col-fee">수강료</div>
+                <div class="payment-sub-col-actual">실결제액</div>
+                <div class="payment-sub-col-status">상태</div>
+              </div>
+              <div class="payment-table-row">
+                <div class="payment-sub-col-num">1</div>
+                <div class="payment-sub-col-term">2026년 2학기 4기</div>
+                <div class="payment-sub-col-subject">가족상담및가족치료</div>
+                <div class="payment-sub-col-fee">150,000원</div>
+                <div class="payment-sub-col-actual">
+                  <span style="font-weight:800; color:#D9541E">1,500원</span>
+                </div>
+                <div class="payment-sub-col-status">
+                  <span style="color:#00479D; font-weight:700">승인</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+                    <!-- Section 4: 환불규정안내 (원본 디자인 완벽 일치) -->
+          <section class="refund-section">
+            <div class="refund-title">환불규정안내</div>
+
+            <div class="refund-table-wrap">
+              <!-- 헤더 -->
+              <div class="refund-table-head">
+                <div class="refund-th-gubun">구분</div>
+                <div class="refund-th-reason">반환사유 발생일</div>
+                <div class="refund-th-amount">반환금액</div>
+              </div>
+              
+              <!-- 1. 과오납의 경우 -->
+              <div class="refund-tr">
+                <div class="refund-td-gubun">1. 과오납의 경우</div>
+                <div class="refund-td-reason">-</div>
+                <div class="refund-td-amount">과오납된 학습비 전액</div>
+              </div>
+
+              <!-- 2. 학습자가 본인의 요청으로 환불을 신청한 경우 -->
+              <div class="refund-tr">
+                <div class="refund-td-gubun">2. 학습자가 본인의 요청으로 환불을 신청한 경우</div>
+                <div class="refund-td-sublist">
+                  <div class="refund-sub-item">수업 시작일 전일까지</div>
+                  <div class="refund-sub-item">수업 시작일부터 총 수업시간의 1/6 경과 전</div>
+                  <div class="refund-sub-item">총 수업시간의 1/6 이상부터 1/3 미만까지의 기간 동안</div>
+                  <div class="refund-sub-item">총 수업시간의 1/3 이상부터 1/2 미만까지의 기간 동안</div>
+                  <div class="refund-sub-item">총 수업시간의 1/2 이상 경과</div>
+                </div>
+                <div class="refund-td-sublist amount">
+                  <div class="refund-sub-item">학습비 전액</div>
+                  <div class="refund-sub-item">학습비의 6분의 5에 해당하는 금액</div>
+                  <div class="refund-sub-item">학습비의 3분의 2에 해당하는 금액</div>
+                  <div class="refund-sub-item">학습비의 2분의 1에 해당하는 금액</div>
+                  <div class="refund-sub-item">반환하지 않음</div>
+                </div>
+              </div>
+
+              <!-- 3. 환불처리기간 -->
+              <div class="refund-tr">
+                <div class="refund-td-gubun">3. 환불처리기간</div>
+                <div class="refund-td-full">
+                  학습자의 사정으로 수강료를 환불하려면 환불신청서 및 필요서류 제출을 원칙으로 하며, 환불신청서 접수일로부터 5일 이내에 환불한다. 단 마지막 5일에 해당 되는 날이 교육원 휴무일, 국경일 또는 일요일에 해당되는 경우는 그 익일, 토요일에 해당되는 경우는 다음 월요일에 환불을 진행한다.
+                </div>
+              </div>
+
+              <!-- 4. 환불관련 법령 -->
+              <div class="refund-tr">
+                <div class="refund-td-gubun">4. 환불관련 법령</div>
+                <div class="refund-td-full">
+                  평가인정 학습과정 운영에 관한 규정(대통령령 제26591호) 제4조(학습비) 2항<br>
+                  <a href="#" class="refund-link">국가법령정보센터 별표확인</a> / <a href="#" class="refund-link">국가법령정보센터 규정확인</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </article>
+
+      </div>
+    </main>
+
+    <!-- 하단 고정 빠른 상담바 -->
+    <div class="bottom-fixed-bar">
+      <div class="bottom-fixed-container">
+        <div class="bottom-fixed-tel-group">
+          <span class="msi bottom-fixed-tel-icon">call</span>
+          <div class="bottom-fixed-tel-col">
+            <div class="bottom-fixed-tel-label">전화상담</div>
+            <div class="bottom-fixed-tel-num">1661-6723</div>
+          </div>
+        </div>
+        <div class="bottom-fixed-sep"></div>
+        <div class="bottom-fixed-title-text">빠른 상담신청</div>
+        <form name="frmcounsel_bottom" method="post" action="https://www.lcyber.co.kr/html/m5/m5s7_proc.asp" class="bottom-fixed-form">
+          <select name="gubun" class="bottom-form-select-course">
+            <option value="">희망과정 선택</option>
+            <option value="사회복지사">사회복지사</option>
+            <option value="한국어교원">한국어교원</option>
+            <option value="건강가정사">건강가정사</option>
+            <option value="학위과정">학위과정</option>
+            <option value="민간자격증">민간자격증</option>
+          </select>
+          <input type="text" name="name" placeholder="이름" required class="bottom-form-input-name">
+          <select name="hptel1" class="bottom-form-select-tel1">
+            <option>010</option>
+            <option>011</option>
+            <option>016</option>
+            <option>017</option>
+            <option>018</option>
+            <option>019</option>
+          </select>
+          <input type="text" name="hptel2" maxlength="4" placeholder="1234" required class="bottom-form-input-tel">
+          <input type="text" name="hptel3" maxlength="4" placeholder="5678" required class="bottom-form-input-tel">
+          <label class="bottom-form-agree-label">
+            <input type="checkbox" name="chkx" required class="bottom-form-checkbox">
+            <span class="bottom-form-agree-text">(필수) 개인정보 수집동의</span>
+          </label>
+          <a href="https://www.lcyber.co.kr/html/m1/m1s4.asp" target="_blank" rel="noopener noreferrer" class="bottom-form-view-link">내용보기</a>
+          <button type="submit" class="btn-bottom-submit btnx">빠른상담 신청하기</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-left-col">
+          <div class="footer-brand-row">
+            <img src="assets/logo/kbs-academy-mono-black.png" alt="KBS아카데미" class="footer-logo-img">
+            <div class="footer-brand-sep"></div>
+            <div class="footer-brand-title">원격평생교육원</div>
+          </div>
+          <div class="footer-company-info">
+            (주)리더스에듀 · 리더스원격평생교육원 · 사업자등록번호 209-81-56148<br>
+            통신판매 제2013-부산사상구-0148호 · 대표자 권영숙 · 개인정보 보호책임자 윤대영<br>
+            본원소재지 (47007) 부산광역시 사상구 가야대로 348 KL빌딩 5층 · 대표전화 1661-6726 · 팩스 070-8233-7077
+          </div>
+          <div class="footer-legal-links">
+            <a href="/kbs-html/sub01_03.html" class="footer-legal-link">이용약관</a>
+            <a href="/kbs-html/sub01_04.html" class="footer-legal-link">개인정보처리방침</a>
+            <a href="http://www.cbinfo.or.kr/pbanMain.do?initGubun=2&amp;initParam1=2013B031&amp;auto_select=1" target="_blank" rel="noopener noreferrer" class="footer-legal-link">정보공시</a>
+            <a href="/kbs-html/sub01_05.html" class="footer-legal-link">찾아오시는 길</a>
+            <a href="https://www.lcyber.co.kr/mobile/" class="footer-legal-link">모바일웹</a>
+          </div>
+        </div>
+        <div class="footer-right-col">
+          <div class="footer-contact-card">
+            <div class="footer-contact-title">입학상담문의</div>
+            <div class="footer-contact-tel blue">1661-6723</div>
+            <div class="footer-contact-hours">평일 09:30~18:30 · 점심 12:30~13:30</div>
+          </div>
+          <div class="footer-contact-card">
+            <div class="footer-contact-title">학습지원센터 · 수업 및 행정 문의</div>
+            <div class="footer-contact-tel dark">1661-6726</div>
+            <div class="footer-contact-hours">평일 09:30~18:30 · 원격지원 070-4027-7087</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 플로팅 위젯 (Floating Actions & Scroll To Top) -->
+    <div id="floating-widget" class="floating-widget">
+      <!-- 바로가기 퀵메뉴 -->
+      <div class="floating-quick-menu">
+        <div class="floating-menu-header">
+          <span class="msi" style="font-size:16px; color:#FFFFFF; flex:none;">bolt</span>
+          <div class="floating-menu-header-title">바로가기 메뉴</div>
+        </div>
+        <a href="https://www.lcyber.co.kr/ssl/login/InstallVestCert.html" class="floating-menu-link">
+          <span class="mso floating-menu-link-icon">login</span>
+          <div class="floating-menu-link-text">통합로그인</div>
+        </a>
+        <a href="#" class="floating-menu-link">
+          <span class="mso floating-menu-link-icon">person_add</span>
+          <div class="floating-menu-link-text">회원가입</div>
+        </a>
+        <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=notice" class="floating-menu-link">
+          <span class="mso floating-menu-link-icon">campaign</span>
+          <div class="floating-menu-link-text">공지사항</div>
+        </a>
+        <a href="https://www.lcyber.co.kr/html/m4/m4s3.asp" class="floating-menu-link">
+          <span class="mso floating-menu-link-icon">event_available</span>
+          <div class="floating-menu-link-text">수강신청</div>
+        </a>
+        <a href="https://www.lcyber.co.kr/html/m4/m4s1.asp" class="floating-menu-link">
+          <span class="mso floating-menu-link-icon">shopping_bag</span>
+          <div class="floating-menu-link-text">과목 장바구니</div>
+        </a>
+        <a href="https://www.lcyber.co.kr/html/m6/m6s1.asp" class="floating-menu-link">
+          <span class="mso floating-menu-link-icon">play_circle</span>
+          <div class="floating-menu-link-text">나의 강의실</div>
+        </a>
+        <a href="http://as82.kr/ledu/" target="_blank" rel="noopener noreferrer" class="floating-menu-link">
+          <span class="mso floating-menu-link-icon">support_agent</span>
+          <div class="floating-menu-link-text">원격지원</div>
+        </a>
+      </div>
+
+      <!-- 네이버 톡톡 버튼 -->
+      <a href="#" class="floating-talktalk-btn btnx">
+        <div class="talktalk-icon-circle">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.6c-4.7 0-8.4 3-8.4 6.8 0 2.4 1.5 4.5 3.8 5.7l-.8 3.4a.5.5 0 0 0 .76.54l3.9-2.5c.24.02.49.03.74.03 4.7 0 8.4-3 8.4-6.8S16.7 3.6 12 3.6Z" fill="#FFFFFF"></path><circle cx="9.1" cy="10.3" r="1.25" fill="#03C75A"></circle><circle cx="14.9" cy="10.3" r="1.25" fill="#03C75A"></circle></svg>
+        </div>
+        <div class="talktalk-text-col">
+          <div class="talktalk-title">네이버 톡톡</div>
+          <div class="talktalk-sub">궁금할땐 문의하세요!</div>
+        </div>
+      </a>
+
+      <!-- AI 학곰이 배너 -->
+      <a href="https://www.lcyber.co.kr/html/m4/m4s5.asp" class="floating-ai-banner btnx">
+        <img src="assets/character/hakgom-staff.png" alt="학곰" class="floating-ai-hakgom">
+        <div class="floating-ai-text-col">
+          <div class="floating-ai-title">지금 시작하면 언제 취득?</div>
+          <div class="floating-ai-sub">AI로 빠르게 알아보기!</div>
+        </div>
+      </a>
+
+      <!-- 맨 위로 가기 버튼 -->
+      <button id="btn-scroll-top" class="btn-scroll-top" aria-label="맨 위로 가기">↑</button>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  <script src="js/sub.js"></script>
+</body>
+</html>

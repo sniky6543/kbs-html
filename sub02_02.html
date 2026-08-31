@@ -430,50 +430,62 @@
                   <div class="target-number-badge">2</div>
                   <div style="flex:1" class="target-item-text">
                     아래와 같이 1개 대학 내에서 시간제등록으로 매 학기 및 연간 이수할 수 있는 학점이 제한되어 있습니다.
-                    <div class="target-table-card" style="margin-top:10px">
-                      <div class="target-table-header">
-                        <div style="flex:1.4; padding:9px 12px; border-right:1px solid #ECEEF2">구분 (근거조항)</div>
-                        <div style="flex:2; padding:9px 12px">보기</div>
-                      </div>
-                      <div class="target-table-row">
-                        <div style="flex:1.4; padding:9px 12px; border-right:1px solid #ECEEF2">고등교육법에 근거한 대학<br><span style="color:#98A2B3">(고등교육법 시행령 제53조제9항)</span></div>
-                        <div style="flex:2; padding:9px 12px">매학기 12학점 및 연간 24학점을 초과할 수 없음.</div>
-                      </div>
-                      <div class="target-table-row">
-                        <div style="flex:1.4; padding:9px 12px; border-right:1px solid #ECEEF2">평생교육법 시행령<br><span style="color:#98A2B3">(제44조제5항, 제57조제2항에 근거한 대학)</span></div>
-                        <div style="flex:2; padding:9px 12px">해당대학의 매 학기 취득기준 학점의 2분의 1을 초과할 수 없음.</div>
-                      </div>
+                    <div class="sub-table-container" style="margin-top:10px;">
+                      <table class="sub-table">
+                        <thead>
+                          <tr>
+                            <th style="width:40%;">구분 (근거조항)</th>
+                            <th style="width:60%;">보기</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>고등교육법에 근거한 대학<br><span style="color:#98A2B3;">(고등교육법 시행령 제53조제9항)</span></td>
+                            <td>매학기 12학점 및 연간 24학점을 초과할 수 없음.</td>
+                          </tr>
+                          <tr>
+                            <td>평생교육법 시행령<br><span style="color:#98A2B3;">(제44조제5항, 제57조제2항에 근거한 대학)</span></td>
+                            <td>해당대학의 매 학기 취득기준 학점의 2분의 1을 초과할 수 없음.</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                     <div class="target-item-note" style="margin-top:8px">※ 단, 2개 이상 대학에서 시간제 등록으로 수업을 이수할 경우, 아래와 같이 '1년/1학기 인정 제한학점'을 초과하지 않는 범위 내에서 인정받을 수 있음. (예: 시간제 등록을 통해서만 1년에 42학점을 이수할 경우)</div>
-                    <div class="target-table-card" style="margin-top:8px">
-                      <div class="target-table-header" style="text-align:center">
-                        <div style="flex:1; padding:8px">학기</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2">A대학교</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2">B대학교</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2">C대학교</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2">합계</div>
-                      </div>
-                      <div class="target-table-row" style="text-align:center">
-                        <div style="flex:1; padding:8px">1,2학기 총합계</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2">24</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2">3</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2">15</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2; font-weight:700">42</div>
-                      </div>
-                      <div class="target-table-row" style="text-align:center">
-                        <div style="flex:1; padding:8px">1학기</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2">12</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2">3</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2">9</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2; font-weight:700">21</div>
-                      </div>
-                      <div class="target-table-row" style="text-align:center">
-                        <div style="flex:1; padding:8px">2학기</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2">12</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2">0</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2">9</div>
-                        <div style="flex:1; padding:8px; border-left:1px solid #ECEEF2; font-weight:700">21</div>
-                      </div>
+                    <div class="sub-table-container" style="margin-top:8px;">
+                      <table class="sub-table text-center">
+                        <thead>
+                          <tr>
+                            <th style="width:20%;">학기</th>
+                            <th style="width:20%;">A대학교</th>
+                            <th style="width:20%;">B대학교</th>
+                            <th style="width:20%;">C대학교</th>
+                            <th style="width:20%;">합계</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center font-bold">1,2학기 총합계</td>
+                            <td class="text-center">24</td>
+                            <td class="text-center">3</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center font-bold" style="color:#00479D;">42</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">1학기</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center">3</td>
+                            <td class="text-center">9</td>
+                            <td class="text-center font-bold">21</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">2학기</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center">0</td>
+                            <td class="text-center">9</td>
+                            <td class="text-center font-bold">21</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
@@ -635,61 +647,79 @@
                 </div>
                 <div style="font-size:13.5px; font-weight:700; color:#1A1D24">[1] 학점인정의 기준</div>
                 
-                <div class="target-table-card">
-                  <div class="target-table-header" style="text-align:center">
-                    <div style="width:110px; flex:none; padding:9px; border-right:1px solid #ECEEF2">등급</div>
-                    <div style="width:100px; flex:none; padding:9px; border-right:1px solid #ECEEF2">인정학점</div>
-                    <div style="flex:1; padding:9px">비고</div>
-                  </div>
-                  <div class="target-table-row">
-                    <div style="width:110px; flex:none; padding:9px; border-right:1px solid #ECEEF2; display:flex; align-items:center; justify-content:center; font-weight:700">보유자</div>
-                    <div style="width:100px; flex:none; padding:9px; border-right:1px solid #ECEEF2; display:flex; align-items:center; justify-content:center; font-weight:700; color:#00479D">140학점</div>
-                    <div style="flex:1; padding:9px; line-height:1.6">고등학교 졸업(혹은 이와 동등 학력) 이상의 중요무형문화재 보유자의 경우, 140학점을 인정받아 학점인정과 동시에 학사학위 취득 가능</div>
-                  </div>
-                  <div class="target-table-row">
-                    <div style="width:110px; flex:none; padding:9px; border-right:1px solid #ECEEF2; display:flex; align-items:center; justify-content:center; font-weight:700">전수교육조교*</div>
-                    <div style="width:100px; flex:none; padding:9px; border-right:1px solid #ECEEF2; display:flex; align-items:center; justify-content:center; font-weight:700; color:#00479D">50학점</div>
-                    <div style="flex:1; padding:9px; line-height:1.6">중요무형문화재의 보유자 또는 보유단체의 전수교육을 보조하기 위하여 전수 교육 이수증을 발급받은 자 중에서 중요무형문화재 전수교육 조교로 선정</div>
-                  </div>
-                  <div class="target-table-row">
-                    <div style="width:110px; flex:none; padding:9px; border-right:1px solid #ECEEF2; display:flex; align-items:center; justify-content:center; font-weight:700">이수자</div>
-                    <div style="width:100px; flex:none; padding:9px; border-right:1px solid #ECEEF2; display:flex; align-items:center; justify-content:center; font-weight:700; color:#00479D">30학점</div>
-                    <div style="flex:1; padding:9px; line-height:1.6">중요무형문화재의 보유자 또는 보유단체에서 해당 중요무형문화재의 전수교육을 3년 이상 받은 자의 기능이나 예능을 심사하여 그 기능이나 예능이 상당한 수준에 이르렀다고 판단되는 자에게 전수교육 이수증 발급</div>
-                  </div>
-                  <div class="target-table-row">
-                    <div style="width:110px; flex:none; padding:9px; border-right:1px solid #ECEEF2; display:flex; align-items:center; justify-content:center; font-weight:700">전수생</div>
-                    <div style="width:100px; flex:none; border-right:1px solid #ECEEF2; display:flex; flex-direction:column">
-                      <div style="padding:6px 9px; border-bottom:1px solid #ECEEF2; text-align:center">3년 이상<br><span style="color:#00479D; font-weight:700">21학점</span></div>
-                      <div style="padding:6px 9px; border-bottom:1px solid #ECEEF2; text-align:center">2년 이상<br><span style="color:#00479D; font-weight:700">14학점</span></div>
-                      <div style="padding:6px 9px; border-bottom:1px solid #ECEEF2; text-align:center">1년 이상<br><span style="color:#00479D; font-weight:700">7학점</span></div>
-                      <div style="padding:6px 9px; text-align:center">6개월<br><span style="color:#00479D; font-weight:700">4학점</span></div>
-                    </div>
-                    <div style="flex:1; padding:9px; line-height:1.6; display:flex; flex-direction:column; gap:8px; justify-content:center">
-                      <div>중요무형문화재 보유자 또는 보유단체에서 해당 중요무형문화재의 전수교육을 6개월 이상 받은 자에 대하여 기간에 따라 학점 인정</div>
-                      <div style="border:1px solid #E4E9F0; border-radius:6px; padding:8px 10px; background:#F7F9FB; font-size:11.5px; line-height:1.65; color:#6B7280">※ 단, 보유자나 보유단체가 중요무형문화재로 지정된 후, 전수생에 대해 문화재청에 보고하거나 등록장부를 만들어 전수생을 관리한 경우에 한해 학점인정 가능합니다(일반회원 자격으로 전수받은 경험은 학점 불인정).</div>
-                    </div>
-                  </div>
+                <div class="sub-table-container" style="margin-top:10px;">
+                  <table class="sub-table">
+                    <thead>
+                      <tr>
+                        <th style="width:110px;">등급</th>
+                        <th style="width:110px;">인정학점</th>
+                        <th>비고</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center font-bold">보유자</td>
+                        <td class="text-center font-bold" style="color:#00479D;">140학점</td>
+                        <td>고등학교 졸업(혹은 이와 동등 학력) 이상의 중요무형문화재 보유자의 경우, 140학점을 인정받아 학점인정과 동시에 학사학위 취득 가능</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center font-bold">전수교육조교*</td>
+                        <td class="text-center font-bold" style="color:#00479D;">50학점</td>
+                        <td>중요무형문화재의 보유자 또는 보유단체의 전수교육을 보조하기 위하여 전수 교육 이수증을 발급받은 자 중에서 중요무형문화재 전수교육 조교로 선정</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center font-bold">이수자</td>
+                        <td class="text-center font-bold" style="color:#00479D;">30학점</td>
+                        <td>중요무형문화재의 보유자 또는 보유단체에서 해당 중요무형문화재의 전수교육을 3년 이상 받은 자의 기능이나 예능을 심사하여 그 기능이나 예능이 상당한 수준에 이르렀다고 판단되는 자에게 전수교육 이수증 발급</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="4" class="text-center font-bold">전수생</td>
+                        <td class="text-center">3년 이상<br><span class="font-bold" style="color:#00479D;">21학점</span></td>
+                        <td rowspan="4">
+                          <div style="display:flex; flex-direction:column; gap:8px;">
+                            <div>중요무형문화재 보유자 또는 보유단체에서 해당 중요무형문화재의 전수교육을 6개월 이상 받은 자에 대하여 기간에 따라 학점 인정</div>
+                            <div style="border:1px solid #E4E9F0; border-radius:6px; padding:8px 10px; background:#F7F9FB; font-size:11.5px; line-height:1.65; color:#6B7280;">※ 단, 보유자나 보유단체가 중요무형문화재로 지정된 후, 전수생에 대해 문화재청에 보고하거나 등록장부를 만들어 전수생을 관리한 경우에 한해 학점인정 가능합니다(일반회원 자격으로 전수받은 경험은 학점 불인정).</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">2년 이상<br><span class="font-bold" style="color:#00479D;">14학점</span></td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1년 이상<br><span class="font-bold" style="color:#00479D;">7학점</span></td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">6개월<br><span class="font-bold" style="color:#00479D;">4학점</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
 
-                <div class="target-item-note">※ 문화재보호법 개정에 따라, [전수교육조교]의 명칭이 변경되었으며 선정일에 따라 세부 인정기준은 다음과 같음.</div>
+                <div class="target-item-note" style="margin-top:12px; margin-bottom:10px;">※ 문화재보호법 개정에 따라, [전수교육조교]의 명칭이 변경되었으며 선정일에 따라 세부 인정기준은 다음과 같음.</div>
 
-                <div class="target-table-card">
-                  <div class="target-table-header" style="text-align:center">
-                    <div style="flex:1.1; padding:8px; border-right:1px solid #ECEEF2">선정일</div>
-                    <div style="flex:1; padding:8px; border-right:1px solid #ECEEF2">~1999.7.19</div>
-                    <div style="flex:1; padding:8px; border-right:1px solid #ECEEF2">1999.7.20~2001.9.7</div>
-                    <div style="flex:1; padding:8px">2001.9.8~현재</div>
-                  </div>
-                  <div class="target-table-row" style="text-align:center">
-                    <div style="flex:1.1; padding:8px; border-right:1px solid #ECEEF2; font-weight:700; display:flex; align-items:center; justify-content:center">등급명칭 (인정학점)</div>
-                    <div style="flex:1; border-right:1px solid #ECEEF2; display:flex; flex-direction:column; justify-content:center; gap:4px; padding:8px 4px">
-                      <div>보유자후보 (60학점)</div>
-                      <div>전수교육조교 (53학점)</div>
-                      <div>전수교육보조자 (50학점)</div>
-                    </div>
-                    <div style="flex:1; padding:8px; border-right:1px solid #ECEEF2; display:flex; align-items:center; justify-content:center">전수교육보조자 (50학점)</div>
-                    <div style="flex:1; padding:8px; display:flex; align-items:center; justify-content:center">전수교육조교 (50학점)</div>
-                  </div>
+                <div class="sub-table-container">
+                  <table class="sub-table text-center">
+                    <thead>
+                      <tr>
+                        <th style="width:25%;">선정일</th>
+                        <th style="width:25%;">~1999.7.19</th>
+                        <th style="width:25%;">1999.7.20~2001.9.7</th>
+                        <th style="width:25%;">2001.9.8~현재</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="font-bold" style="background:#F7F8FA; text-align:center;">등급명칭 (인정학점)</th>
+                        <td class="text-center">
+                          <div>보유자후보 (60학점)</div>
+                          <div style="margin-top:4px;">전수교육조교 (53학점)</div>
+                          <div style="margin-top:4px;">전수교육보조자 (50학점)</div>
+                        </td>
+                        <td class="text-center">전수교육보조자 (50학점)</td>
+                        <td class="text-center">전수교육조교 (50학점)</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
 

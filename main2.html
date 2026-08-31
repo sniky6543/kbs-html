@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KBS아카데미 원격평생교육원 - 나의 강의실</title>
+  <meta name="description" content="KBS아카데미 원격평생교육원 - 사회복지사2급, 사회복지사 현장실습, 한국어교원2급, 건강가정사, 학점은행제 학위취득 교육부 평가인정 기관">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo/kbs-symbol.png">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Page Loading Overlay (1초 뒤 사라짐) -->
+  <div id="page-loading" class="page-loading-overlay">
+    <div class="page-loading-logo-group">
+      <img src="assets/kbs-academy-logo-white.png" alt="KBS아카데미" class="page-loading-logo-img">
+      <div class="page-loading-divider"></div>
+      <div class="page-loading-title">원격평생교육원</div>
+    </div>
+    <div class="page-loading-spinner"></div>
+    <div class="page-loading-text">KBS아카데미원격평생교육원 · 조금만 기다려주세요</div>
+  </div>
+
+  <div class="page-wrapper">
+
+    <!-- 1. 상단 유틸바 (Utility Bar) -->
+    <div class="top-util-bar">
+      <div class="top-util-container">
+        <div class="desk-status-group">
+          <div id="desk-dot" class="desk-status-dot"></div>
+          <div id="desk-label" class="desk-status-label">지금 상담 가능</div>
+          <div id="desk-note" class="desk-status-note">평일 09:30~18:30 · 점심 12:30~13:30</div>
+        </div>
+        <div class="top-util-links">
+          <a href="index.html" class="top-util-link">HOME</a>
+          <div class="top-util-sep"></div>
+          <a href="#" class="top-util-link">즐겨찾기 추가</a>
+          <div class="top-util-sep"></div>
+          <a href="http://as82.kr/ledu/" target="_blank" rel="noopener noreferrer" class="top-util-link">원격지원센터</a>
+          <div class="top-util-sep"></div>
+          <a href="#" class="btn-header-logout">로그아웃</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. 메인 헤더 (Header) -->
+    <header class="main-header">
+      <div class="header-container">
+        <div class="header-logo-group">
+          <a href="index.html" class="header-brand-link">
+            <div class="header-logo-col">
+              <img src="assets/kbs-academy-logo.png" alt="KBS아카데미" class="header-logo-img">
+              <div class="header-moe-row">
+                <img src="assets/moe-mark.png" alt="교육부" class="header-moe-icon">
+                <div class="header-moe-text">교육부 인증 학점은행제 원격교육기관</div>
+              </div>
+            </div>
+            <div class="header-brand-divider"></div>
+            <div class="header-brand-sub">원격평생교육원</div>
+          </a>
+        </div>
+        <div class="header-right-group">
+          <!-- 롤링 티커 배너 -->
+          <div class="header-ticker-box">
+            <div id="header-ticker" class="header-ticker-track">
+              <div class="ticker-item ticker-item-voucher">
+                <img src="assets/voucher-logo-white.png" alt="평생교육이용권" class="ticker-item-img">
+                <div class="ticker-item-divider"></div>
+                <div class="ticker-item-text">사용가능기관</div>
+              </div>
+              <div class="ticker-item ticker-item-loan">
+                <span class="msi" style="font-size:18px; color:#FFFFFF;">support_agent</span>
+                <div class="ticker-item-text">학자금 대출지원 가능기관</div>
+              </div>
+              <div class="ticker-item ticker-item-veteran">
+                <img src="assets/gov-emblem-white.png" alt="국가보훈처" class="ticker-item-img">
+                <div class="ticker-item-text">국가보훈처 학습비지원기관</div>
+              </div>
+            </div>
+          </div>
+          <a href="https://www.cb.or.kr/creditbank/eduOrg/eduOrg1_1.do?m_szOrgId=2013B031" target="_blank" rel="noopener noreferrer" class="header-cb-link">
+            <img src="assets/cb-mark.png" alt="학점은행제 국가평생교육진흥원" class="header-cb-img">
+          </a>
+          <div class="header-v-divider"></div>
+          <div class="header-tel-group">
+            <div class="header-tel-col">
+              <div class="header-tel-label">입학상담문의</div>
+              <div class="header-tel-num blue">1661-6723</div>
+            </div>
+            <div class="header-tel-sep"></div>
+            <div class="header-tel-col">
+              <div class="header-tel-label">학습지원센터</div>
+              <div class="header-tel-num dark">1661-6726</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 3. GNB (Global Navigation Bar) & 메가메뉴 -->
+    <nav class="main-nav">
+      <div class="gnb-container">
+        <div class="gnb-list">
+          <div class="gnb-item" data-index="0">
+            <a href="https://www.lcyber.co.kr/html/m1/m1s1.asp" class="gnb-link">교육원소개</a>
+          </div>
+          <div class="gnb-item" data-index="1">
+            <a href="https://www.lcyber.co.kr/html/m2/m2s1.asp" class="gnb-link">학점은행제</a>
+          </div>
+          <div class="gnb-item" data-index="2">
+            <a href="https://www.lcyber.co.kr/html/event/event2.asp" class="gnb-link">교육과정</a>
+          </div>
+          <div class="gnb-item" data-index="3">
+            <a href="https://www.lcyber.co.kr/html/m4/m4s1.asp" class="gnb-link">수강신청
+              <div class="badge-closing-wrapper">
+                <div class="badge-closing-bob">
+                  <div class="badge-closing-pill">
+                    <div class="badge-closing-dot"></div>
+                    <div class="badge-closing-text">정원마감예정</div>
+                  </div>
+                  <div class="badge-closing-arrow"></div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gnb-item" data-index="4">
+            <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=notice" class="gnb-link">학습지원센터</a>
+          </div>
+          <div class="gnb-item" data-index="5">
+            <a href="https://www.lcyber.co.kr/html/m6/m6s1.asp" class="gnb-link">온라인강의실</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 메가메뉴 드롭다운 -->
+      <div id="gnb-megamenu" class="gnb-megamenu">
+        <div class="megamenu-container">
+          <!-- 1열: 교육원소개 -->
+          <div class="megamenu-col">
+            <a href="sub01_01.html" class="megamenu-link">교육원안내</a>
+            <a href="sub01_02.html" class="megamenu-link">인사말</a>
+            <a href="sub01_03.html" class="megamenu-link">이용약관</a>
+            <a href="sub01_04.html" class="megamenu-link">개인정보처리방침</a>
+          </div>
+          <!-- 2열: 학점은행제 -->
+          <div class="megamenu-col">
+            <a href="sub02_01.html" class="megamenu-link">학점은행제란?</a>
+            <a href="sub02_02.html" class="megamenu-link">학습자등록</a>
+            <a href="sub02_03.html" class="megamenu-link">학점인정대상</a>
+            <a href="sub02_04.html" class="megamenu-link">신청방법안내</a>
+            <a href="https://www.lcyber.co.kr/html/m2/m2s5.asp" class="megamenu-link">관련법규</a>
+            <a href="https://www.lcyber.co.kr/html/m2/m2s6.asp" class="megamenu-link">학습자등록/학점인정</a>
+          </div>
+          <!-- 3열: 교육과정 -->
+          <div class="megamenu-col">
+            <a href="https://www.lcyber.co.kr/html/event/event2.asp" class="megamenu-link">사회복지사</a>
+            <a href="https://www.lcyber.co.kr/html/practice/" class="megamenu-link">사회복지사 현장실습</a>
+            <a href="https://www.lcyber.co.kr/html/event/event7.asp" class="megamenu-link">한국어교원</a>
+            <a href="https://www.lcyber.co.kr/html/event/event4.asp" class="megamenu-link">건강가정사</a>
+            <a href="https://www.lcyber.co.kr/html/event/event1.asp" class="megamenu-link">학위과정</a>
+            <a href="https://www.lcyber.co.kr/html/m3/m3s5.asp" class="megamenu-link">민간자격증</a>
+          </div>
+          <!-- 4열: 수강신청 -->
+          <div class="megamenu-col">
+            <a href="sub04_01.html" class="megamenu-link">개설과목안내</a>
+            <a href="sub04_02.html" class="megamenu-link">등록절차안내</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s3.asp" class="megamenu-link">수강신청</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s4.asp" class="megamenu-link">수강료결제</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s5.asp" class="megamenu-link">수강료결제확인</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s6.asp" class="megamenu-link">대상별학습설계</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s7.asp" class="megamenu-link">환불신청</a>
+          </div>
+          <!-- 5열: 학습지원센터 -->
+          <div class="megamenu-col">
+            <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=notice" class="megamenu-link">공지사항</a>
+            <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=faq" class="megamenu-link">자주하는질문</a>
+            <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=qna" class="megamenu-link">질문과답변</a>
+            <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=epilogue" class="megamenu-link">장학생 수강후기</a>
+            <a href="https://www.lcyber.co.kr/board@v2/page/listprof/?board_name=profcolumn" class="megamenu-link">교수진 칼럼</a>
+            <a href="http://as82.kr/ledu/" target="_blank" rel="noopener noreferrer" class="megamenu-link">원격지원</a>
+            <a href="https://www.lcyber.co.kr/html/m5/m5s8.asp" class="megamenu-link">모바일학습가이드</a>
+          </div>
+          <!-- 6열: 온라인강의실 -->
+          <div class="megamenu-col">
+            <a href="https://www.lcyber.co.kr/html/m6/m6s5.asp" class="megamenu-link">강의실입장</a>
+            <a href="https://www.lcyber.co.kr/html/m6/m6s2.asp" class="megamenu-link">증명서발급</a>
+            <a href="https://www.lcyber.co.kr/html/m6/m6s3.asp" class="megamenu-link">교육비납입증명서</a>
+            <a href="https://www.lcyber.co.kr/html/m6/m6s4.asp" class="megamenu-link">강의교안 다운로드</a>
+            <a href="https://www.lcyber.co.kr/html/m6/m6s6.asp" class="megamenu-link">학습자료실</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 4. 히어로 슬라이더 5장 & 우측 로그인 사용자 카드 -->
+    <div class="hero-slider-container">
+      
+      <!-- Slide 0 Background: 사회복지사 2급 -->
+      <div class="hero-slide-bg slide-bg-0 active">
+        <div class="hero-pattern-overlay"></div>
+        <div class="hero-glow-circle"></div>
+        <img src="assets/confetti-burst.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; pointer-events:none; clip-path:polygon(53% 0, 100% 0, 100% 100%, 0 100%, 0 88%, 53% 88%)">
+        <div class="hero-circle-outline"></div>
+        <div class="hero-confetti-piece hero-confetti-1"></div>
+        <div class="hero-confetti-piece hero-confetti-2"></div>
+        <div class="hero-confetti-piece hero-confetti-3"></div>
+        <div class="hero-confetti-piece hero-confetti-4"></div>
+        <div class="hero-badge-stamp">
+          <img src="assets/deco/laurel-wreath.png" alt="" style="width:80px; height:auto; display:block">
+          <div class="hero-badge-stamp-text">
+            <div class="stamp-year">2026</div>
+            <div class="stamp-org">교육부</div>
+            <div class="stamp-type">평가인정</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 1 Background: 사회복지사 현장실습 -->
+      <div class="hero-slide-bg slide-bg-1">
+        <div class="hero-pattern-overlay"></div>
+        <div class="hero-circle-outline"></div>
+        <div class="hero-glow-circle pink"></div>
+      </div>
+
+      <!-- Slide 2 Background: 한국어교원 -->
+      <div class="hero-slide-bg slide-bg-2">
+        <div class="hero-pattern-overlay"></div>
+        <div class="hero-glow-circle green"></div>
+        <img src="assets/deco/motif-circle.png" alt="" style="position:absolute; left:16px; top:50%; transform:translateY(-50%); width:340px; height:auto; z-index:0; opacity:.35; pointer-events:none">
+        <div class="hero-circle-outline"></div>
+        <img src="assets/deco/hunminjeongeum-bg.png" alt="" style="position:absolute; left:50%; top:0; bottom:0; height:100%; width:auto; z-index:0; pointer-events:none; transform:translateX(-73%);">
+        <img src="assets/deco/sejong-cutout2.png" alt="" style="position:absolute; left:54%; bottom:0; height:228px; width:auto; z-index:0; pointer-events:none; transform:translateX(-50%);">
+        <div class="hero-badge-stamp" style="width:100px;">
+          <img src="assets/deco/laurel-wreath.png" alt="" style="width:100px; height:auto; display:block">
+          <div class="hero-badge-stamp-text" style="top:-8px;">
+            <img src="assets/deco/gov-emblem.png" alt="" style="width:20px; height:auto; display:block; margin-bottom:1px">
+            <div class="stamp-org">국립국어원</div>
+            <div class="stamp-type">교육기관</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 Background: 건강가정사 -->
+      <div class="hero-slide-bg slide-bg-3">
+        <div class="hero-pattern-overlay"></div>
+        <div class="hero-circle-outline"></div>
+        <div class="hero-glow-circle orange"></div>
+      </div>
+
+      <!-- Slide 4 Background: 학곰이에게 물어봐 -->
+      <div class="hero-slide-bg slide-bg-4">
+        <div class="hero-pattern-overlay"></div>
+        <div class="hero-circle-outline"></div>
+        <div class="hero-glow-circle cyan"></div>
+      </div>
+
+      <!-- Floating Particle Deco -->
+      <div class="hero-particles-box">
+        <div class="particle p-1"></div>
+        <div class="particle p-2"></div>
+        <div class="particle p-3"></div>
+        <div class="particle p-4"></div>
+        <div class="particle p-5"></div>
+        <div class="particle p-6"></div>
+        <div class="particle p-7"></div>
+        <div class="particle p-8"></div>
+      </div>
+
+      <!-- Hero Main Content Grid -->
+      <div class="hero-main-content-grid">
+
+        <!-- Slide 0 Content: 사회복지사 2급 -->
+        <div class="hero-slide-content active" data-index="0">
+          <img src="assets/gift-hand.png" alt="" class="hero-gift-hand-deco">
+          <div class="slide-tag-row rv">
+            <div class="slide-tag-text">사회복지사 과정 누적 학습자 <span class="slide-tag-highlight">1만 4,000명</span>의 선택</div>
+          </div>
+          <div class="slide-title-group">
+            <h1 class="slide-title rv2">사회복지사 2급<br>교육원 이동 없이 올인원 취득과정</h1>
+            <div class="slide-desc rv3"><span style="font-weight:700">뭘 좋아할지 몰라 다~ 준비했어요!</span><br>최대 혜택 · 최단기 · 매월 실습개강 · 전국단위 모집 · 결국 돌고돌아 선택은 KBS아카데미</div>
+          </div>
+          <div class="slide-specs-bar">
+            <div class="spec-col"><div class="spec-label">취득기간</div><div class="spec-val">최단기설계</div></div>
+            <div class="spec-sep"></div>
+            <div class="spec-col"><div class="spec-label">필수 이수</div><div class="spec-val">17과목</div></div>
+            <div class="spec-sep"></div>
+            <div class="spec-col"><div class="spec-label">현장실습</div><div class="spec-val">120·160시간</div></div>
+            <div class="spec-sep"></div>
+            <div class="spec-col"><div class="spec-label">자격 구분</div><div class="spec-val">국가공인자격증</div></div>
+            <div class="spec-sep"></div>
+            <div class="spec-col"><div class="spec-label">모집기간</div><div class="spec-val" style="font-family:'Archivo',sans-serif; font-size:15px;">매달 개강</div></div>
+          </div>
+          <div class="slide-btn-row">
+            <a href="https://www.lcyber.co.kr/html/event/event2.asp" class="btn-slide-white btnx">사회복지사 과정 보기</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s3.asp" class="btn-slide-outline btnx">수강신청 바로가기</a>
+          </div>
+        </div>
+
+        <!-- Slide 1 Content: 사회복지사 현장실습 -->
+        <div class="hero-slide-content" data-index="1">
+          <div class="slide-tag-row">
+            <div class="slide-tag-text">사회복지사 현장실습 과목을 매달 개강하는 교육원이 <span style="font-size:18px; font-weight:800;">있다?</span></div>
+          </div>
+          <div class="slide-title-group">
+            <div class="slide-title">사회복지사 현장실습<br><span>전국단위 모집·실습과목만 수강도 OK</span></div>
+            <div class="slide-desc"><b style="font-weight:700">기관섭외? 실습일지? 세미나? 처음이라 막막하셨죠?</b><br>실습맛집 KBS아카데미, 실습지원센터·전담직원상주로 끝까지 함께합니다!</div>
+          </div>
+          <div class="slide-specs-bar">
+            <div class="spec-col"><div class="spec-label">실습시간</div><div class="spec-val">120·160시간</div></div>
+            <div class="spec-sep"></div>
+            <div class="spec-col"><div class="spec-label">선이수과목</div><div class="spec-val">필수4·선택2과목</div></div>
+            <div class="spec-sep"></div>
+            <div class="spec-col"><div class="spec-label">실습가능지역</div><div class="spec-val">전국단위모집</div></div>
+            <div class="spec-sep"></div>
+            <div class="spec-col"><div class="spec-label">개강예정</div><div class="spec-val">매달 개강</div></div>
+          </div>
+          <div class="slide-btn-row">
+            <a href="https://www.lcyber.co.kr/html/practice/" class="btn-slide-white btnx" style="color:#D9436B;">실습지원센터 보기</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s3.asp" class="btn-slide-outline btnx">수강신청 바로가기</a>
+            <a href="https://www.welfare.net/prm/find-training-center/current-stat" target="_blank" rel="noopener noreferrer" class="btn-slide-outline btnx">실습기관 검색</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 Content: 한국어교원 -->
+        <div class="hero-slide-content" data-index="2">
+          <div class="slide-tag-row">
+            <div class="slide-tag-text">100% 온라인 실습 올해 마지막 기회, 막차 탑승하세요!</div>
+          </div>
+          <div class="slide-title-group">
+            <div class="slide-title" style="white-space:nowrap;">한국어교원 자격증 2급<br><span>한국어라 하면, KBS아카데미로 가면 되느니라!</span></div>
+            <div class="slide-desc"><b style="font-weight:700">국내 거주 외국인 주민 258만명, K컨텐츠시대 지금은 세계가 배우는 한국어!</b><br>전문 학습설계팀의 학사설계로 쉽고 빠르게 취득하세요!</div>
+          </div>
+          <div class="slide-specs-bar">
+            <div class="spec-col"><div class="spec-label">취득기간</div><div class="spec-val">최단기설계</div></div>
+            <div class="spec-sep"></div>
+            <div class="spec-col"><div class="spec-label">필수 이수</div><div class="spec-val">16과목</div></div>
+            <div class="spec-sep"></div>
+            <div class="spec-col"><div class="spec-label">자격 구분</div><div class="spec-val">국가공인자격증</div></div>
+            <div class="spec-sep"></div>
+            <div class="spec-col"><div class="spec-label">모집기간</div><div class="spec-val">매달 개강</div></div>
+          </div>
+          <div class="slide-btn-row">
+            <a href="https://www.lcyber.co.kr/html/event/event7.asp" class="btn-slide-white btnx" style="color:#1F5B41;">한국어교원 과정 보기</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s3.asp" class="btn-slide-outline btnx">수강신청 바로가기</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 Content: 건강가정사 -->
+        <div class="hero-slide-content" data-index="3">
+          <div class="slide-tag-row">
+            <div class="slide-tag-text">나의 커리어를 쉽게 한 단계 더 넓게 스펙업하세요!</div>
+          </div>
+          <div class="slide-title-group">
+            <div class="slide-title">건강가정사, 2과목만 더 들으면<br><span>국가공인 자격이 하나 더?</span></div>
+            <div class="slide-desc" style="color:#FFE9DA;"><b style="font-weight:700; color:#FFFFFF;">여성가족부 필수과목 이수 시 건강가정사 자격이 부여됩니다.</b><br>가족센터·복지기관에서 가족상담·교육 전문인력으로 활동할 수 있습니다.</div>
+          </div>
+          <div class="slide-specs-bar">
+            <div class="spec-col"><div class="spec-label">취득기간</div><div class="spec-val">단 1학기</div></div>
+            <div class="spec-sep"></div>
+            <div class="spec-col"><div class="spec-label">필수 이수</div><div class="spec-val">단 2과목</div></div>
+            <div class="spec-sep"></div>
+            <div class="spec-col"><div class="spec-label">추천 대상</div><div class="spec-val">사복이수자</div></div>
+            <div class="spec-sep"></div>
+            <div class="spec-col"><div class="spec-label">자격 구분</div><div class="spec-val">국가공인자격증</div></div>
+            <div class="spec-sep"></div>
+            <div class="spec-col"><div class="spec-label">모집기간</div><div class="spec-val">매달 개강</div></div>
+          </div>
+          <div class="slide-btn-row">
+            <a href="https://www.lcyber.co.kr/html/event/event4.asp" class="btn-slide-white btnx" style="color:#D9541E;">건강가정사 과정 보기</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s3.asp" class="btn-slide-outline btnx">수강신청 바로가기</a>
+          </div>
+        </div>
+
+        <!-- Slide 4 Content: 학곰이에게 물어봐 -->
+        <div class="hero-slide-content" data-index="4">
+          <div class="slide-left-content">
+            <div class="slide-tag-row">
+              <div class="slide-tag-text">학점은행제 처음이라서 어려우시죠?</div>
+            </div>
+            <div class="slide-title-group">
+              <div class="slide-title">학점은행제 도우미<br><span>학곰이에게 물어보세요!</span></div>
+              <div class="slide-desc"><b style="font-weight:700;">첫 수강부터 학점인정신청, 학위취득까지 궁금한건 뭐든 학곰이가 알려드릴게요!</b><br>학사일정 등 놓치기 쉬운 일정도 문자로 챙겨드려요!</div>
+            </div>
+            <div class="slide-specs-bar">
+              <div class="spec-col"><div class="spec-label">안내 범위</div><div class="spec-val" style="font-size:15px;">첫 수강부터 끝까지</div></div>
+              <div class="spec-sep"></div>
+              <div class="spec-col"><div class="spec-label">질문 횟수</div><div class="spec-val" style="font-size:15px;">몇 번이든 OK</div></div>
+              <div class="spec-sep"></div>
+              <div class="spec-col"><div class="spec-label">상담 방식</div><div class="spec-val" style="font-size:15px;">채팅 OR 유선안내</div></div>
+              <div class="spec-sep"></div>
+              <div class="spec-col"><div class="spec-label">도입 예정</div><div class="spec-val" style="font-size:15px;">AI챗봇 베타</div></div>
+            </div>
+            <div class="slide-btn-row">
+              <a href="https://www.lcyber.co.kr/html/m4/m4s5.asp" class="btn-slide-white btnx" style="color:#063E82;">학곰이에게 물어보기</a>
+              <a href="https://www.lcyber.co.kr/html/m5/m5s7.asp" class="btn-slide-outline btnx">상담원과 통화하기</a>
+            </div>
+          </div>
+          <img src="assets/character/hakgom-staff.png" alt="학곰" class="slide-hakgom-character">
+        </div>
+
+        <!-- 하단 탭 컨트롤 & 카운터 -->
+        <div class="hero-controls-bar">
+          <div class="hero-tabs-box">
+            <div class="hero-tabs-row">
+              <div class="hero-tab-item active" data-index="0"><span>사회복지사2급</span></div>
+              <div class="hero-tab-sep"></div>
+              <div class="hero-tab-item" data-index="1"><span>사회복지사 현장실습</span></div>
+              <div class="hero-tab-sep"></div>
+              <div class="hero-tab-item" data-index="2"><span>한국어교원</span></div>
+              <div class="hero-tab-sep"></div>
+              <div class="hero-tab-item" data-index="3"><span>건강가정사</span></div>
+              <div class="hero-tab-sep"></div>
+              <div class="hero-tab-item" data-index="4"><span>학곰이에게 물어봐</span></div>
+              <div class="hero-tab-sep"></div>
+              <div style="display:flex; align-items:center; padding:0 13px; font-size:13px; font-weight:700; color:rgba(255,255,255,.55); letter-spacing:.06em;">···</div>
+            </div>
+            <div class="hero-dots-row">
+              <div class="hero-dot active" data-index="0"></div>
+              <div class="hero-dot" data-index="1"></div>
+              <div class="hero-dot" data-index="2"></div>
+              <div class="hero-dot" data-index="3"></div>
+              <div class="hero-dot" data-index="4"></div>
+            </div>
+          </div>
+          <div class="hero-counter-box">
+            <div id="hero-counter" class="hero-counter-text">01 / 05</div>
+            <div id="hero-prev" class="hero-arrow-btn">‹</div>
+            <div id="hero-next" class="hero-arrow-btn">›</div>
+          </div>
+        </div>
+
+        <!-- 우측 고정 로그인 사용자 마이페이지 위젯 카드 -->
+        <div class="user-quick-card">
+          <div class="user-card-header">
+            <div class="user-card-title-row">
+              <div class="user-avatar-icon">
+                <span class="msi" style="font-size:19px; color:#FFFFFF;">person</span>
+              </div>
+              <div class="user-card-greeting">천세현 학습자님!</div>
+            </div>
+            <div class="user-card-desc">KBS아카데미원격평생교육원에 방문해주셔서 감사합니다.<br>오늘도 즐거운 수업 되시기 바랍니다.</div>
+          </div>
+
+          <a href="https://www.lcyber.co.kr/html/m6/m6s5.asp" class="btn-user-classroom">
+            <span class="msi" style="font-size:19px;">play_circle</span>강의실 입장
+          </a>
+
+          <div class="user-quick-grid">
+            <a href="https://www.lcyber.co.kr/html/m6/m6s2.asp" class="user-quick-item">
+              <span class="msi user-quick-item-icon">receipt_long</span>
+              <div class="user-quick-item-label">증명서<br>발급센터</div>
+            </a>
+            <a href="https://www.lcyber.co.kr/html/m6/m6s4.asp" class="user-quick-item">
+              <span class="msi user-quick-item-icon">download</span>
+              <div class="user-quick-item-label">강의교안<br>다운로드</div>
+            </a>
+            <a href="https://www.lcyber.co.kr/ssl/login/InstallVestCert.html" class="user-quick-item">
+              <span class="msi user-quick-item-icon">badge</span>
+              <div class="user-quick-item-label" style="white-space:nowrap;">공동인증서 복사</div>
+            </a>
+            <a href="http://as82.kr/ledu/" target="_blank" rel="noopener noreferrer" class="user-quick-item">
+              <span class="msi user-quick-item-icon">support_agent</span>
+              <div class="user-quick-item-label">실습지원센터</div>
+            </a>
+            <a href="https://www.lcyber.co.kr/html/m2/m2s4.asp" class="user-quick-item">
+              <span class="msi user-quick-item-icon">format_list_numbered</span>
+              <div class="user-quick-item-label" style="white-space:nowrap;">학점신청방법</div>
+            </a>
+            <a href="https://www.welfare.net/prm/find-training-center/current-stat" target="_blank" rel="noopener noreferrer" class="user-quick-item">
+              <span class="msi user-quick-item-icon">travel_explore</span>
+              <div class="user-quick-item-label" style="white-space:nowrap;">실습기관검색</div>
+            </a>
+            <a href="https://www.lcyber.co.kr/html/member/modify.asp" class="user-quick-item">
+              <span class="msi user-quick-item-icon">manage_accounts</span>
+              <div class="user-quick-item-label" style="white-space:nowrap;">내 정보수정</div>
+            </a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s6.asp" class="user-quick-item">
+              <span class="msi user-quick-item-icon">route</span>
+              <div class="user-quick-item-label">학습설계</div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 컬러 라인 바 -->
+    <div class="color-accent-line"></div>
+
+    <!-- 5. 선착순 모집중 + 수강신청 마감 카운트다운 -->
+    <div class="recruiting-bar">
+      <div class="recruiting-container">
+        <div class="recruiting-left-group">
+          <img src="assets/megaphone-flip.png" alt="모집 안내" class="recruiting-icon-img">
+          <div class="recruiting-title-text">
+            <span>2026년 2학기 13기수 · 09월 28일 개강반 · <span class="pulseText" style="color:#00479D; font-weight:800;">선착순 모집 중</span></span>
+          </div>
+        </div>
+        <div class="recruiting-divider"></div>
+        <div class="countdown-wrapper">
+          <div class="countdown-label-text">수강신청 마감까지</div>
+          <div class="countdown-digits-row">
+            <!-- Day Digit -->
+            <div class="flip-box">
+              <div class="flip-line"></div>
+              <div id="dday-d0" class="flip-digit">0</div>
+            </div>
+            <div class="flip-box">
+              <div class="flip-line"></div>
+              <div id="dday-d1" class="flip-digit">7</div>
+            </div>
+            <div class="flip-unit">day</div>
+            <!-- Hour Digit -->
+            <div class="flip-box">
+              <div class="flip-line"></div>
+              <div id="dday-h0" class="flip-digit">1</div>
+            </div>
+            <div class="flip-box">
+              <div class="flip-line"></div>
+              <div id="dday-h1" class="flip-digit">2</div>
+            </div>
+            <div class="flip-colon">:</div>
+            <!-- Min Digit -->
+            <div class="flip-box">
+              <div class="flip-line"></div>
+              <div id="dday-m0" class="flip-digit">3</div>
+            </div>
+            <div class="flip-box">
+              <div class="flip-line"></div>
+              <div id="dday-m1" class="flip-digit">0</div>
+            </div>
+            <div class="flip-colon">:</div>
+            <!-- Sec Digit -->
+            <div class="flip-box blue">
+              <div class="flip-line" style="background:rgba(0,0,0,.35);"></div>
+              <div id="dday-s0" class="flip-digit">0</div>
+            </div>
+            <div class="flip-box blue">
+              <div class="flip-line" style="background:rgba(0,0,0,.35);"></div>
+              <div id="dday-s1" class="flip-digit">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. 3단 정보 영역 (공지사항 · 학사일정 · 교수진 칼럼) -->
+    <div class="info-3col-section">
+      <div class="info-3col-container">
+        <!-- 공지사항 -->
+        <div class="info-col">
+          <div class="info-col-header">
+            <div class="info-col-title">공지사항</div>
+            <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=notice" class="info-col-more">more +</a>
+          </div>
+          <div class="info-col-list">
+            <a href="https://www.lcyber.co.kr/board@v2/page/view/?board_name=notice&amp;view=9495" class="info-col-item"><span class="info-item-text">[국가평생교육진흥원] 26년 8월 학위신청 안내</span></a>
+            <a href="https://www.lcyber.co.kr/board@v2/page/view/?board_name=notice&amp;view=9492" class="info-col-item"><span class="info-item-text">[신용카드] 26년 08월 신용카드 무이자 할부</span></a>
+            <a href="https://www.lcyber.co.kr/board@v2/page/view/?board_name=notice&amp;view=9491" class="info-col-item"><span class="info-item-text">[국립국어원] 2026년 제2차 한국어교원 안내</span></a>
+            <a href="https://www.lcyber.co.kr/board@v2/page/view/?board_name=notice&amp;view=9490" class="info-col-item"><span class="info-item-text">[국가평생교육진흥원] 2026년 8월 후기 학위</span></a>
+          </div>
+        </div>
+
+        <!-- 학사일정 -->
+        <div class="info-col">
+          <div class="info-col-header">
+            <div class="info-col-title">학사일정</div>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s1.asp" class="info-col-more">more +</a>
+          </div>
+          <div class="info-col-list">
+            <div class="info-col-item schedule"><span class="info-item-text">2026년 2학기 개강</span><span class="info-item-date blue">08.13(목)</span></div>
+            <div class="info-col-item schedule"><span class="info-item-text">수강신청 기간</span><span class="info-item-date">07.08 ~ 08.12</span></div>
+            <div class="info-col-item schedule"><span class="info-item-text">학습기간</span><span class="info-item-date">08.13 ~ 11.25</span></div>
+            <div class="info-col-item schedule"><span class="info-item-text">성적 정정 기간</span><span class="info-item-date">12.01 ~ 12.05</span></div>
+          </div>
+        </div>
+
+        <!-- 교수진 칼럼 -->
+        <div class="info-col">
+          <div class="info-col-header">
+            <div class="info-col-title">교수진 칼럼</div>
+            <a href="https://www.lcyber.co.kr/board@v2/page/listprof/?board_name=profcolumn" class="info-col-more">more +</a>
+          </div>
+          <div class="info-col-list">
+            <a href="https://www.lcyber.co.kr/board@v2/page/view/?board_name=profcolumn&amp;view=9300" class="info-col-item"><span class="info-item-text">[강연아 교수님] 소리 없는 전쟁터에서</span></a>
+            <a href="https://www.lcyber.co.kr/board@v2/page/view/?board_name=profcolumn&amp;view=9299" class="info-col-item"><span class="info-item-text">[김신국 교수님] 촘촘한 복지시대 일상돌봄</span></a>
+            <a href="https://www.lcyber.co.kr/board@v2/page/view/?board_name=profcolumn&amp;view=9298" class="info-col-item"><span class="info-item-text">[이명선 교수님] 사회복지와 도덕적 해이</span></a>
+            <a href="https://www.lcyber.co.kr/board@v2/page/view/?board_name=profcolumn&amp;view=9297" class="info-col-item"><span class="info-item-text">[이춘화 교수님] 장애인 활동지원제도란?</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. 수강생 생생후기 (Student Reviews 3선) -->
+    <div class="reviews-section">
+      <div class="reviews-container">
+        <div class="reviews-header">
+          <div class="reviews-title-col">
+            <div class="badge-pill-quote">
+              <span class="msi" style="font-size:15px; color:#00479D;">format_quote</span>
+              <span>선배들의 이야기</span>
+            </div>
+            <h2 class="reviews-title-text">KBS아카데미에서 꿈을 이룬<br>선배 학습자들의 리얼 후기</h2>
+          </div>
+          <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=epilogue" class="btn-more-reviews btnx">수강후기 더보기 ›</a>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- 후기 카드 1 -->
+          <div class="review-card hv">
+            <div class="review-card-top">
+              <img src="assets/review/r1.jpg" alt="김○희 님" class="review-avatar-img">
+              <div class="review-meta-col">
+                <div class="review-author-name">김○희 학습자님</div>
+                <div class="review-course-tag">사회복지사 2급 취득</div>
+              </div>
+              <div class="review-stars-row">★★★★★</div>
+            </div>
+            <div class="review-text-quote">
+              "직장생활과 병행하며 준비했는데, 모바일 강의 출석 인정과 1:1 담당 플래너님의 꼼꼼한 학사일정 알림 덕분에 한 과목도 과락 없이 원패스로 자격증을 취득했습니다! 특히 실습기관 섭외 꿀팁이 정말 큰 도움이 되었어요."
+            </div>
+            <div class="review-card-footer">
+              <div class="review-badge-verified">수료 인증</div>
+              <div class="review-date-text">2026.07 등록</div>
+            </div>
+          </div>
+
+          <!-- 후기 카드 2 -->
+          <div class="review-card hv">
+            <div class="review-card-top">
+              <img src="assets/review/r2.jpg" alt="박○준 님" class="review-avatar-img">
+              <div class="review-meta-col">
+                <div class="review-author-name">박○준 학습자님</div>
+                <div class="review-course-tag">한국어교원 2급 취득</div>
+              </div>
+              <div class="review-stars-row">★★★★★</div>
+            </div>
+            <div class="review-text-quote">
+              "은퇴 후 해외 봉사와 한국어 강사를 목표로 도전했습니다. 국립국어원 인증 교육원이라 믿음이 갔고, 비전공자도 알기 쉽게 설명해주는 교수진의 수준 높은 강의 퀄리티 덕분에 늦은 나이에도 즐겁게 완강할 수 있었습니다."
+            </div>
+            <div class="review-card-footer">
+              <div class="review-badge-verified">수료 인증</div>
+              <div class="review-date-text">2026.06 등록</div>
+            </div>
+          </div>
+
+          <!-- 후기 카드 3 -->
+          <div class="review-card hv">
+            <div class="review-card-top">
+              <img src="assets/review/r3.jpg" alt="이○영 님" class="review-avatar-img">
+              <div class="review-meta-col">
+                <div class="review-author-name">이○영 학습자님</div>
+                <div class="review-course-tag">사회복지학 학사학위</div>
+              </div>
+              <div class="review-stars-row">★★★★★</div>
+            </div>
+            <div class="review-text-quote">
+              "전문대 졸업 후 4년제 학위가 필요해 상담받았는데, 전적대 학점을 최대로 인정받아 단 2학기 만에 4년제 학사학위를 취득했습니다. 합리적인 수강료 할인 혜택과 빠른 상담 피드백에 매우 만족합니다!"
+            </div>
+            <div class="review-card-footer">
+              <div class="review-badge-verified">수료 인증</div>
+              <div class="review-date-text">2026.05 등록</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. 통계 지표 4종 (Numbers & Credibility) -->
+    <div id="stats-section" class="stats-section">
+      <div class="stats-container">
+        <div class="stats-header-group">
+          <div class="badge-pill-verified">
+            <span class="msi" style="font-size:16px; color:#1D9ADD;">verified</span>
+            <span>검증된 교육 성과</span>
+          </div>
+          <h2 class="stats-title-main">숫자로 증명하는 압도적 교육 성과</h2>
+          <div class="stats-sub-text">KBS아카데미원격평생교육원은 누적 수료생과 합격률로 교육의 가치를 입증합니다.</div>
+        </div>
+
+        <div class="stats-grid">
+          <!-- Stat 1: 누적 수료생 -->
+          <div class="stat-card hv">
+            <div class="stat-icon-wrapper">
+              <span class="mso stat-card-icon">school</span>
+            </div>
+            <div class="stat-card-body">
+              <div class="stat-number-row">
+                <span id="stat-grads" class="stat-number-val">4,820</span>
+                <span class="stat-number-unit">명</span>
+              </div>
+              <div class="stat-label-title">누적 수료 학습자</div>
+              <div class="stat-desc-text">사회복지·한국어·학위취득 전 과정</div>
+            </div>
+          </div>
+
+          <!-- Stat 2: 학위 취득자 -->
+          <div class="stat-card hv">
+            <div class="stat-icon-wrapper">
+              <span class="mso stat-card-icon">workspace_premium</span>
+            </div>
+            <div class="stat-card-body">
+              <div class="stat-number-row">
+                <span id="stat-degrees" class="stat-number-val">2,140</span>
+                <span class="stat-number-unit">명</span>
+              </div>
+              <div class="stat-label-title">학위 및 자격 취득자</div>
+              <div class="stat-desc-text">교육부 장관 명의 학위 수여</div>
+            </div>
+          </div>
+
+          <!-- Stat 3: 개설 과목 수 -->
+          <div class="stat-card hv">
+            <div class="stat-icon-wrapper">
+              <span class="mso stat-card-icon">menu_book</span>
+            </div>
+            <div class="stat-card-body">
+              <div class="stat-number-row">
+                <span id="stat-courses" class="stat-number-val">42</span>
+                <span class="stat-number-unit">개</span>
+              </div>
+              <div class="stat-label-title">평가인정 개설과목</div>
+              <div class="stat-desc-text">교육부 평가인정 정규 과목 완비</div>
+            </div>
+          </div>
+
+          <!-- Stat 4: 과목 이수율 -->
+          <div class="stat-card hv">
+            <div class="stat-icon-wrapper">
+              <span class="mso stat-card-icon">trending_up</span>
+            </div>
+            <div class="stat-card-body">
+              <div class="stat-number-row">
+                <span id="stat-rate" class="stat-number-val">96</span>
+                <span class="stat-number-unit">%</span>
+              </div>
+              <div class="stat-label-title">평균 과목 이수율</div>
+              <div class="stat-desc-text">체계적인 1:1 학습 밀착 관리</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 하단 만족도 배너 -->
+        <div class="stats-satisfaction-bar">
+          <div class="stat-sat-item">
+            <div class="stat-sat-label">학습자 만족도</div>
+            <div class="stat-sat-val"><span id="rate-num">99</span>.4%</div>
+          </div>
+          <div class="stat-sat-sep"></div>
+          <div class="stat-sat-item">
+            <div class="stat-sat-label">재수강 의향</div>
+            <div class="stat-sat-val">98.7%</div>
+          </div>
+          <div class="stat-sat-sep"></div>
+          <div class="stat-sat-item">
+            <div class="stat-sat-label">실습 연계율</div>
+            <div class="stat-sat-val">100%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. 개설 교육과정 (Course Programs 4대 탭) -->
+    <div class="courses-section">
+      <div class="courses-container">
+        <div class="courses-header-group">
+          <div class="badge-pill-book">
+            <span class="msi" style="font-size:16px; color:#00479D;">local_library</span>
+            <span>교육과정 안내</span>
+          </div>
+          <h2 class="courses-title-main">나에게 딱 맞는 최적의 교육과정을 찾아보세요</h2>
+          <div class="courses-sub-text">국가공인 자격증부터 4년제 학위취득까지, 교육부 평가인정 정규 커리큘럼을 제공합니다.</div>
+        </div>
+
+        <!-- 과정 탭 버튼 -->
+        <div class="courses-tabs-bar">
+          <a href="#" class="course-tab-link active">사회복지사 2급</a>
+          <a href="#" class="course-tab-link">한국어교원 2급</a>
+          <a href="#" class="course-tab-link">건강가정사</a>
+          <a href="#" class="course-tab-link">학위취득과정</a>
+        </div>
+
+        <!-- 과정 카드 그리드 4종 -->
+        <div class="courses-card-grid">
+          <!-- Course Card 1: 사회복지사 2급 -->
+          <div class="course-card hv">
+            <div class="course-card-badge blue">인기과정 No.1</div>
+            <h3 class="course-card-title">사회복지사 2급</h3>
+            <div class="course-card-desc">고령화 사회 필수 국가공인 자격증! 노인·아동·장애인 복지관 및 공공기관 취업 우대.</div>
+            <div class="course-info-list">
+              <div class="course-info-item">
+                <span class="course-info-key">취득기간</span>
+                <span class="course-info-val">전문대졸 3학기 / 고졸 4학기</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-key">이수과목</span>
+                <span class="course-info-val">이론 16과목 + 실습 1과목 (160시간)</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-key">진로분야</span>
+                <span class="course-info-val">복지관, 주간보호센터, 학교사회복지사</span>
+              </div>
+            </div>
+            <div class="course-card-btn-row">
+              <a href="https://www.lcyber.co.kr/html/event/event2.asp" class="btn-course-apply btnx">상세보기 및 신청 ›</a>
+            </div>
+          </div>
+
+          <!-- Course Card 2: 한국어교원 2급 -->
+          <div class="course-card hv">
+            <div class="course-card-badge green">국립국어원 인증</div>
+            <h3 class="course-card-title">한국어교원 2급</h3>
+            <div class="course-card-desc">K-컬처 열풍 속 글로벌 수요 급증! 국내외 다문화센터, 세종학당, 대학 한국어학당 진출.</div>
+            <div class="course-info-list">
+              <div class="course-info-item">
+                <span class="course-info-key">취득기간</span>
+                <span class="course-info-val">비전공 대졸 3학기 / 고졸 4학기</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-key">이수과목</span>
+                <span class="course-info-val">이론 15과목 + 실습 1과목 (온라인가능)</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-key">진로분야</span>
+                <span class="course-info-val">다문화가족지원센터, 해외 세종학당</span>
+              </div>
+            </div>
+            <div class="course-card-btn-row">
+              <a href="https://www.lcyber.co.kr/html/event/event7.asp" class="btn-course-apply btnx" style="background:#1F5B41;">상세보기 및 신청 ›</a>
+            </div>
+          </div>
+
+          <!-- Course Card 3: 건강가정사 -->
+          <div class="course-card hv">
+            <div class="course-card-badge orange">초단기 1학기</div>
+            <h3 class="course-card-title">건강가정사</h3>
+            <div class="course-card-desc">사회복지사 2급 소지자 기준 단 2과목만 추가 이수하면 여성가족부 자격 취득 완료!</div>
+            <div class="course-info-list">
+              <div class="course-info-item">
+                <span class="course-info-key">취득기간</span>
+                <span class="course-info-val">단 1학기 완성 (최단기)</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-key">이수과목</span>
+                <span class="course-info-val">핵심 2과목 (사복2급 기이수자 기준)</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-key">진로분야</span>
+                <span class="course-info-val">시·군·구 가족센터, 가정상담소</span>
+              </div>
+            </div>
+            <div class="course-card-btn-row">
+              <a href="https://www.lcyber.co.kr/html/event/event4.asp" class="btn-course-apply btnx" style="background:#D9541E;">상세보기 및 신청 ›</a>
+            </div>
+          </div>
+
+          <!-- Course Card 4: 학위취득과정 -->
+          <div class="course-card hv">
+            <div class="course-card-badge purple">교육부장관 명의</div>
+            <h3 class="course-card-title">학사·전문학사 학위</h3>
+            <div class="course-card-desc">사회복지학, 아동학, 경영학 등 100% 온라인 수업으로 4년제 학사학위 최단기 취득.</div>
+            <div class="course-info-list">
+              <div class="course-info-item">
+                <span class="course-info-key">취득학점</span>
+                <span class="course-info-val">학사 140학점 / 전문학사 80학점</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-key">학점인정</span>
+                <span class="course-info-val">전적대 학점 + 자격증 + 독학사 병행</span>
+              </div>
+              <div class="course-info-item">
+                <span class="course-info-key">취득효과</span>
+                <span class="course-info-val">대학원 진학, 학사편입, 승진 가산점</span>
+              </div>
+            </div>
+            <div class="course-card-btn-row">
+              <a href="https://www.lcyber.co.kr/html/event/event1.asp" class="btn-course-apply btnx" style="background:#44337A;">상세보기 및 신청 ›</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. 특별한 혜택 6종 (Benefits) -->
+    <div class="benefits-section">
+      <div class="benefits-container">
+        <div class="benefits-header-group">
+          <div class="badge-pill-star">
+            <span class="msi" style="font-size:16px; color:#12B76A;">auto_awesome</span>
+            <span>KBS아카데미만의 차별성</span>
+          </div>
+          <h2 class="benefits-title-main">수강생의 완벽한 합격을 위한 6대 프리미엄 혜택</h2>
+          <div class="benefits-sub-text">시작부터 취득까지 학습자의 편의를 최우선으로 생각하는 든든한 학습 동반자입니다.</div>
+        </div>
+
+        <div class="benefits-grid">
+          <!-- Benefit 1 -->
+          <div class="benefit-card hv">
+            <div class="benefit-icon-box blue">
+              <span class="mso benefit-icon">verified_user</span>
+            </div>
+            <h3 class="benefit-card-title">교육부 정식 평가인정 기관</h3>
+            <div class="benefit-card-desc">국가평생교육진흥원 평가인정을 완벽하게 통과한 정규 원격교육기관으로 안전하게 학점을 인정받습니다.</div>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="benefit-card hv">
+            <div class="benefit-icon-box pink">
+              <span class="mso benefit-icon">support_agent</span>
+            </div>
+            <h3 class="benefit-card-title">1:1 전담 플래너 밀착 관리</h3>
+            <div class="benefit-card-desc">전문 학습설계팀이 학습자 등록부터 학점신청, 과제/시험 일정까지 카카오톡과 전화로 실시간 안내합니다.</div>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="benefit-card hv">
+            <div class="benefit-icon-box green">
+              <span class="mso benefit-icon">smartphone</span>
+            </div>
+            <h3 class="benefit-card-title">모바일 100% 출석 인정</h3>
+            <div class="benefit-card-desc">스마트폰, 태블릿, PC 어디서나 끊김 없이 수강 가능하며 배속 재생 및 이어보기 기능을 완벽 지원합니다.</div>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="benefit-card hv">
+            <div class="benefit-icon-box orange">
+              <span class="mso benefit-icon">location_city</span>
+            </div>
+            <h3 class="benefit-card-title">전국 실습기관 연계 지원</h3>
+            <div class="benefit-card-desc">사회복지 현장실습 전담 부서를 상시 운영하여 거주지 인근 실습기관 검색과 섭외 가이드를 제공합니다.</div>
+          </div>
+
+          <!-- Benefit 5 -->
+          <div class="benefit-card hv">
+            <div class="benefit-icon-box purple">
+              <span class="mso benefit-icon">card_giftcard</span>
+            </div>
+            <h3 class="benefit-card-title">다양한 장학금 및 바우처 혜택</h3>
+            <div class="benefit-card-desc">성적우수 장학금, 평생교육이용권(바우처), 국가유공자 보훈장학금, 학자금 대출 연계까지 최대 지원합니다.</div>
+          </div>
+
+          <!-- Benefit 6 -->
+          <div class="benefit-card hv">
+            <div class="benefit-icon-box cyan">
+              <span class="mso benefit-icon">headset_mic</span>
+            </div>
+            <h3 class="benefit-card-title">원격 기술지원 센터 상시 가동</h3>
+            <div class="benefit-card-desc">강의 수강 중 PC 오류나 인증서 문제 발생 시 원격 제어를 통해 전문 상담원이 즉시 해결해드립니다.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11. 하단 빠른 상담 폼 (Bottom Counsel Section) -->
+    <div class="bottom-counsel-section">
+      <div class="bottom-counsel-container">
+        <div class="bottom-counsel-header">
+          <div class="badge-pill-bolt">
+            <span class="msi" style="font-size:16px; color:#FFFFFF;">bolt</span>
+            <span>1분 간편 신청</span>
+          </div>
+          <h2 class="bottom-counsel-title">아직 고민 중이신가요? 무료 맞춤 학습설계를 받아보세요!</h2>
+          <div class="bottom-counsel-desc">전문 학습설계팀이 학습자님의 최종 학력과 보유 학점을 분석하여 최단기·최저비용 커리큘럼을 무료로 설계해드립니다.</div>
+        </div>
+
+        <form name="frmcounsel_bottom_main" method="post" action="https://www.lcyber.co.kr/html/m5/m5s7_proc.asp" class="bottom-counsel-form-box">
+          <div class="bottom-counsel-grid">
+            <div class="bottom-form-group">
+              <label class="bottom-form-label">이름 <span class="req">*</span></label>
+              <input type="text" name="name" placeholder="홍길동" required class="bottom-form-input">
+            </div>
+            <div class="bottom-form-group">
+              <label class="bottom-form-label">연락처 <span class="req">*</span></label>
+              <div class="bottom-tel-input-group">
+                <select name="hptel1" class="bottom-form-select">
+                  <option>010</option>
+                  <option>011</option>
+                  <option>016</option>
+                  <option>017</option>
+                  <option>018</option>
+                  <option>019</option>
+                </select>
+                <input type="text" name="hptel2" maxlength="4" placeholder="1234" required class="bottom-form-input">
+                <input type="text" name="hptel3" maxlength="4" placeholder="5678" required class="bottom-form-input">
+              </div>
+            </div>
+            <div class="bottom-form-group">
+              <label class="bottom-form-label">희망 과정 <span class="req">*</span></label>
+              <select name="gubun" class="bottom-form-select full">
+                <option value="사회복지사">사회복지사 2급</option>
+                <option value="한국어교원">한국어교원 2급</option>
+                <option value="건강가정사">건강가정사</option>
+                <option value="학위과정">학사 / 전문학사 학위과정</option>
+                <option value="민간자격증">민간자격증</option>
+              </select>
+            </div>
+            <div class="bottom-form-group">
+              <label class="bottom-form-label">희망 상담 시간</label>
+              <select name="consult_time" class="bottom-form-select full">
+                <option value="항상 가능">항상 가능 (빠른 순차 연락)</option>
+                <option value="오전 09~12시">오전 09:30 ~ 12:00</option>
+                <option value="오후 13~17시">오후 13:30 ~ 17:00</option>
+                <option value="저녁 18시 이후">저녁 18:00 이후</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="bottom-counsel-agree-box">
+            <label class="bottom-counsel-agree-label">
+              <input type="checkbox" name="chkx" required class="counsel-checkbox">
+              <span>(필수) 개인정보 수집 및 이용에 동의합니다. (상담 접수 및 안내 목적)</span>
+            </label>
+            <a href="https://www.lcyber.co.kr/html/m1/m1s4.asp" target="_blank" rel="noopener noreferrer" class="bottom-agree-link">약관보기</a>
+          </div>
+
+          <button type="submit" class="btn-bottom-counsel-submit btnx">무료 맞춤 학습설계 신청하기</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- 12. 하단 CTA 배너 (Call To Action) -->
+    <div class="cta-banner-section">
+      <div class="cta-banner-container">
+        <div class="cta-banner-left">
+          <div class="cta-banner-tag-row">
+            <img src="assets/kbs-academy-logo-white.png" alt="KBS아카데미" class="cta-banner-logo-img">
+            <div class="cta-banner-sep"></div>
+            <div class="cta-banner-tag-text">내 삶을 바꾸는 선택</div>
+          </div>
+          <div class="cta-banner-heading">내 삶을 바꾸는 선택, KBS아카데미원격평생교육원 방문을 환영합니다.</div>
+          <div class="cta-banner-desc">학점은행제 과정설계가 어렵다면 전문 학습설계팀이 학력·수강이력을 확인하고 최단 경로를 안내해드립니다.</div>
+        </div>
+        <div class="cta-banner-right">
+          <div class="cta-banner-tel-col">
+            <div class="cta-banner-hours">평일 09:30~18:30 · 점심 12:30~13:30</div>
+            <div class="cta-banner-number">1661-6723</div>
+          </div>
+          <a href="https://www.lcyber.co.kr/html/m5/m5s7.asp" class="btn-cta-apply btnx">무료 학습설계 신청</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13. 유관기관 링크 -->
+    <div class="partners-section">
+      <div class="partners-container">
+        <div class="partners-label-text">관련기관</div>
+        <a href="http://www.cb.or.kr/" target="_blank" rel="noopener noreferrer"><img src="assets/partners/p1.png" alt="국가평생교육진흥원" class="partner-logo-img"></a>
+        <a href="http://www.welfare.net/" target="_blank" rel="noopener noreferrer"><img src="assets/partners/p2.png" alt="한국사회복지사협회 자격관리센터" class="partner-logo-img"></a>
+        <a href="http://www.kmooc.kr" target="_blank" rel="noopener noreferrer"><img src="assets/partners/p3.png" alt="K-MOOC" class="partner-logo-img"></a>
+        <a href="http://chrd.childcare.go.kr/" target="_blank" rel="noopener noreferrer"><img src="assets/partners/p4.png" alt="온국민평생배움터" class="partner-logo-img"></a>
+        <a href="http://bdes.nile.or.kr/" target="_blank" rel="noopener noreferrer"><img src="assets/partners/p5.png" alt="한국산업인력공단" class="partner-logo-img"></a>
+        <a href="http://www.cbinfo.or.kr/" target="_blank" rel="noopener noreferrer"><img src="assets/partners/p6.png" alt="학점은행제 정보공시" class="partner-logo-img"></a>
+      </div>
+    </div>
+
+    <!-- 14. 푸터 (Footer) -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-left-col">
+          <div class="footer-brand-row">
+            <img src="assets/logo/kbs-academy-mono-black.png" alt="KBS아카데미" class="footer-logo-img">
+            <div class="footer-brand-sep"></div>
+            <div class="footer-brand-title">원격평생교육원</div>
+          </div>
+          <div class="footer-company-info">
+            (주)리더스에듀 · 리더스원격평생교육원 · 사업자등록번호 209-81-56148<br>
+            통신판매 제2013-부산사상구-0148호 · 대표자 권영숙 · 개인정보 보호책임자 윤대영<br>
+            본원소재지 (47007) 부산광역시 사상구 가야대로 348 KL빌딩 5층 · 대표전화 1661-6726 · 팩스 070-8233-7077
+          </div>
+          <div class="footer-legal-links">
+            <a href="https://www.lcyber.co.kr/html/m1/m1s3.asp" class="footer-legal-link">이용약관</a>
+            <a href="https://www.lcyber.co.kr/html/m1/m1s4.asp" class="footer-legal-link">개인정보처리방침</a>
+            <a href="http://www.cbinfo.or.kr/pbanMain.do?initGubun=2&amp;initParam1=2013B031&amp;auto_select=1" target="_blank" rel="noopener noreferrer" class="footer-legal-link">정보공시</a>
+            <a href="https://www.lcyber.co.kr/html/m1/m1s5.asp" class="footer-legal-link">찾아오시는 길</a>
+            <a href="https://www.lcyber.co.kr/mobile/" class="footer-legal-link">모바일웹</a>
+          </div>
+        </div>
+        <div class="footer-right-col">
+          <div class="footer-contact-card">
+            <div class="footer-contact-title">입학상담문의</div>
+            <div class="footer-contact-tel blue">1661-6723</div>
+            <div class="footer-contact-hours">평일 09:30~18:30 · 점심 12:30~13:30</div>
+          </div>
+          <div class="footer-contact-card">
+            <div class="footer-contact-title">학습지원센터 · 수업 및 행정 문의</div>
+            <div class="footer-contact-tel dark">1661-6726</div>
+            <div class="footer-contact-hours">평일 09:30~18:30 · 원격지원 070-4027-7087</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 15. 플로팅 위젯 (Floating Actions & Scroll To Top) -->
+    <div id="floating-widget" class="floating-widget">
+      <!-- 바로가기 퀵메뉴 -->
+      <div class="floating-quick-menu">
+        <div class="floating-menu-header">
+          <span class="msi" style="font-size:16px; color:#FFFFFF; flex:none;">bolt</span>
+          <div class="floating-menu-header-title">바로가기 메뉴</div>
+        </div>
+        <a href="#" class="floating-menu-link floating-logout-link">
+          <span class="mso floating-menu-link-icon">logout</span>
+          <div class="floating-menu-link-text">로그아웃</div>
+        </a>
+        <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=notice" class="floating-menu-link">
+          <span class="mso floating-menu-link-icon">campaign</span>
+          <div class="floating-menu-link-text">공지사항</div>
+        </a>
+        <a href="https://www.lcyber.co.kr/html/m4/m4s3.asp" class="floating-menu-link">
+          <span class="mso floating-menu-link-icon">event_available</span>
+          <div class="floating-menu-link-text">수강신청</div>
+        </a>
+        <a href="https://www.lcyber.co.kr/html/m4/m4s1.asp" class="floating-menu-link">
+          <span class="mso floating-menu-link-icon">shopping_bag</span>
+          <div class="floating-menu-link-text">과목 장바구니</div>
+        </a>
+        <a href="https://www.lcyber.co.kr/html/m6/m6s1.asp" class="floating-menu-link">
+          <span class="mso floating-menu-link-icon">play_circle</span>
+          <div class="floating-menu-link-text">나의 강의실</div>
+        </a>
+        <a href="http://as82.kr/ledu/" target="_blank" rel="noopener noreferrer" class="floating-menu-link">
+          <span class="mso floating-menu-link-icon">support_agent</span>
+          <div class="floating-menu-link-text">원격지원</div>
+        </a>
+      </div>
+
+      <!-- 네이버 톡톡 버튼 -->
+      <a href="#" class="floating-talktalk-btn btnx">
+        <div class="talktalk-icon-circle">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.6c-4.7 0-8.4 3-8.4 6.8 0 2.4 1.5 4.5 3.8 5.7l-.8 3.4a.5.5 0 0 0 .76.54l3.9-2.5c.24.02.49.03.74.03 4.7 0 8.4-3 8.4-6.8S16.7 3.6 12 3.6Z" fill="#FFFFFF"></path><circle cx="9.1" cy="10.3" r="1.25" fill="#03C75A"></circle><circle cx="14.9" cy="10.3" r="1.25" fill="#03C75A"></circle></svg>
+        </div>
+        <div class="talktalk-text-col">
+          <div class="talktalk-title">네이버 톡톡</div>
+          <div class="talktalk-sub">궁금할땐 문의하세요!</div>
+        </div>
+      </a>
+
+      <!-- AI 학곰이 배너 -->
+      <a href="https://www.lcyber.co.kr/html/m4/m4s5.asp" class="floating-ai-banner btnx">
+        <img src="assets/character/hakgom-staff.png" alt="학곰" class="floating-ai-hakgom">
+        <div class="floating-ai-text-col">
+          <div class="floating-ai-title">지금 시작하면 언제 취득?</div>
+          <div class="floating-ai-sub">AI로 빠르게 알아보기!</div>
+        </div>
+      </a>
+
+      <!-- 맨 위로 가기 버튼 -->
+      <button id="btn-scroll-top" class="btn-scroll-top" aria-label="맨 위로 가기">↑</button>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

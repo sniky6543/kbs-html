@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initStatsCountUp();
   initCourseTabs();
   initFloatingAndScrollTop();
+  initUserQuickCard();
 });
 
 /* 1. 페이지 로딩 오버레이 (1초 후 사라짐) */
@@ -372,4 +373,19 @@ function initFloatingAndScrollTop() {
       });
     });
   }
+}
+
+/* 10. 로그인 사용자 마이페이지 위젯 및 로그아웃 인터랙션 (main2.html) */
+function initUserQuickCard() {
+  const logoutBtns = document.querySelectorAll('.btn-header-logout, .floating-logout-link');
+  logoutBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      if (btn.getAttribute('href') === '#' || !btn.getAttribute('href')) {
+        e.preventDefault();
+        if (confirm('로그아웃 하시겠습니까?')) {
+          location.href = 'index.html';
+        }
+      }
+    });
+  });
 }

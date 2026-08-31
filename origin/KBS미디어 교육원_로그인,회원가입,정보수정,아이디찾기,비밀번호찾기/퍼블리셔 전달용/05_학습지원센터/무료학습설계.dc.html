@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<template id="__bundler_thumbnail" data-bg-color="#00479D">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#00479D"/>
+    <text x="600" y="410" font-family="Arial" font-size="34" font-weight="800" fill="#FFFFFF" text-anchor="middle">KBS 아카데미 | 원격평생교육원</text>
+  </svg>
+</template>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300..500,0..1,-25..0&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing:border-box; }
+  body { margin:0; background:#FFFFFF; font-family:'Noto Sans KR','Archivo',sans-serif; -webkit-font-smoothing:antialiased; color:#1A1D24; }
+  a { color:#00479D; text-decoration:none; }
+  a:hover { color:#003070; }
+  .msi { font-family:'Material Symbols Rounded'; font-weight:400; font-style:normal; line-height:1; display:inline-block; }
+  .mso { font-family:'Material Symbols Rounded'; font-variation-settings:'FILL' 0,'wght' 350,'GRAD' 0; font-weight:400; font-style:normal; line-height:1; display:inline-block; }
+  .hv { transition:transform .18s ease, box-shadow .18s ease; }
+  .hv:hover { transform:translateY(-2px); box-shadow:0 8px 18px rgba(16,24,40,.08); }
+</style>
+</helmet>
+
+<div style="width:100%; min-width:1280px; display:flex; flex-direction:column">
+
+  <div style="height:38px; background:#F7F8FA; border-bottom:1px solid #ECEEF2; display:flex; justify-content:center">
+    <div style="width:1200px; display:flex; align-items:center; justify-content:space-between">
+      <div style="display:flex; align-items:center; gap:7px">
+        <div style="width:6px; height:6px; border-radius:50%; background:#12B76A"></div>
+        <div style="font-size:12.5px; font-weight:700; color:#4B5563">지금 상담 가능</div>
+        <div style="font-size:12.5px; color:#98A2B3">평일 09:30~18:30 · 점심 12:30~13:30</div>
+      </div>
+      <div style="display:flex; align-items:center; gap:0">
+        <a href="https://www.lcyber.co.kr/" style="font-size:12.5px; color:#6B7280; padding:0 11px">HOME</a>
+        <div style="width:1px; height:10px; background:#DEE1E7"></div>
+        <a href="#" style="font-size:12.5px; color:#6B7280; padding:0 11px">즐겨찾기 추가</a>
+        <div style="width:1px; height:10px; background:#DEE1E7"></div>
+        <a href="http://as82.kr/ledu/" style="font-size:12.5px; color:#6B7280; padding:0 11px">원격지원센터</a>
+        <div style="width:1px; height:10px; background:#DEE1E7"></div>
+        <a href="#" style="font-size:12.5px; color:#6B7280; padding:0 11px">회원가입</a>
+        <a href="https://www.lcyber.co.kr/ssl/login/InstallVestCert.html" style="font-size:12.5px; font-weight:700; color:#FFFFFF; background:#00479D; padding:6px 16px; border-radius:6px; margin-left:10px">로그인</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="border-bottom:1px solid #ECEEF2; background:#FFFFFF; display:flex; justify-content:center">
+    <div style="width:1200px; height:88px; display:flex; align-items:center; justify-content:space-between">
+      <a href="https://www.lcyber.co.kr/" style="display:flex; align-items:flex-start; gap:0">
+        <div style="display:flex; flex-direction:column; align-items:flex-start; gap:6px; padding-top:3px">
+          <img src="assets/kbs-academy-logo.png" alt="KBS아카데미" width="204" style="width:204px; height:auto; display:block; flex:none">
+          <div style="display:flex; align-items:center; gap:6px">
+            <img src="assets/moe-mark.png" alt="교육부" style="height:17px; width:auto; display:block; flex:none">
+            <div style="font-size:13px; font-weight:500; letter-spacing:-.015em; color:#7A8394; white-space:nowrap">교육부 인증 학점은행제 원격교육기관</div>
+          </div>
+        </div>
+        <div style="width:1px; height:22px; background:#DCE1E8; flex:none; margin:6px 6px 0 0"></div>
+        <div style="font-size:24px; font-weight:700; letter-spacing:-.05em; color:#00479D; line-height:1; white-space:nowrap; padding-top:5px">원격평생교육원</div>
+      </a>
+      <div style="display:flex; align-items:center; gap:20px">
+        <div style="width:180px; height:34px; flex:none; overflow:hidden; border-radius:6px">
+          <div style="display:flex; flex-direction:column; width:180px; transform:{{ badgeShift }}; transition:{{ badgeTrans }}">
+            <div style="width:180px; height:34px; flex:none; display:flex; align-items:center; justify-content:center; gap:7px; background:#159C93; padding:0 8px">
+              <img src="assets/voucher-logo-white.png" alt="평생교육이용권" style="height:18px; width:auto; display:block; flex:none">
+              <div style="width:1px; height:15px; background:rgba(255,255,255,.4); flex:none"></div>
+              <div style="font-size:11.5px; font-weight:600; letter-spacing:-.045em; color:#FFFFFF; white-space:nowrap">사용가능기관</div>
+            </div>
+            <div style="width:180px; height:34px; flex:none; display:flex; align-items:center; justify-content:center; gap:7px; background:#FF7A00; padding:0 8px">
+              <span class="msi" style="font-size:18px; color:#FFFFFF; flex:none">support_agent</span>
+              <div style="font-size:11.5px; font-weight:600; letter-spacing:-.045em; color:#FFFFFF; white-space:nowrap">학자금 대출지원 가능기관</div>
+            </div>
+            <div style="width:180px; height:34px; flex:none; display:flex; align-items:center; justify-content:center; gap:7px; background:#1C3E75; padding:0 8px">
+              <img src="assets/gov-emblem-white.png" alt="국가보훈처" style="height:18px; width:auto; display:block; flex:none">
+              <div style="font-size:11.5px; font-weight:600; letter-spacing:-.055em; color:#FFFFFF; white-space:nowrap">국가보훈처 학습비지원기관</div>
+            </div>
+            <div style="width:180px; height:34px; flex:none; display:flex; align-items:center; justify-content:center; gap:7px; background:#159C93; padding:0 8px">
+              <img src="assets/voucher-logo-white.png" alt="평생교육이용권" style="height:18px; width:auto; display:block; flex:none">
+              <div style="width:1px; height:15px; background:rgba(255,255,255,.4); flex:none"></div>
+              <div style="font-size:11.5px; font-weight:600; letter-spacing:-.045em; color:#FFFFFF; white-space:nowrap">사용가능기관</div>
+            </div>
+          </div>
+        </div>
+        <a href="https://www.cb.or.kr/creditbank/eduOrg/eduOrg1_1.do?m_szOrgId=2013B031" style="display:flex; align-items:center">
+          <img src="assets/cb-mark.png" alt="학점은행제 국가평생교육진흥원" style="height:34px; width:auto; display:block">
+        </a>
+        <div style="width:1px; height:34px; background:#ECEEF2"></div>
+        <div style="display:flex; gap:20px">
+          <div style="display:flex; flex-direction:column; gap:3px">
+            <div style="font-size:11px; color:#98A2B3; white-space:nowrap">입학상담문의</div>
+            <div style="font-family:'Archivo',sans-serif; font-size:20px; font-weight:800; color:#00479D; line-height:1">1661-6723</div>
+          </div>
+          <div style="width:1px; background:#ECEEF2"></div>
+          <div style="display:flex; flex-direction:column; gap:3px">
+            <div style="font-size:11px; color:#98A2B3; white-space:nowrap">학습지원센터</div>
+            <div style="font-family:'Archivo',sans-serif; font-size:20px; font-weight:800; color:#1A1D24; line-height:1">1661-6726</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="border-bottom:1px solid #ECEEF2; background:#FFFFFF; display:flex; justify-content:center; position:relative; z-index:30">
+    <div style="width:1200px">
+      <div style="display:flex; align-items:stretch">
+      <div onMouseEnter="{{ enterNav1 }}" onMouseLeave="{{ leaveNav }}" style="flex:1; height:58px; position:relative">
+        <a href="https://www.lcyber.co.kr/html/m1/m1s1.asp" style="height:58px; width:100%; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700; letter-spacing:-.03em; border-bottom:3px solid transparent; position:relative; color:{{ navColor1 }}; border-bottom-color:{{ navBorder1 }}">교육원소개</a>
+      </div>
+      <div onMouseEnter="{{ enterNav2 }}" onMouseLeave="{{ leaveNav }}" style="flex:1; height:58px; position:relative">
+        <a href="https://www.lcyber.co.kr/html/m2/m2s1.asp" style="height:58px; width:100%; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700; letter-spacing:-.03em; border-bottom:3px solid transparent; position:relative; color:{{ navColor2 }}; border-bottom-color:{{ navBorder2 }}">학점은행제</a>
+      </div>
+      <div onMouseEnter="{{ enterNav3 }}" onMouseLeave="{{ leaveNav }}" style="flex:1; height:58px; position:relative">
+        <a href="https://www.lcyber.co.kr/html/event/event2.asp" style="height:58px; width:100%; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700; letter-spacing:-.03em; border-bottom:3px solid transparent; position:relative; color:{{ navColor3 }}; border-bottom-color:{{ navBorder3 }}">교육과정</a>
+      </div>
+      <div onMouseEnter="{{ enterNav4 }}" onMouseLeave="{{ leaveNav }}" style="flex:1; height:58px; position:relative">
+        <a href="https://www.lcyber.co.kr/html/m4/m4s1.asp" style="height:58px; width:100%; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700; letter-spacing:-.03em; border-bottom:3px solid transparent; position:relative; color:{{ navColor4 }}; border-bottom-color:{{ navBorder4 }}">수강신청</a>
+      </div>
+      <div onMouseEnter="{{ enterNav5 }}" onMouseLeave="{{ leaveNav }}" style="flex:1; height:58px; position:relative">
+        <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=notice" style="height:58px; width:100%; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700; letter-spacing:-.03em; border-bottom:3px solid transparent; position:relative; color:{{ navColor5 }}; border-bottom-color:{{ navBorder5 }}">학습지원센터</a>
+      </div>
+      <div onMouseEnter="{{ enterNav6 }}" onMouseLeave="{{ leaveNav }}" style="flex:1; height:58px; position:relative">
+        <a href="https://www.lcyber.co.kr/html/m6/m6s1.asp" style="height:58px; width:100%; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:700; letter-spacing:-.03em; border-bottom:3px solid transparent; position:relative; color:{{ navColor6 }}; border-bottom-color:{{ navBorder6 }}">온라인강의실</a>
+      </div>
+      </div>
+    </div>
+        <sc-if value="{{ anyNav }}" hint-placeholder-val="{{ false }}">
+        <div onMouseEnter="{{ keepNav }}" onMouseLeave="{{ leaveNav }}" style="position:absolute; top:58px; left:0; width:100%; background:#FFFFFF; border-top:1px solid #ECEEF2; box-shadow:0 20px 36px rgba(16,32,64,.12); z-index:40; overflow:hidden">
+          <div style="width:1200px; margin:0 auto; display:flex; padding:20px 8px 24px; gap:2px">
+          <div style="flex:1; display:flex; flex-direction:column; gap:2px; padding:0 8px; background:{{ colBg1 }}; border-radius:8px; transition:background-color .15s ease">
+            <a href="https://www.lcyber.co.kr/html/m1/m1s1.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">교육원안내</a>
+            <a href="https://www.lcyber.co.kr/html/m1/m1s2.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">인사말</a>
+            <a href="https://www.lcyber.co.kr/html/m1/m1s3.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">이용약관</a>
+            <a href="https://www.lcyber.co.kr/html/m1/m1s4.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">개인정보처리방침</a>
+          </div>
+          <div style="flex:1; display:flex; flex-direction:column; gap:2px; padding:0 8px; background:{{ colBg2 }}; border-radius:8px; transition:background-color .15s ease">
+            <a href="https://www.lcyber.co.kr/html/m2/m2s1.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">학점은행제란?</a>
+            <a href="https://www.lcyber.co.kr/html/m2/m2s2.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">학습자등록</a>
+            <a href="https://www.lcyber.co.kr/html/m2/m2s3.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">학점인정대상</a>
+            <a href="https://www.lcyber.co.kr/html/m2/m2s4.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">신청방법안내</a>
+            <a href="https://www.lcyber.co.kr/html/m2/m2s5.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">관련법규</a>
+            <a href="https://www.lcyber.co.kr/html/m2/m2s6.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">학습자등록/학점인정</a>
+          </div>
+          <div style="flex:1; display:flex; flex-direction:column; gap:2px; padding:0 8px; background:{{ colBg3 }}; border-radius:8px; transition:background-color .15s ease">
+            <a href="https://www.lcyber.co.kr/html/event/event2.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">사회복지사</a>
+            <a href="https://www.lcyber.co.kr/html/event/event2_1.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">사회복지사 현장실습</a>
+            <a href="https://www.lcyber.co.kr/html/event/event7.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">한국어교원</a>
+            <a href="https://www.lcyber.co.kr/html/event/event8.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">건강가정사</a>
+            <a href="https://www.lcyber.co.kr/html/event/event4.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">학위과정</a>
+            <a href="https://www.lcyber.co.kr/html/LIC/" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">민간자격증</a>
+          </div>
+          <div style="flex:1; display:flex; flex-direction:column; gap:2px; padding:0 8px; background:{{ colBg4 }}; border-radius:8px; transition:background-color .15s ease">
+            <a href="https://www.lcyber.co.kr/html/m4/m4s1.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">개설과목안내</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s2.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">등록절차안내</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s3.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">수강신청</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s4.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">수강료결제</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s6.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">수강료결제확인</a>
+            <a href="https://www.lcyber.co.kr/html/m4/m4s7.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">환불신청</a>
+          </div>
+          <div style="flex:1; display:flex; flex-direction:column; gap:2px; padding:0 8px; background:{{ colBg5 }}; border-radius:8px; transition:background-color .15s ease">
+            <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=notice" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">공지사항</a>
+            <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=faq" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">자주하는질문</a>
+            <a href="https://www.lcyber.co.kr/board@v2/page/listqna/?board_name=qna" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">질문과답변</a>
+            <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=review" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">장학생 수강후기</a>
+            <a href="https://www.lcyber.co.kr/board@v2/page/listprof/?board_name=profcolumn" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">교수진 칼럼</a>
+            <a href="http://as82.kr/ledu/" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">원격지원</a>
+            <a href="https://www.lcyber.co.kr/html/m5/m5s7.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">무료학습설계</a>
+            <a href="https://www.lcyber.co.kr/html/mobile_help/mobile_help1.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">모바일학습가이드</a>
+          </div>
+          <div style="flex:1; display:flex; flex-direction:column; gap:2px; padding:0 8px; background:{{ colBg6 }}; border-radius:8px; transition:background-color .15s ease">
+            <a href="https://www.lcyber.co.kr/html/m6/m6s1.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">강의실입장</a>
+            <a href="https://www.lcyber.co.kr/html/m6/m6s11.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">증명서발급</a>
+            <a href="https://www.lcyber.co.kr/html/m6/m6s10_StudyBook.asp" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">강의교안 다운로드</a>
+            <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=data" class="hv" style="font-size:14px; font-weight:500; color:#3A4152; padding:8px 10px; border-radius:6px; text-align:left" style-hover="color:#00479D; background:#F2F6FB">학습자료실</a>
+          </div>
+          </div>
+        </div>
+        </sc-if>
+  </div>
+
+  <div style="background:#F7F8FA; border-bottom:1px solid #ECEEF2; display:flex; justify-content:center">
+    <div style="width:1200px; padding:11px 0; font-size:12.5px; color:#8A90A0">HOME <span style="margin:0 5px">&gt;</span> 학습지원센터 <span style="margin:0 5px">&gt;</span> <span style="color:#00479D; font-weight:700">무료학습설계</span></div>
+  </div>
+
+  <div style="display:flex; justify-content:center; padding:40px 0 64px">
+    <div style="width:1200px; display:flex; gap:32px; align-items:flex-start">
+
+      <div style="width:240px; flex:none; display:flex; flex-direction:column; gap:20px">
+        <div style="display:flex; flex-direction:column; gap:2px">
+          <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=notice" style="padding:14px 16px; font-size:15px; font-weight:500; color:#3A4152; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #ECEEF2">공지사항 <span class="msi" style="font-size:18px; color:#C4C9D2">chevron_right</span></a>
+          <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=faq" style="padding:14px 16px; font-size:15px; font-weight:500; color:#3A4152; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #ECEEF2">자주하는질문 <span class="msi" style="font-size:18px; color:#C4C9D2">chevron_right</span></a>
+          <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=data" style="padding:14px 16px; font-size:15px; font-weight:500; color:#3A4152; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #ECEEF2">학습자료실 <span class="msi" style="font-size:18px; color:#C4C9D2">chevron_right</span></a>
+          <a href="https://www.lcyber.co.kr/board@v2/page/listqna/?board_name=qna" style="padding:14px 16px; font-size:15px; font-weight:500; color:#3A4152; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #ECEEF2">질문과답변 <span class="msi" style="font-size:18px; color:#C4C9D2">chevron_right</span></a>
+          <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=review" style="padding:14px 16px; font-size:15px; font-weight:500; color:#3A4152; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #ECEEF2">장학생 수강후기 <span class="msi" style="font-size:18px; color:#C4C9D2">chevron_right</span></a>
+          <a href="https://www.lcyber.co.kr/board@v2/page/listprof/?board_name=profcolumn" style="padding:14px 16px; font-size:15px; font-weight:500; color:#3A4152; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #ECEEF2">교수진 칼럼 <span class="msi" style="font-size:18px; color:#C4C9D2">chevron_right</span></a>
+          <a href="https://www.lcyber.co.kr/html/m5/m5s7.asp" style="padding:14px 16px; background:#00479D; border-radius:6px; font-size:15px; font-weight:700; color:#FFFFFF; display:flex; align-items:center; justify-content:space-between">무료학습설계 <span class="msi" style="font-size:18px">chevron_right</span></a>
+          <a href="https://www.lcyber.co.kr/html/mobile_help/mobile_help1.asp" style="padding:14px 16px; font-size:15px; font-weight:500; color:#3A4152; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #ECEEF2">모바일학습가이드 <span class="msi" style="font-size:18px; color:#C4C9D2">chevron_right</span></a>
+        </div>
+
+        <div style="border:1px solid #ECEEF2; border-radius:8px; padding:16px; display:flex; flex-direction:column; gap:10px">
+          <div style="font-size:14px; font-weight:800; color:#1A1D24">자주 찾는 서비스</div>
+          <a href="https://www.welfare.net/prm/find-training-center/current-stat" target="_blank" class="hv" style="display:flex; align-items:center; gap:10px; padding:10px; border-radius:6px" style-hover="background:#F7F8FA"><span class="msi" style="font-size:22px; color:#00479D">search</span><div style="font-size:15px; font-weight:700; color:#1A1D24">실습기관검색</div></a>
+          <a href="https://www.lcyber.co.kr/html/m6/m6s11.asp" class="hv" style="display:flex; align-items:center; gap:10px; padding:10px; border-radius:6px" style-hover="background:#F7F8FA"><span class="msi" style="font-size:22px; color:#00479D">verified</span><div style="font-size:15px; font-weight:700; color:#1A1D24">증명서 발급센터</div></a>
+          <a href="https://www.lcyber.co.kr/html/m6/m6s10_StudyBook.asp" class="hv" style="display:flex; align-items:center; gap:10px; padding:10px; border-radius:6px" style-hover="background:#F7F8FA"><span class="msi" style="font-size:22px; color:#00479D">download</span><div style="font-size:15px; font-weight:700; color:#1A1D24">강의교안 다운로드</div></a>
+          <a href="https://www.lcyber.co.kr/html/m6/m6s10.asp" class="hv" style="display:flex; align-items:center; gap:10px; padding:10px; border-radius:6px" style-hover="background:#F7F8FA"><span class="msi" style="font-size:22px; color:#00479D">key</span><div style="font-size:15px; font-weight:700; color:#1A1D24">공동인증서 복사</div></a>
+        </div>
+
+        <div style="border:1px solid #ECEEF2; border-radius:8px; padding:16px; display:flex; flex-direction:column; gap:10px">
+          <div style="font-size:13px; font-weight:700; color:#6B7280">입학상담문의</div>
+          <div style="font-family:'Archivo',sans-serif; font-size:25px; font-weight:800; color:#00479D">1661-6723</div>
+          <div style="height:1px; background:#ECEEF2; margin:2px 0"></div>
+          <div style="font-size:13px; font-weight:700; color:#6B7280">학습지원센터</div>
+          <div style="font-family:'Archivo',sans-serif; font-size:25px; font-weight:800; color:#1A1D24">1661-6726</div>
+        </div>
+      </div>
+
+      <div style="flex:1; display:flex; flex-direction:column; gap:14px; min-width:0">
+
+                <div class="rv" style="display:flex; flex-direction:column; gap:8px">
+          <div style="font-family:'Archivo',sans-serif; font-size:11px; font-weight:700; letter-spacing:.18em; color:#1D9ADD">PLANNING</div>
+          <h1 style="margin:0; font-size:32px; font-weight:900; letter-spacing:-.03em; color:#1A1D24">무료학습설계</h1>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="display:flex; align-items:center; gap:10px"><span class="msi" style="font-size:18px; color:#00479D; flex:none">schedule</span><div style="font-size:13px; color:#3A4152">평일 오후 5시 이전 문의는 당일 중 연락드립니다.</div></div>
+          <div style="display:flex; align-items:center; gap:10px"><span class="msi" style="font-size:18px; color:#00479D; flex:none">support_agent</span><div style="font-size:13px; color:#3A4152">급격하게 문의가 증가할 경우, 안내가 다소 지연될 수 있으나 양해해주시면 최대한 빠르게 연락드리겠습니다.</div></div>
+          <div style="display:flex; align-items:center; gap:10px"><span class="msi" style="font-size:18px; color:#00479D; flex:none">favorite</span><div style="font-size:13px; color:#3A4152">기존 학습자분도 혹여나 수업 중 불편하셨거나 궁금하신 점이 있으시면 남겨주세요. 담당자가 확인 후 자세히 안내드리겠습니다.</div></div>
+        </div>
+
+        <div style="border:1px solid #ECEEF2; border-radius:10px; overflow:hidden">
+          <div style="display:flex; border-bottom:1px solid #ECEEF2">
+            <div style="flex:0 0 140px; padding:16px; background:#F7F8FA; font-size:13px; font-weight:700; color:#3A4152">관심분야</div>
+            <div style="flex:1; padding:14px 16px; display:flex; flex-wrap:wrap; gap:6px">
+              <label style="display:inline-flex; align-items:center; gap:5px; height:36px; padding:0 12px; border:1px solid #DEE1E7; border-radius:100px; cursor:pointer; white-space:nowrap"><input type="checkbox" style="width:14px; height:14px; accent-color:#00479D"><span style="font-size:12.5px; color:#3A4152; font-weight:500">사회복지사</span></label>
+              <label style="display:inline-flex; align-items:center; gap:5px; height:36px; padding:0 12px; border:1px solid #DEE1E7; border-radius:100px; cursor:pointer; white-space:nowrap"><input type="checkbox" style="width:14px; height:14px; accent-color:#00479D"><span style="font-size:12.5px; color:#3A4152; font-weight:500">한국어교원</span></label>
+              <label style="display:inline-flex; align-items:center; gap:5px; height:36px; padding:0 12px; border:1px solid #DEE1E7; border-radius:100px; cursor:pointer; white-space:nowrap"><input type="checkbox" style="width:14px; height:14px; accent-color:#00479D"><span style="font-size:12.5px; color:#3A4152; font-weight:500">건강가정사</span></label>
+              <label style="display:inline-flex; align-items:center; gap:5px; height:36px; padding:0 12px; border:1px solid #DEE1E7; border-radius:100px; cursor:pointer; white-space:nowrap"><input type="checkbox" style="width:14px; height:14px; accent-color:#00479D"><span style="font-size:12.5px; color:#3A4152; font-weight:500">학위취득</span></label>
+              <label style="display:inline-flex; align-items:center; gap:5px; height:36px; padding:0 12px; border:1px solid #DEE1E7; border-radius:100px; cursor:pointer; white-space:nowrap"><input type="checkbox" style="width:14px; height:14px; accent-color:#00479D"><span style="font-size:12.5px; color:#3A4152; font-weight:500">보육교사</span></label>
+            </div>
+          </div>
+          <div style="display:flex; border-bottom:1px solid #ECEEF2">
+            <div style="flex:0 0 140px; padding:16px; background:#F7F8FA; font-size:13px; font-weight:700; color:#3A4152">이름</div>
+            <div style="flex:1; padding:10px 16px"><input type="text" style="width:280px; height:40px; padding:0 12px; border:1px solid #DEE1E7; border-radius:6px; font-size:13.5px; outline:none" placeholder="이름을 입력해 주세요"></div>
+          </div>
+          <div style="display:flex; border-bottom:1px solid #ECEEF2">
+            <div style="flex:0 0 140px; padding:16px; background:#F7F8FA; font-size:13px; font-weight:700; color:#3A4152">이메일</div>
+            <div style="flex:1; padding:10px 16px"><input type="email" style="width:360px; height:40px; padding:0 12px; border:1px solid #DEE1E7; border-radius:6px; font-size:13.5px; outline:none" placeholder="이메일을 입력해 주세요"></div>
+          </div>
+          <div style="display:flex; border-bottom:1px solid #ECEEF2">
+            <div style="flex:0 0 140px; padding:16px; background:#F7F8FA; font-size:13px; font-weight:700; color:#3A4152">연락처</div>
+            <div style="flex:1; padding:10px 16px; display:flex; align-items:center; gap:8px">
+              <select style="width:90px; height:40px; padding:0 10px; border:1px solid #DEE1E7; border-radius:6px; font-size:13.5px; outline:none; background:#FFFFFF"><option>010</option><option>011</option><option>019</option><option>018</option><option>017</option><option>016</option></select>
+              <span style="color:#98A2B3">-</span>
+              <input type="text" maxlength="4" style="width:70px; height:40px; padding:0 10px; border:1px solid #DEE1E7; border-radius:6px; font-size:13.5px; outline:none; text-align:center">
+              <span style="color:#98A2B3">-</span>
+              <input type="text" maxlength="4" style="width:70px; height:40px; padding:0 10px; border:1px solid #DEE1E7; border-radius:6px; font-size:13.5px; outline:none; text-align:center">
+            </div>
+          </div>
+          <div style="display:flex; border-bottom:1px solid #ECEEF2">
+            <div style="flex:0 0 140px; padding:16px; background:#F7F8FA; font-size:13px; font-weight:700; color:#3A4152">희망시간</div>
+            <div style="flex:1; padding:10px 16px">
+              <select style="width:220px; height:40px; padding:0 12px; border:1px solid #DEE1E7; border-radius:6px; font-size:13.5px; outline:none; background:#FFFFFF">
+              <option>항상 가능</option>
+              <option>오전 09시 ~ 10시</option>
+              <option>오전 10시 ~ 11시</option>
+              <option>오전 11시 ~ 12시</option>
+              <option>오후 01시 ~ 02시</option>
+              <option>오후 02시 ~ 03시</option>
+              <option>오후 03시 ~ 04시</option>
+              <option>오후 04시 ~ 05시</option>
+              </select>
+            </div>
+          </div>
+          <div style="display:flex">
+            <div style="flex:0 0 140px; padding:16px; background:#F7F8FA; font-size:13px; font-weight:700; color:#3A4152">문의사항</div>
+            <div style="flex:1; padding:10px 16px"><textarea rows="5" style="width:100%; padding:10px 12px; border:1px solid #DEE1E7; border-radius:6px; font-size:13.5px; outline:none; resize:vertical; font-family:inherit" placeholder="궁금하신 내용을 자유롭게 남겨주세요."></textarea></div>
+          </div>
+        </div>
+
+        <div style="border:1px solid #ECEEF2; border-radius:10px; padding:16px 18px; background:#F7F9FB; font-size:12.5px; line-height:1.8; color:#6B7280; display:flex; align-items:flex-start; gap:10px">
+          <span class="msi" style="font-size:18px; color:#98A2B3; flex:none; margin-top:1px">verified_user</span>
+          <div>입력하신 이름, 이메일, 연락처는 개인정보보호정책에 따라 보호됩니다.<br>해당 개인정보는 문의안내 및 교육과정 안내에만 사용되며 그 외 용도로 사용되지 않습니다.</div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; align-items:center; gap:14px">
+          <label style="display:flex; align-items:center; gap:8px; cursor:pointer">
+            <input type="checkbox" style="width:16px; height:16px; accent-color:#00479D; cursor:pointer">
+            <span onClick="{{ openPrivacyModal }}" class="hv" style="font-size:13.5px; font-weight:700; color:#1A1D24; text-decoration:underline; text-underline-offset:2px; cursor:pointer" style-hover="color:#00479D">(필수) 개인정보수집동의</span>
+          </label>
+          <a href="#" style="display:inline-flex; align-items:center; justify-content:center; height:52px; padding:0 60px; background:#00479D; border-radius:8px; font-size:16px; font-weight:800; color:#FFFFFF">무료학습설계 신청하기</a>
+        </div>
+
+      </div>
+
+      <div style="width:150px; flex:none"></div>
+
+    </div>
+  </div>
+
+
+  <div style="position:fixed; left:0; right:0; bottom:0; z-index:60; background:linear-gradient(100deg,#00479D 0%,#0A5FC0 62%,#1D9ADD 100%); box-shadow:0 -4px 20px rgba(16,24,40,.18); display:flex; justify-content:center">
+    <div style="width:1200px; height:72px; display:flex; align-items:center; gap:22px">
+      <div style="display:flex; align-items:center; gap:10px; flex:none">
+        <span class="msi" style="font-size:20px; color:#7FD0FF">call</span>
+        <div style="display:flex; flex-direction:column; gap:1px">
+          <div style="font-size:10.5px; color:#A9C8E8; letter-spacing:-.01em">전화상담</div>
+          <div style="font-family:'Archivo',sans-serif; font-size:20px; font-weight:800; color:#FFFFFF; line-height:1">1661-6723</div>
+        </div>
+      </div>
+      <div style="width:1px; height:34px; background:rgba(255,255,255,.22); flex:none"></div>
+      <div style="font-size:13.5px; font-weight:700; color:#FFFFFF; letter-spacing:-.025em; white-space:nowrap; flex:none">빠른 상담신청</div>
+      <div style="flex:1; display:flex; align-items:center; gap:7px; min-width:0">
+        <select name="gubun" style="width:132px; height:40px; padding:0 10px; border:none; border-radius:5px; font-size:13px; background:#FFFFFF; color:#1A1D24; outline:none; flex:none">
+          <option>희망과정 선택</option>
+          <option>사회복지사</option>
+          <option>한국어교원</option>
+          <option>건강가정사</option>
+          <option>학위과정</option>
+          <option>민간자격증</option>
+        </select>
+        <input type="text" name="name" placeholder="이름" style="width:104px; height:40px; padding:0 11px; border:none; border-radius:5px; font-size:13px; outline:none; color:#1A1D24; flex:none">
+        <select name="hptel1" style="width:78px; height:40px; padding:0 8px; border:none; border-radius:5px; font-size:13px; background:#FFFFFF; outline:none; flex:none"><option>010</option><option>011</option><option>016</option><option>017</option><option>018</option><option>019</option></select>
+        <input type="text" name="hptel2" maxlength="4" style="width:72px; height:40px; padding:0 10px; border:none; border-radius:5px; font-size:13px; outline:none; flex:none">
+        <input type="text" name="hptel3" maxlength="4" style="width:72px; height:40px; padding:0 10px; border:none; border-radius:5px; font-size:13px; outline:none; flex:none">
+        <label style="display:flex; align-items:center; gap:7px; cursor:pointer; margin-left:6px; white-space:nowrap">
+          <input type="checkbox" name="chkx" style="width:15px; height:15px; accent-color:#7FD0FF; cursor:pointer">
+          <span style="font-size:12.5px; color:#D3E3F4">(필수) 개인정보 수집동의</span>
+        </label>
+        <a href="https://www.lcyber.co.kr/html/m1/m1s4.asp" style="font-size:12px; color:#A9C8E8; text-decoration:underline; white-space:nowrap">내용보기</a>
+      </div>
+      <button type="submit" class="btnx" style="flex:none; height:46px; padding:0 26px; background:#FFFFFF; border:none; border-radius:6px; font-size:14.5px; font-weight:700; color:#00479D; cursor:pointer; white-space:nowrap">빠른상담 신청하기</button>
+    </div>
+  </div>
+
+<div style="position:fixed; right:24px; bottom:96px; z-index:50; display:flex; flex-direction:column; align-items:flex-end; gap:9px">
+    <div style="background:#FFFFFF; border:none; border-radius:12px; box-shadow:0 4px 16px rgba(16,24,40,.12); overflow:hidden; display:flex; flex-direction:column; width:176px">
+      <div style="display:flex; align-items:center; gap:7px; padding:10px 14px; background:linear-gradient(120deg,#00479D 0%,#1D9ADD 100%)">
+        <span class="msi" style="font-size:16px; color:#FFFFFF; flex:none">bolt</span>
+        <div style="font-size:12px; font-weight:800; color:#FFFFFF; letter-spacing:-.02em">바로가기 메뉴</div>
+      </div>
+      <a href="https://www.lcyber.co.kr/ssl/login/InstallVestCert.html" class="hv" style="display:flex; align-items:center; gap:9px; padding:11px 14px; border-bottom:1px solid #F2F4F7">
+        <span class="mso" style="font-size:20px; color:#00479D; flex:none">login</span>
+        <div style="font-size:13px; font-weight:700; color:#1A1D24; letter-spacing:-.025em; white-space:nowrap">통합로그인</div>
+      </a>
+      <a href="#" class="hv" style="display:flex; align-items:center; gap:9px; padding:11px 14px; border-bottom:1px solid #F2F4F7">
+        <span class="mso" style="font-size:20px; color:#00479D; flex:none">person_add</span>
+        <div style="font-size:13px; font-weight:700; color:#1A1D24; letter-spacing:-.025em; white-space:nowrap">회원가입</div>
+      </a>
+      <a href="https://www.lcyber.co.kr/board@v2/page/list/?board_name=notice" class="hv" style="display:flex; align-items:center; gap:9px; padding:11px 14px; border-bottom:1px solid #F2F4F7">
+        <span class="mso" style="font-size:20px; color:#00479D; flex:none">campaign</span>
+        <div style="font-size:13px; font-weight:700; color:#1A1D24; letter-spacing:-.025em; white-space:nowrap">공지사항</div>
+      </a>
+      <a href="https://www.lcyber.co.kr/html/m4/m4s3.asp" class="hv" style="display:flex; align-items:center; gap:9px; padding:11px 14px; border-bottom:1px solid #F2F4F7">
+        <span class="mso" style="font-size:20px; color:#00479D; flex:none">event_available</span>
+        <div style="font-size:13px; font-weight:700; color:#1A1D24; letter-spacing:-.025em; white-space:nowrap">수강신청</div>
+      </a>
+      <a href="https://www.lcyber.co.kr/html/m4/m4s1.asp" class="hv" style="display:flex; align-items:center; gap:9px; padding:11px 14px; border-bottom:1px solid #F2F4F7">
+        <span class="mso" style="font-size:20px; color:#00479D; flex:none">shopping_bag</span>
+        <div style="font-size:13px; font-weight:700; color:#1A1D24; letter-spacing:-.025em; white-space:nowrap">과목 장바구니</div>
+      </a>
+      <a href="https://www.lcyber.co.kr/html/m6/m6s1.asp" class="hv" style="display:flex; align-items:center; gap:9px; padding:11px 14px; border-bottom:1px solid #F2F4F7">
+        <span class="mso" style="font-size:20px; color:#00479D; flex:none">play_circle</span>
+        <div style="font-size:13px; font-weight:700; color:#1A1D24; letter-spacing:-.025em; white-space:nowrap">나의 강의실</div>
+      </a>
+      <a href="http://as82.kr/ledu/" class="hv" style="display:flex; align-items:center; gap:9px; padding:11px 14px">
+        <span class="mso" style="font-size:20px; color:#00479D; flex:none">support_agent</span>
+        <div style="font-size:13px; font-weight:700; color:#1A1D24; letter-spacing:-.025em; white-space:nowrap">원격지원</div>
+      </a>
+    </div>
+    <a href="#" class="hv" style="display:flex; align-items:center; gap:10px; height:44px; padding:0 18px 0 8px; background:#FFFFFF; border:1px solid #E1E5EB; border-radius:100px; box-shadow:0 4px 14px rgba(16,24,40,.1)">
+      <div style="width:30px; height:30px; border-radius:50%; background:#03C75A; display:flex; align-items:center; justify-content:center; flex:none">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.6c-4.7 0-8.4 3-8.4 6.8 0 2.4 1.5 4.5 3.8 5.7l-.8 3.4a.5.5 0 0 0 .76.54l3.9-2.5c.24.02.49.03.74.03 4.7 0 8.4-3 8.4-6.8S16.7 3.6 12 3.6Z" fill="#FFFFFF"/><circle cx="9.1" cy="10.3" r="1.25" fill="#03C75A"/><circle cx="14.9" cy="10.3" r="1.25" fill="#03C75A"/></svg>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:1px">
+        <div style="font-size:13px; font-weight:700; color:#1A1D24; letter-spacing:-.025em; white-space:nowrap">네이버 톡톡</div>
+        <div style="font-size:11px; color:#98A2B3; letter-spacing:-.02em; white-space:nowrap">궁금할땐 문의하세요!</div>
+      </div>
+    </a>
+    <a href="https://www.lcyber.co.kr/html/m4/m4s5.asp" class="hv" style="display:flex; align-items:center; gap:4px; padding:0 20px 0 10px; height:52px; background:linear-gradient(120deg,#00479D 0%,#1D9ADD 100%); border-radius:100px; box-shadow:0 6px 18px rgba(0,71,157,.32)">
+      <img src="assets/character/hakgom-staff.png" alt="학곰" style="width:58px; height:auto; display:block; flex:none; margin:-16px 0 -4px; filter:drop-shadow(0 3px 5px rgba(0,24,60,.28))">
+      <div style="display:flex; flex-direction:column; gap:2px">
+        <div style="font-size:13.5px; font-weight:700; color:#FFFFFF; letter-spacing:-.025em; white-space:nowrap">지금 시작하면 언제 취득?</div>
+        <div style="font-size:11.5px; font-weight:500; color:#CDE6FA; letter-spacing:-.02em; white-space:nowrap">AI로 빠르게 알아보기!</div>
+      </div>
+    </a>
+    <a href="#" class="hv" style="width:42px; height:42px; background:#FFFFFF; border:1px solid #E1E5EB; border-radius:50%; box-shadow:0 4px 14px rgba(16,24,40,.1); display:flex; align-items:center; justify-content:center; font-size:15px; color:#6B7280">↑</a>
+  </div>
+
+  <div style="background:#F7F8FA; border-top:1px solid #ECEEF2; display:flex; justify-content:center">
+    <div style="width:1200px; padding:28px 0; font-size:12px; line-height:1.9; color:#98A2B3">
+      KBS아카데미 원격평생교육원 · (주)리더스에듀 · 사업자등록번호 209-81-56148 · 통신판매 제2013-부산사상구-0148호 · 대표자 권영숙<br>
+      본원소재지 (47007) 부산광역시 사상구 가야대로 348 KL빌딩 5층 · 대표전화 1661-6726 · 팩스 070-8233-7077
+    </div>
+  </div>
+
+</div>
+
+<sc-if value="{{ showVerifyModal }}" hint-placeholder-val="{{ false }}">
+<div style="position:fixed; inset:0; z-index:300; background:rgba(16,24,40,.5); display:flex; align-items:center; justify-content:center">
+  <div style="width:400px; background:#FFFFFF; border-radius:14px; box-shadow:0 20px 50px rgba(16,24,40,.25); padding:32px 28px; display:flex; flex-direction:column; align-items:center; gap:18px; text-align:center">
+    <div style="width:56px; height:56px; border-radius:50%; background:#F2F6FB; display:flex; align-items:center; justify-content:center">
+      <span class="msi" style="font-size:32px; color:#00479D">verified</span>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:6px">
+      <div style="font-size:16px; font-weight:800; color:#1A1D24">실명인증 완료</div>
+      <div style="font-size:14px; line-height:1.6; color:#3A4152">해당계정의 실명이 인증되었습니다.</div>
+    </div>
+    <a href="#" onClick="{{ closeVerifyModal }}" style="width:100%; display:flex; align-items:center; justify-content:center; height:46px; background:#00479D; border-radius:8px; font-size:14.5px; font-weight:800; color:#FFFFFF">확인</a>
+  </div>
+</div>
+</sc-if>
+
+      <sc-if value="{{ privacyOpen }}" hint-placeholder-val="{{ false }}">
+      <div onClick="{{ closePrivacyModal }}" style="position:fixed; inset:0; background:rgba(20,24,32,.55); z-index:200; display:flex; align-items:center; justify-content:center; padding:40px 20px">
+        <div onClick="{{ stopClick }}" style="width:640px; max-width:92%; max-height:60vh; background:#FFFFFF; border-radius:14px; display:flex; flex-direction:column; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.25)">
+          <div style="flex:none; display:flex; align-items:center; justify-content:space-between; padding:16px 20px; border-bottom:1px solid #ECEEF2">
+            <div style="font-size:15.5px; font-weight:800; color:#1A1D24">개인정보 수집 및 이용 동의</div>
+            <a href="#" onClick="{{ closePrivacyModal }}" style="display:flex; align-items:center; justify-content:center; width:30px; height:30px; border-radius:8px" class="hv" style-hover="background:#F7F8FA"><span class="msi" style="font-size:20px; color:#6B7280">close</span></a>
+          </div>
+          <div style="flex:1; overflow-y:auto; padding:16px 20px; font-size:11.5px; line-height:1.7; color:#3A4152; white-space:pre-wrap">제1조(개인정보의 처리목적)
+
+KBS원격평생교육원(이하 "교육원")은 다음의 목적을 위하여 개인정보를 처리합니다.
+처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보 보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.
+
+① 홈페이지 회원 가입 및 관리
+   회원 가입의사 확인, 회원제 서비스 제공에 따른 본인 식별·인증, 회원자격 유지·관리, 제한적 본인확인제 시행에
+   따른 본인확인, 서비스 부정이용 방지, 만 14세 미만 아동의 개인정보 처리시 법정대리인의 동의여부 확인
+   각종 고지·통지, 고충처리 등을 목적으로 개인정보를 처리합니다.
+
+② 평생교육진흥원 사전보고 및 성적보고
+  「학점인정 등에 관한 법률」 제19조의 2와 관련하여 교육원에서 수강한 자를 평생교육진흥원에 사전보고 및 성적보고
+   등의 목적으로 개인정보를 처리합니다.
+
+③ 재화 또는 서비스 제공
+   물품배송, 서비스 제공, 계약서·청구서 발송, 콘텐츠 제공, 맞춤서비스 제공, 본인인증, 연령인증, 요금결제·정산,
+   채권추심 등을 목적으로 개인정보를 처리합니다.
+
+④ 고충처리
+   민원인의 신원 확인, 민원사항 확인, 사실조사를 위한 연락통지, 처리결과통보 등의 목적으로 개인정보를 처리합니다.
+
+⑤ 마케팅 및 광고에의 활용
+   신규 서비스 및 제품 개발, 맞춤 서비스 제공, 이벤트 및 광고성 정보 제공 및 참여기회 제공, 인구통계학적 특성에 따른
+   서비스 제공 및 광고 게재, 서비스의 유효성 확인, 접속빈도 파악 또는 회원의 서비스 이용에 대한 통계 등을 목적으로
+   개인정보를 처리합니다.
+
+제2조(개인정보의 처리 및 보유기간)
+
+① 교육원은 법령에 따른 개인정보 보유·이용기간 또는 정보주체로부터
+   개인정보를 수집시에 동의받은 개인정보 보유·이용기간 내에서 개인정보를 처리·보유합니다.
+
+② 각각의 개인정보 처리 및 보유 기간은 다음과 같습니다.
+
+    1. 홈페이지 회원 가입 및 관리 : 홈페이지 탈퇴시까지
+       다만, 다음의 사유에 해당하는 경우에는 해당 사유 종료시까지
+
+       1) 관계 법령 위반에 따른 수사·조사 등이 진행중인 경우에는 해당 수사·조사 종료시까지
+       2) 홈페이지 이용에 따른 채권·채무관계 잔존시에는 해당 채권·채무관계 정산시까지
+
+    2. 재화 또는 서비스 제공 : 재화·서비스 공급완료 및 요금결제·정산 완료시까지
+       다만, 다음의 사유에 해당하는 경우에는 해당 기간 종료시까지
+
+       1) 「전자상거래 등에서의 소비자 보호에 관한 법률」에 따른 표시·광고, 계약내용 및 이행 등 거래에 관한 기록
+        - 표시·광고에 관한 기록 : 6월
+        - 계약 또는 청약철회, 대금결제, 재화 등의 공급기록 : 5년
+        - 소비자 불만 또는 분쟁처리에 관한 기록 : 3년
+
+       2) 「통신비밀보호법」제41조에 따른 통신사실확인자료 보관
+        - 가입자 전기통신일시, 개시·종료시간, 상대방 가입자번호, 사용도수, 발신기지국 위치추적자료 : 1년
+        - 컴퓨터통신, 인터넷 로그기록자료, 접속지 추적자료 : 3개월
+
+       3) 「학점인정 등에 관한 법률」제19조의 2항, 평가인정 학습과정 운영지침(교육부 고시 제 2021-8호)에 따른
+       개인정보 보유 기간
+        - 학습자 대장 : 영구
+        - 환불 내역 및 장학금 지급 관련 자료 : 5년
+        - 교강사 명부(이력서 및 학력,경력 증명서) : 5년
+        - 출석 관련 서류 : 5년
+          → 출석부 및 수강로그, 공결승인신청서, 휴·보강계획서, 교강사 및 조교의 접속기록
+        - 성적표 : 5년
+        - 성적근거자료 : 5년
+        - 실습관련 자료 : 5년
+          → 선수과목 이수현황, 실습의뢰관련, 협약관련, 실습생기록대장(보육은 영구), 기관 방문근거자료,
+            각종 지급관련 자료, 현장실습근거자료, 실습일지 원본, 평가표 등
+
+    3. 비회원 이용 문의 및 안내 내용 등 : 문의일로부터 1년 또는 목적 달성 시기까지
+
+③ 정보통신망 이용촉진 및 정보보호 등에 관한 법률 제29조의 2 개인정보 유효기간제에 의거하여 1년 간 홈페이지에
+   접속하지 않은 회원에 대하여 30일 전에 별도 고지 후 개인정보를 분리하여 보관 합니다.
+   단 이용자가 별도로 개인정보 유효기간을 설정한 경우에는 그에 따릅니다.
+
+제3조(개인정보의 제3자 제공)
+
+① 교육원은 정보주체의 개인정보를 제1조(개인정보의 처리 목적)에서 명시한 범위 내에서만 처리하며, 정보주체의 동의,
+   법률의 특별한 규정 등 개인정보 보호법 제17조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.
+
+② 교육원은 다음과 같이 개인정보를 제3자에게 제공하고 있습니다.
+
+    1. 신용카드 등의 결제 관련
+      - 개인정보를 제공받는 자 : 나이스페이 나이스페이먼츠(주)
+      - 제공받는 자의 개인정보 이용목적 : 신용카드 등의 결제 정보
+      - 제공하는 개인정보 항목 : 성명, 전화번호, 이메일주소, 과목명
+      - 제공받는 자의 보유·이용기간 : 나이스페이의 개인정보처리방침 참조
+
+    2. 학점은행제 운영 관련
+      - 개인정보를 제공받는 자 : 국가평생교육진흥원
+      - 제공받는 자의 개인정보 이용목적 : 학습자등록, 학점인정신청, 사전보고, 성적보고 등의 행정보고
+      - 제공하는 개인정보 항목 : 성명, 주민등록번호, 주소, 전화번호, 이메일주소, 최종출신교, 최종학력, 수강과목,
+        성적
+      - 제공받는 자의 보유·이용기간 : 제2조 2항 참조
+
+    3. 전자도서관 관련
+      - 개인정보를 제공받는 자 : (주)교보문고
+      - 제공받는 자의 개인정보 이용목적 : 전자도서관 이용 목적
+      - 제공하는 개인정보 항목 : 성명, 아이디
+      - 제공받는 자의 보유·이용기간 : (주)교보문고의 개인정보처리방침 참조
+
+    4. 보훈 장학금 관련
+      - 개인정보를 제공받는자 : 국가보훈청
+      - 제공받는 자의 개인정보 이용 목적 : 보훈대상자 학적 현황보고 및 장학금 신청
+      - 제공하는 개인정보 항목 : 성명, 생년월일, 성별, 관련보훈번호
+      - 제공받는 자의 보유 이용기간 : 국가보훈청의 개인정보처리방침 참조
+
+    5. 연말정산 관련 - 교육비 납입 증명
+      - 개인정보를 제공받는자 : 국세청 홈텍스
+      - 제공받는 자의 개인정보 이용 목적 : 연말정산 간소화 서비스 - 교육비 관련
+      - 제공하는 개인정보 항목 : 성명, 주민번호
+      - 제공받는 자의 보유 이용기간 : 국세청의 개인정보처리방침 참조
+
+    6. 문자 발송 관련
+      - 개인정보를 제공받는자 : KT
+      - 제공받는 자의 개인정보 이용 목적 : 문자 발송
+      - 제공하는 개인정보 항목 : 휴대폰 번호
+      - 제공받는 자의 보유 이용기간 : KT의 개인정보처리방침 참조
+
+    7. 한국장학재단 학자금 대출관련
+      - 개인정보를 제공받는자 : 한국장학재단
+      - 제공받는 자의 개인정보 이용 목적 : 학자금 대출 업무
+      - 제공하는 개인정보 항목 : 성명, 주민등록번호, 주소, 전화번호, 이메일주소, 수강과목
+      - 제공받는 자의 보유 이용기간 : 한국장학재단의 개인정보처리 방침 참조
+
+제4조(개인정보처리의 위탁)
+
+① 교육원은 원활한 개인정보 업무처리를 위하여 다음과 같이 개인정보 처리업무를 위탁하고 있습니다.
+
+   ◎ 실명확인
+    - 위탁받는 자 (수탁자) : NICE신용평가정보(주)
+    - 위탁하는 업무의 내용 : 실명확인
+
+② 교육원은 위탁계약 체결시 개인정보 보호법 제25조에 따라 위탁업무 수행목적 외 개인정보 처리금지,
+   기술적·관리적 보호조치, 재위탁 제한, 수탁자에 대한 관리·감독, 손해배상 등 책임에 관한 사항을 계약서 등
+   문서에 명시하고, 수탁자가 개인정보를 안전하게 처리하는지를 감독하고 있습니다.
+
+③ 위탁업무의 내용이나 수탁자가 변경될 경우에는 지체없이 본 개인정보 처리방침을 통하여 공개하도록 하겠습니다.
+
+제5조(정보주체의 권리·의무 및 행사방법)
+
+① 정보주체는 회사에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.
+
+    1. 개인정보 열람요구
+    2. 오류 등이 있을 경우 정정 요구
+    3. 삭제요구
+    4. 처리정지 요구
+
+② 제1항에 따른 권리 행사는 회사에 대해 서면, 전화, 전자우편, 모사전송(FAX) 등을 통하여 하실 수 있으며 교육원은
+   이에 대해 지체 없이 조치하겠습니다.
+
+③ 정보주체가 개인정보의 오류 등에 대한 정정 또는 삭제를 요구한 경우에는 교육원은 정정 또는 삭제를 완료할 때까지
+   당해 개인정보를 이용하거나 제공하지 않습니다.
+   다만 제2조의 보유기간 등에 근거하여 학습 중 또는 교육 이수 내용이 있는 경우 처리가 불가 할 수 있습니다.
+
+④ 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다.
+   이 경우 개인정보 보호법 시행규칙 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다.
+
+⑤ 정보주체는 개인정보 보호법 등 관계법령을 위반하여 교육원이 처리하고 있는 정보주체 본인이나 타인의 개인정보 및
+   사생활을 침해하여서는 아니됩니다.
+
+제6조(처리하는 개인정보 항목)
+
+교육원은 다음의 개인정보 항목을 처리하고 있습니다.
+
+① 홈페이지 회원 가입 및 관리
+
+  - 필수항목 : 성명, 아이디, 비밀번호, 휴대폰번호, 이메일주소
+  - 선택항목 : 주소, 전화번호, 최종학력, 출신 학교명, 졸업연도, 학년, 학점, 관심분야, 상담자명
+
+② 재화 또는 서비스 제공
+
+  - 필수항목 : 성명, 아이디, 휴대번호, 이메일주소, 졸업고교명 및 졸업연도
+  - 선택항목 : 주소, 전화번호, 환불계좌번호, 가상계좌번호, 은행명, 결제 카드사
+
+③ 인터넷 서비스 이용과정에서 아래 개인정보 항목이 자동으로 생성되어 수집될 수 있습니다.
+
+  - IP주소, 쿠키, MAC주소, 서비스 이용기록, 방문기록, 불량 이용기록 등
+
+제7조(개인정보의 파기)
+
+① 교육원은 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를
+   파기합니다.
+
+② 정보주체로부터 동의받은 개인정보 보유기간이 경과하거나 처리목적이 달성되었음에도 불구하고 다른 법령에 따라
+   개인정보를 계속 보존하여야 하는 경우에는, 해당 개인정보를 별도의 데이터베이스(DB)로 옮기거나 보관장소를 달리하여
+   보존합니다.
+
+③ 개인정보 파기의 절차 및 방법은 다음과 같습니다.
+
+  1. 파기절차
+     교육원은 파기 사유가 발생한 개인정보를 선정하고, 개인정보 보호책임자의 승인을 받아 개인정보를 파기합니다.
+
+  2. 파기방법
+     교육원은 전자적 파일 형태로 기록·저장된 개인정보는 기록을 재생할 수 없도록 로우레밸포멧(Low Level Format) 등의
+     방법을 이용하여 파기하며, 종이 문서에 기록·저장된 개인정보는 분쇄기로 분쇄하거나 소각하여 파기합니다.
+
+제8조(개인정보의 안전성 확보조치)
+
+교육원은 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.
+
+① 관리적 조치 : 내부관리계획 수립·시행, 정기적 직원 교육 등
+
+② 기술적 조치 : 개인정보처리시스템 등의 접근권한 관리, 접근통제시스템 설치
+                 고유식별정보 및 비밀번호 암호화(KISA제공 암호화방식), 보안프로그램 설치
+
+③ 물리적 조치 : 전산실, 자료보관실 등의 접근통제
+
+제9조(개인정보 자동 수집 장치의 설치 운영 및 거부에 관한 사항)
+
+① 교육원은 이용자에게 개별적인 맞춤서비스를 제공하기 위해 이용정보를 저장하고 수시로 불러오는 '쿠키(cookie)'를
+   사용합니다.
+② 쿠키는 웹사이트를 운영하는데 이용되는 서버(http)가 이용자의 컴퓨터 브라우저에게 보내는 소량의 정보이며
+   이용자들의 PC 컴퓨터내의 하드디스크에 저장되기도 합니다.
+   가. 쿠키의 사용 목적 : 이용자가 방문한 각 서비스와 웹 사이트들에 대한 방문 및 이용형태, 인기 검색어,
+       보안접속 여부, 등을 파악하여 이용자에게 최적화된 정보 제공을 위해 사용됩니다.
+   나. 쿠키의 설치ㆍ운영 및 거부 : 웹브라우저 상단의 도구>인터넷 옵션>개인정보 메뉴의 옵션 설정을 통해 쿠키 저장을
+       거부할 수 있습니다.
+   다. 쿠키 저장을 거부할 경우 맞춤형 서비스 이용에 어려움이 발생할 수 있습니다.
+
+제10조(개인정보 보호책임자)
+① 교육원은 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만처리 및 피해구제
+   등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.
+
+   ◎ 개인정보 보호책임자
+       성명 : 윤대영
+       직책 : 실장
+       연락처 : ☎ 070-4027-7085, ydy@lcyber.co.kr
+
+   ◎ 개인정보 보호 담당부서
+       부서명 : 학사운영실
+       연락처 : 1661-6726 ledu@lcyber.co.kr 팩스 070-8233-7077
+
+② 회원님께서는 교육원의 서비스(또는 사업)을 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만처리, 피해구제
+   등에 관한 사항을 개인정보 보호책임자 및 담당부서로 문의하실 수 있습니다.
+   교육원은 회원님의 문의에 대해 지체 없이 답변 및 처리해드릴 것입니다.
+
+③ 개인정보 보호책임자는 개인정보 보호와 관련하여 관계 법령의 위반 사실을 알게 된 경우에는 즉시 개선조치를 하고,
+   대표이사에게 개선조치를 보고할 것이며, 필요한 경우 홈페이지에 고지할 것입니다.
+
+제11조(개인정보 열람청구)
+
+회원님은 개인정보 보호법 제35조에 따른 개인정보의 열람 청구를 아래의 부서에 할 수 있습니다. 교육원은 정보주체의 개인정보 열람청구가 신속하게 처리되도록 노력하겠습니다.
+
+   ◎ 개인정보 열람청구 접수·처리 부서
+       부서명 : 학사운영실
+       담당자 : 정희정 실장
+       연락처 : ☎ 070-4027-7088, jhj@lcyber.co.kr, Fax) 070-8233-7077
+
+제12조(권익침해 구제방법)
+
+정보주체는 아래의 기관에 대해 개인정보 침해에 대한 피해구제, 상담 등을 문의하실 수 있습니다.
+아래의 기관은 교육원과는 별개의 기관으로서, 교육원의 자체적인 개인정보 불만처리, 피해구제 결과에 만족하지 못하시거나 보다 자세한 도움이 필요하시면 문의하여 주시기 바랍니다.
+
+   ◎ 개인정보 침해신고센터 (한국인터넷진흥원 운영)
+     소관업무 : 개인정보 침해사실 신고, 상담 신청
+     홈페이지 : privacy.kisa.or.kr
+     전화 : ☎ (국번없이) 118
+     주소 : (138-950) 서울시 송파구 중대로 135 한국인터넷진흥원 개인정보침해신고센터
+
+   ◎ 개인정보 분쟁조정위원회
+     소관업무 : 개인정보 분쟁조정신청, 집단분쟁조정 (민사적 해결)
+     홈페이지 : www.kopico.go.kr
+     전화 : ☎ 1833-6972
+     주소 : (03171) 서울특별시 종로구 세종대로 209 정부서울청사 4층, 개인정보 분쟁조정위원회
+
+   ◎ 정보보호마크인증위원회 : ☎ (국번없이) 118
+
+   ◎ 대검찰청 사이버범죄수사단 : ☎ 02-3480-3573 (www.spo.go.kr)
+
+   ◎ 경찰청 사이버테러대응센터 : ☎ 1566-0112 (www.netan.go.kr)
+
+제13조(개인정보 처리방침 변경)
+
+① 이 개인정보 처리방침은 2025. 6. 1 부터 적용됩니다. (2025. 04. 30 공지사항 고지)
+
+② 리더스 홈페이지와 개인정보 처리방침의 유사용어 통일
+
+    ◎ 개인정보취급을 개인정보처리로
+    ◎ 개인정보누출을 개인정보유출로
+    ◎ 개인정보 관리책임자를 개인정보 보호책임자로
+    ◎ 개인정보취급방침, 개인정보취급방법 등을 개인정보처리방침으로
+
+③ 제9조(개인정보 보호책임자) 제3항 추가
+
+④ 정보통신망법 개정내용 반영 [법률 제14080호, 2016.3.22. 일부개정]
+
+▶2022. 01. 01 ~ 2025. 05. 31 개인정보처리방침
+▶2016. 09. 23 ~ 2021. 12. 31 개인정보처리방침
+▶2014. 04. 01 ~ 2016. 09. 22 개인정보처리방침
+▶2014. 01. 01 ~ 2014. 03. 31 개인정보처리방침
+▶2013. 06. 01 ~ 2014. 12. 31 개인정보처리방침</div>
+          <div style="flex:none; padding:12px 20px; border-top:1px solid #ECEEF2; display:flex; justify-content:flex-end">
+            <a href="#" onClick="{{ closePrivacyModal }}" style="display:inline-flex; align-items:center; justify-content:center; height:36px; padding:0 20px; background:#00479D; border-radius:7px; font-size:13px; font-weight:700; color:#FFFFFF">확인</a>
+          </div>
+        </div>
+      </div>
+      </sc-if>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">class Component extends DCLogic {
+  state = { hoverNav: 0, privacyOpen: false };
+  openPrivacyModal(e) { if (e) e.preventDefault(); this.setState({ privacyOpen: true }); }
+  closePrivacyModal() { this.setState({ privacyOpen: false }); }
+  stopClick(e) { e.stopPropagation(); }
+  componentDidMount() {
+    this.badgeTimer = setInterval(() => {
+      this.setState(st => ({ bi: (st.bi || 0) + 1, bsnap: false }), () => {
+        if (this.state.bi >= 3) setTimeout(() => this.setState({ bi: 0, bsnap: true }), 520);
+      });
+    }, 3200);
+  }
+  componentWillUnmount() { clearInterval(this.badgeTimer); }
+  holdNav(n) { if (this.navCloseTimer) clearTimeout(this.navCloseTimer); this.setState({ hoverNav: n }); }
+  scheduleClose() { if (this.navCloseTimer) clearTimeout(this.navCloseTimer); this.navCloseTimer = setTimeout(() => this.setState({ hoverNav: 0 }), 150); }
+  keepNav() { if (this.navCloseTimer) clearTimeout(this.navCloseTimer); }
+  renderVals() {
+    const active = 5;
+    const h = this.state.hoverNav;
+    const colorFor = n => (h === n || (h === 0 && n === active)) ? '#00479D' : '#1A1D24';
+    const borderFor = n => (h === n || (h === 0 && n === active)) ? '#00479D' : 'transparent';
+    return {
+      anyNav: h !== 0,
+      privacyOpen: this.state.privacyOpen, openPrivacyModal: (e) => this.openPrivacyModal(e), closePrivacyModal: () => this.closePrivacyModal(), stopClick: (e) => this.stopClick(e),
+      enterNav1: () => this.holdNav(1), enterNav2: () => this.holdNav(2), enterNav3: () => this.holdNav(3),
+      enterNav4: () => this.holdNav(4), enterNav5: () => this.holdNav(5), enterNav6: () => this.holdNav(6),
+      leaveNav: () => this.scheduleClose(),
+      keepNav: () => this.keepNav(),
+      navColor1: colorFor(1), navBorder1: borderFor(1),
+      navColor2: colorFor(2), navBorder2: borderFor(2),
+      navColor3: colorFor(3), navBorder3: borderFor(3),
+      navColor4: colorFor(4), navBorder4: borderFor(4),
+      navColor5: colorFor(5), navBorder5: borderFor(5),
+      navColor6: colorFor(6), navBorder6: borderFor(6),
+    };
+  }
+}</script>
+</body>
+</html>
