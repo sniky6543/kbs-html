@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>아이디/비밀번호 찾기 - KBS아카데미 원격평생교육원</title>
+    <meta name="description" content="KBS아카데미 원격평생교육원 아이디/비밀번호 찾기 - 휴대폰 본인인증 또는 이메일 인증을 통해 계정 정보를 찾으실 수 있습니다.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/a940c586-733e-4110-94d3-a7267230c4a5.png">
+
+    <!-- CSS Stylesheets (기본 main.css + 서브 sub.css) -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub.css">
+
+    <!-- JavaScript (기본 main.js + 서브 sub.js) -->
+    <script src="js/main.js"></script>
+    <script src="js/sub.js"></script>
+</head>
+<body>
+
+<div class="mo-page-wrapper">
+
+    <!-- 1. 상단 유틸 -->
+    <aside class="mo-top-util" aria-label="고객센터 운영안내">
+        <div class="mo-top-util-status">
+            <div class="mo-status-dot" aria-hidden="true"></div>
+            <div class="mo-status-text">지금 상담 가능 · 09:30~18:30</div>
+        </div>
+        <a href="tel:1661-6723" class="mo-top-util-call" aria-label="입학상담 전화걸기 1661-6723"><span class="msi" aria-hidden="true">call</span>1661-6723</a>
+    </aside>
+
+    <!-- 2. 상단 헤더 -->
+    <header class="mo-header">
+        <a href="#" id="btnOpenMenu" class="tapx mo-btn-menu" aria-label="전체메뉴 열기"><span class="msi" aria-hidden="true">menu</span></a>
+        <a href="main.html" class="mo-header-brand" aria-label="KBS아카데미 원격평생교육원 홈으로 이동">
+            <div class="mo-brand-row">
+                <img src="assets/4a8c512e-0a9d-4dcb-ab29-ce660091834d.png" alt="KBS아카데미" class="mo-brand-logo">
+                <div class="mo-brand-divider" aria-hidden="true"></div>
+                <div class="mo-brand-sub">원격평생교육원</div>
+            </div>
+            <div class="mo-cert-row">
+                <img src="assets/8c08767d-8f53-4ba9-a020-2c73d7648de6.png" alt="" class="mo-cert-icon" aria-hidden="true">
+                <div class="mo-cert-text">교육부 인증 학점은행제 원격교육기관</div>
+            </div>
+        </a>
+        <div class="mo-header-right">
+            <a href="login.html" class="tapx mo-btn-login" aria-label="통합로그인 페이지"><span class="msi" aria-hidden="true">lock</span><div class="mo-btn-login-text">통합로그인</div></a>
+        </div>
+    </header>
+
+    <!-- 3. 사이드 메뉴 오버레이 -->
+    <aside id="sideMenuOverlay" aria-label="전체 메뉴">
+        <nav id="sideMenuContainer">
+            <div class="mo-side-account-bar">
+                <div class="mo-side-account-info"><span class="msi" aria-hidden="true">account_circle</span><div class="mo-side-account-title">로그인이 필요합니다</div></div>
+                <a href="#" id="btnCloseMenu" class="tapx mo-side-btn-close" aria-label="전체메뉴 닫기"><span class="msi" aria-hidden="true">close</span></a>
+            </div>
+            <div class="mo-side-auth-btns">
+                <a href="login.html" class="tapx mo-side-btn-primary">로그인</a>
+                <a href="sign_up.html" class="tapx mo-side-btn-secondary">회원가입</a>
+            </div>
+            <div class="mo-side-section-sep" aria-hidden="true"></div>
+
+            <div>
+                <a href="#" id="btnAcc1" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">교육원소개</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc1">expand_more</span></span></a>
+                <ul id="panelAcc1" class="acc-panel">
+                    <li><a href="m1s1.html" class="acc-panel-link">교육원안내</a></li>
+                    <li><a href="m1s2.html" class="acc-panel-link">인사말</a></li>
+                    <li><a href="m1s3.html" class="acc-panel-link">이용약관</a></li>
+                    <li><a href="m1s4.html" class="acc-panel-link">개인정보처리방침</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc2" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">학점은행제</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc2">expand_more</span></span></a>
+                <ul id="panelAcc2" class="acc-panel">
+                    <li><a href="m2s1.html" class="acc-panel-link">학점은행제란?</a></li>
+                    <li><a href="m2s3.html" class="acc-panel-link">학점인정대상</a></li>
+                    <li><a href="m2s4.html" class="acc-panel-link">신청방법안내</a></li>
+                    <li><a href="m2s5.html" class="acc-panel-link">관련법규</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc3" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">교육과정</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc3">expand_more</span></span></a>
+                <ul id="panelAcc3" class="acc-panel">
+                    <li><a href="https://www.lcyber.co.kr/html/event/event1_1.asp" class="acc-panel-link">사회복지사</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event2_1.asp" class="acc-panel-link">사회복지사 현장실습</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event3_1.asp" class="acc-panel-link">한국어교원</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event8.asp" class="acc-panel-link">건강가정사</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event4.asp" class="acc-panel-link">학위과정</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/LIC/" class="acc-panel-link">민간자격증</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc4" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">수강신청</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc4">expand_more</span></span></a>
+                <ul id="panelAcc4" class="acc-panel">
+                    <li><a href="m4s1.html" class="acc-panel-link">개설과목안내</a></li>
+                    <li><a href="m4s2.html" class="acc-panel-link">등록절차안내</a></li>
+                    <li><a href="course.html" class="acc-panel-link">수강신청</a></li>
+                    <li><a href="payment.html" class="acc-panel-link">수강료결제</a></li>
+                    <li><a href="payment_check.html" class="acc-panel-link">결제확인</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/curriculum/curriculum6.asp" class="acc-panel-link">환불신청</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc5" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">학습지원센터</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc5">expand_more</span></span></a>
+                <ul id="panelAcc5" class="acc-panel">
+                    <li><a href="m5list_notice.html" class="acc-panel-link">공지사항</a></li>
+                    <li><a href="m5s7.html" class="acc-panel-link">무료학습설계</a></li>
+                    <li><a href="https://www.lcyber.co.kr/bbs/board_list.asp?tb_name=faq" class="acc-panel-link">자주하는질문</a></li>
+                    <li><a href="https://www.lcyber.co.kr/bbs/board_list.asp?tb_name=qna" class="acc-panel-link">질문과답변</a></li>
+                    <li><a href="https://www.lcyber.co.kr/bbs/board_list.asp?tb_name=review" class="acc-panel-link">장학생 수강후기</a></li>
+                </ul>
+            </div>
+
+            <a href="https://www.lcyber.co.kr/myclass/myclass.asp" class="tapx mo-side-direct-link">온라인강의실</a>
+
+            <div class="mo-side-cs-box">
+                <div class="mo-side-cs-phones">
+                    <div class="mo-side-cs-col">
+                        <div class="mo-side-cs-lbl">입학상담문의</div>
+                        <div class="mo-side-cs-num">1661-6723</div>
+                    </div>
+                    <div class="mo-side-cs-sep" aria-hidden="true"></div>
+                    <div class="mo-side-cs-col">
+                        <div class="mo-side-cs-lbl">학습지원센터</div>
+                        <div class="mo-side-cs-num dark">1661-6726</div>
+                    </div>
+                </div>
+                <div class="mo-side-cs-time">평일 09:30~18:30 · 점심 12:30~13:30</div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- 4. 본문 컨테이너 -->
+    <main id="mainContent" class="mo-help-container">
+
+        <!-- 탭 전환 바 (아이디 찾기 / 비밀번호 찾기) -->
+        <div class="mo-help-tab-bar" role="tablist" aria-label="아이디 및 비밀번호 찾기 탭">
+            <button type="button" id="tabFindId" class="mo-help-tab-btn active" role="tab" aria-selected="true">아이디 찾기</button>
+            <button type="button" id="tabFindPw" class="mo-help-tab-btn" role="tab" aria-selected="false">비밀번호 찾기</button>
+        </div>
+
+        <!-- 1단계: 인증 방법 선택 카드 -->
+        <div id="stepMethodCard" class="mo-help-card">
+
+            <!-- 비밀번호 찾기 시 아이디 입력 섹션 -->
+            <div id="pwIdSection" style="display:none">
+                <!-- 1-1) 아이디 입력 폼 -->
+                <div id="pwIdNotConfirmed" class="mo-help-pw-id-box">
+                    <label for="inputPwSearchId" class="mo-help-pw-id-label">비밀번호를 찾고자 하는 아이디를 입력해주세요.</label>
+                    <div class="mo-help-pw-id-row">
+                        <input type="text" id="inputPwSearchId" placeholder="아이디를 입력해주세요" class="mo-help-input">
+                        <button type="button" id="btnConfirmPwId" class="tapx mo-help-btn-confirm-sm">확인</button>
+                    </div>
+                </div>
+                <!-- 1-2) 아이디 확인 완료 안내 문구 -->
+                <div id="pwIdConfirmed" class="mo-help-pw-id-confirmed" style="display:none">
+                    아이디 <b id="confirmedPwIdText">kbsacademy01</b> 확인되었습니다. 비밀번호 찾는 방법을 선택해 주세요.
+                </div>
+            </div>
+
+            <!-- 방법 선택 안내 헤더 -->
+            <div id="methodLabelHeader" class="mo-help-card-header">아이디 찾는 방법을 선택해 주세요.</div>
+
+            <!-- 방법 선택 본문 리스트 -->
+            <div id="methodListSection" class="mo-help-method-list">
+
+                <!-- 1) 휴대폰 본인인증으로 찾기 -->
+                <label id="methodPhoneRow" class="mo-help-method-row phone">
+                    <input type="radio" name="findMethod" id="radioMethodPhone" value="phone" checked class="mo-help-radio">
+                    <div class="mo-help-method-content">
+                        <div class="mo-help-method-title">휴대폰 본인인증으로 찾기</div>
+                        <div class="mo-help-method-desc">안전한 통신사 본인인증(PASS 또는 문자)으로 인증합니다.</div>
+                        <div id="phoneAuthBtnWrap">
+                            <button type="button" id="btnAuthPhone" class="tapx mo-help-btn-outline">휴대폰으로 본인 인증</button>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- 구분선 -->
+                <div class="mo-help-sep" aria-hidden="true"></div>
+
+                <!-- 2) 이메일로 찾기 -->
+                <label id="methodEmailRow" class="mo-help-method-row email">
+                    <input type="radio" name="findMethod" id="radioMethodEmail" value="email" class="mo-help-radio">
+                    <div class="mo-help-method-content">
+                        <div class="mo-help-method-title">이메일로 찾기</div>
+
+                        <!-- 이메일 입력 및 인증번호 영역 -->
+                        <div id="emailAuthSection" class="mo-help-email-auth-box" style="display:none">
+                            <div class="mo-help-method-desc">가입 시 등록한 이메일 주소로 인증번호를 보내드립니다.</div>
+                            <div class="mo-help-flex-row">
+                                <input type="email" id="inputFindEmail" placeholder="example@lcyber.co.kr" class="mo-help-input sm" aria-label="이메일 주소">
+                                <button type="button" id="btnSendEmailCode" class="tapx mo-help-btn-code">인증번호</button>
+                            </div>
+
+                            <!-- 인증번호 발송 후 표시 영역 -->
+                            <div id="emailCodeBox" class="mo-help-email-code-box" style="display:none">
+                                <div class="mo-help-flex-row">
+                                    <input type="text" id="inputEmailAuthCode" placeholder="인증번호 6자리" maxlength="6" class="mo-help-input sm" aria-label="이메일 인증번호 6자리">
+                                    <div class="mo-help-timer">03:00</div>
+                                </div>
+                                <div class="mo-help-email-hint">인증번호가 오지 않으면 스팸 메일함을 확인해주세요.</div>
+                            </div>
+
+                            <button type="button" id="btnConfirmEmailCode" class="tapx mo-help-btn-primary">확인</button>
+                        </div>
+                    </div>
+                </label>
+
+            </div>
+        </div>
+
+        <!-- 2단계: 결과 단계 카드 -->
+        <div id="stepResultCard" class="mo-help-card" style="display:none">
+
+            <!-- 1) 아이디 찾기 결과 화면 -->
+            <div id="resultIdSection" class="mo-help-result-sec" style="display:none">
+                <div class="mo-help-card-header">입력하신 정보와 일치하는 아이디입니다.</div>
+                <div class="mo-help-result-id-box">
+                    <div class="mo-help-result-id-text">홍길동 님의 아이디는</div>
+                    <div class="mo-help-result-id-val">kbsacademy01</div>
+                    <div class="mo-help-result-id-date">가입일 : 2026-08-18</div>
+                </div>
+                <div class="mo-help-result-actions">
+                    <a href="login.html" class="tapx btn-primary">로그인 하기</a>
+                    <button type="button" id="btnGoFindPwFromResult" class="tapx btn-outline">비밀번호 찾기</button>
+                </div>
+            </div>
+
+            <!-- 2) 비밀번호 찾기 결과 화면 -->
+            <div id="resultPwSection" class="mo-help-result-sec" style="display:none">
+
+                <!-- 2-1) 새 비밀번호 재설정 폼 -->
+                <div id="pwResetFormSection" class="mo-help-pw-form-wrap">
+                    <div class="mo-help-pw-reset-head">
+                        <div class="mo-help-pw-reset-name">홍길동님</div>
+                        <div class="mo-help-pw-reset-sub">새로 사용할 비밀번호를 입력해 주세요.</div>
+                    </div>
+                    <div class="mo-help-pw-reset-body">
+                        <label for="inputNewPw" class="sr-only">새 비밀번호</label>
+                        <input type="password" id="inputNewPw" placeholder="비밀번호" class="mo-help-input" autocomplete="new-password">
+                        <label for="inputNewPwConfirm" class="sr-only">새 비밀번호 확인</label>
+                        <input type="password" id="inputNewPwConfirm" placeholder="비밀번호 확인" class="mo-help-input" autocomplete="new-password">
+                        <div class="mo-help-pw-reset-hint">· 영문, 숫자, 특수문자중 3가지 조합(8~16자) 또는 2가지 조합(10~16자)으로 설정해주세요.</div>
+                        <button type="button" id="btnSubmitNewPw" class="tapx mo-help-pw-reset-submit">확인</button>
+                    </div>
+                </div>
+
+                <!-- 2-2) 비밀번호 변경 완료 화면 -->
+                <div id="pwResetDoneSection" class="mo-help-pw-done-box" style="display:none">
+                    <span class="msi mo-help-pw-done-icon" aria-hidden="true">check_circle</span>
+                    <div class="mo-help-pw-done-title">비밀번호가 변경되었습니다</div>
+                    <div class="mo-help-pw-done-sub">새 비밀번호로 다시 로그인해 주세요.</div>
+                    <a href="login.html" class="tapx mo-help-pw-done-btn">로그인 하기</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- 5. 푸터 -->
+    <footer class="mo-footer">
+        <div class="mo-footer-info">
+            <div class="mo-footer-logo-row">
+                <img src="assets/4a8c512e-0a9d-4dcb-ab29-ce660091834d.png" alt="KBS아카데미" class="mo-footer-logo-img">
+                <div class="mo-footer-logo-title">원격평생교육원</div>
+            </div>
+            (주)리더스에듀 · 리더스원격평생교육원 · 사업자등록번호 209-81-56148 · 통신판매 제2013-부산사상구-0148호<br>
+            대표자 권영숙 · 본원소재지 (47007) 부산광역시 사상구 가야대로 348 KL빌딩 5층<br>
+            대표전화 1661-6726 · 팩스 070-8233-7077
+        </div>
+    </footer>
+
+    <!-- 6. 하단 고정 바 -->
+    <nav class="mo-bottom-fixed" aria-label="하단 고정 메뉴">
+        <div class="mo-bottom-nav">
+            <a href="main.html" class="tapx mo-nav-item"><span class="msi" aria-hidden="true">home</span><div class="mo-nav-lbl">홈</div></a>
+            <a href="tel:1661-6723" class="tapx mo-nav-item"><span class="msi" aria-hidden="true">call</span><div class="mo-nav-lbl">전화상담</div></a>
+            <div class="mo-nav-spacer" aria-hidden="true"></div>
+            <a href="course.html" class="tapx mo-nav-item"><span class="msi" aria-hidden="true">edit_calendar</span><div class="mo-nav-lbl">수강신청</div></a>
+            <a href="login.html" class="tapx mo-nav-item active" aria-current="page"><span class="msi" aria-hidden="true">lock</span><div class="mo-nav-lbl">로그인</div></a>
+        </div>
+    </nav>
+
+</div>
+
+</body>
+</html>

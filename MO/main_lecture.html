@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>가족상담및가족치료 강의실 - KBS아카데미 원격평생교육원</title>
+    <meta name="description" content="KBS아카데미 원격평생교육원 - 가족상담및가족치료 강의실 내부 메인 페이지입니다.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/a940c586-733e-4110-94d3-a7267230c4a5.png">
+
+    <!-- CSS Stylesheet (단독 myclass.css) -->
+    <link rel="stylesheet" href="css/myclass.css">
+
+    <!-- JavaScript (단독 myclass.js) -->
+    <script src="js/myclass.js"></script>
+</head>
+<body>
+
+<div class="mo-myclass-page">
+
+    <!-- 1. 상단 헤더 -->
+    <header class="mo-myclass-header">
+        <a href="#" id="btnOpenRoomMenu" class="tapx mo-myclass-btn-menu" aria-label="강의실 전체메뉴 열기">
+            <span class="msi" aria-hidden="true">menu</span>
+        </a>
+        <a href="main.html" class="mo-myclass-brand" aria-label="KBS아카데미 원격평생교육원 나의강의실로 이동">
+            <img src="assets/4a8c512e-0a9d-4dcb-ab29-ce660091834d.png" alt="KBS아카데미" class="mo-myclass-brand-logo">
+            <div class="mo-myclass-brand-sub">원격평생교육원</div>
+        </a>
+        <a href="main.html" class="tapx mo-myclass-btn-home" aria-label="나의 강의실로 이동">
+            <span class="msi" aria-hidden="true">home</span>
+        </a>
+    </header>
+
+    <!-- 2. '가족상담및가족치료 강의실' 배너 -->
+    <div class="mo-myclass-banner">가족상담및가족치료 강의실</div>
+
+    <!-- 3. 사이드 메뉴 오버레이 드로어 -->
+    <aside id="sideMenuRoomOverlay" class="mo-myclass-side-overlay" aria-label="강의실 메뉴">
+        <nav id="sideMenuRoomContainer" class="mo-myclass-side-box">
+            <!-- 유저 프로필 영역 -->
+            <div class="mo-myclass-side-user">
+                <div class="mo-myclass-side-user-row">
+                    <div class="mo-myclass-side-user-name">
+                        <span class="msi" aria-hidden="true">account_circle</span>
+                        <span>천세현 학습자님</span>
+                    </div>
+                    <a href="#" id="btnCloseRoomMenu" class="tapx mo-myclass-side-btn-close" aria-label="메뉴 닫기">
+                        <span class="msi" aria-hidden="true">close</span>
+                    </a>
+                </div>
+                <div class="mo-myclass-side-user-msg">오늘도 즐거운 수업 되시기 바랍니다.</div>
+                <div class="mo-myclass-side-user-id">ID : cshyun33</div>
+                <div class="mo-room-user-ip">접속중 : 117.111.150.61</div>
+            </div>
+
+            <!-- 아코디언 메뉴 리스트 -->
+            <div class="mo-myclass-side-nav">
+                <!-- 1) 학습메뉴 -->
+                <a href="#" id="btnToggleM1" class="tapx mo-room-acc-btn" aria-expanded="true">
+                    <span class="mo-room-acc-title">학습메뉴</span>
+                    <span id="iconM1" class="msi mo-room-acc-icon" aria-hidden="true">expand_less</span>
+                </a>
+                <div id="panelM1" class="mo-room-acc-panel">
+                    <a href="lecture_plan.html" class="tapx mo-myclass-side-nav-link">강의계획서</a>
+                    <a href="lecture_view.html" class="tapx mo-myclass-side-nav-link">강의수강</a>
+                    <a href="task.html" class="tapx mo-myclass-side-nav-link">과제방</a>
+                    <a href="debate.html" class="tapx mo-myclass-side-nav-link">토론방</a>
+                </div>
+
+                <!-- 2) 과목게시판 -->
+                <a href="#" id="btnToggleM2" class="tapx mo-room-acc-btn" aria-expanded="true">
+                    <span class="mo-room-acc-title">과목게시판</span>
+                    <span id="iconM2" class="msi mo-room-acc-icon" aria-hidden="true">expand_less</span>
+                </a>
+                <div id="panelM2" class="mo-room-acc-panel">
+                    <a href="#" class="tapx mo-myclass-side-nav-link">과목공지사항</a>
+                    <a href="subject_data.html" class="tapx mo-myclass-side-nav-link">과목자료실</a>
+                    <a href="subject_qna.html" class="tapx mo-myclass-side-nav-link">과목질의응답</a>
+                    <a href="consult.html" class="tapx mo-myclass-side-nav-link">1:1 학습상담</a>
+                    <a href="board_free.html" class="tapx mo-myclass-side-nav-link">자유게시판</a>
+                </div>
+            </div>
+
+            <!-- 원격지원센터 안내 -->
+            <div class="mo-myclass-side-cs">
+                <div class="mo-myclass-side-cs-lbl">원격지원센터</div>
+                <div class="mo-myclass-side-cs-phone">1661-6726</div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- 4. 본문 메인 콘텐츠 -->
+    <main class="mo-myclass-content" aria-label="강의실 메인 본문">
+
+        <!-- 1) 과목 정보 & 바로가기 카드 -->
+        <section class="mo-myclass-card" aria-label="강의실 과목 정보">
+            <div class="mo-room-info-row">
+                <div class="mo-room-info-lbl">강의실 이동</div>
+                <select class="mo-room-select" aria-label="강의실 과목 선택">
+                    <option>2026년 2학기 3기 - 가족상담및가족치료</option>
+                </select>
+            </div>
+            <div class="mo-room-info-row">
+                <div class="mo-room-info-lbl">담당교수</div>
+                <div class="mo-room-info-val">이유리 교수님</div>
+            </div>
+            <div class="mo-room-btn-row">
+                <a href="lecture_plan.html" class="tapx mo-room-btn-outline">강의계획서 보기</a>
+                <a href="lecture_view.html" class="tapx mo-room-btn-solid">강의수강하기</a>
+            </div>
+        </section>
+
+        <!-- 2) 과목 게시판 탭 & 공지사항 테이블 카드 -->
+        <section class="mo-myclass-card" aria-label="과목 게시판">
+            <nav class="mo-room-tab-bar" aria-label="게시판 탭">
+                <a href="#" class="mo-room-tab-item active" aria-current="page">과목공지사항</a>
+                <a href="subject_data.html" class="mo-room-tab-item">과목자료실</a>
+                <a href="subject_qna.html" class="mo-room-tab-item">과목질의응답</a>
+                <a href="consult.html" class="mo-room-tab-item">1:1학습상담</a>
+                <a href="board_free.html" class="mo-room-tab-item">자유게시판</a>
+            </nav>
+            <table class="mo-room-notice-table" aria-label="과목 공지사항 목록">
+                <thead>
+                    <tr>
+                        <th scope="col" class="mo-th-ntitle">제목</th>
+                        <th scope="col" class="mo-th-nauthor">작성자</th>
+                        <th scope="col" class="mo-th-ndate">작성일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="mo-room-td-title">주제토론 기간 및 토론 참여 방법 안내</td>
+                        <td class="mo-room-td-author">관리자</td>
+                        <td class="mo-room-td-date">08-27</td>
+                    </tr>
+                    <tr>
+                        <td class="mo-room-td-title">주제토론 및 과제 주제 사전 공지</td>
+                        <td class="mo-room-td-author">관리자</td>
+                        <td class="mo-room-td-date">08-20</td>
+                    </tr>
+                    <tr>
+                        <td class="mo-room-td-title">반갑습니다. 담당교수 이유리입니다~</td>
+                        <td class="mo-room-td-author is-prof">이유리교수</td>
+                        <td class="mo-room-td-date">08-13</td>
+                    </tr>
+                    <tr>
+                        <td class="mo-room-td-title">참여도 점수 관련 공지</td>
+                        <td class="mo-room-td-author">관리자</td>
+                        <td class="mo-room-td-date">08-12</td>
+                    </tr>
+                    <tr>
+                        <td class="mo-room-td-title">출석인정 요건 및 강의수강 방법 안내</td>
+                        <td class="mo-room-td-author">관리자</td>
+                        <td class="mo-room-td-date">08-12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 3) 학사일정 카드 -->
+        <section class="mo-myclass-card" aria-label="과목 학사일정">
+            <h2 class="mo-myclass-card-title">학사일정</h2>
+            <table class="mo-room-schedule-table" aria-label="학사일정 목록">
+                <thead>
+                    <tr>
+                        <th scope="col">일정</th>
+                        <th scope="col">기간</th>
+                        <th scope="col">상태</th>
+                        <th scope="col">참고사항</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="mo-room-td-schedule">주제토론</td>
+                        <td class="mo-room-td-period">09-10~09-23</td>
+                        <td class="mo-room-td-status">기간전</td>
+                        <td class="mo-room-td-note"><a href="debate.html" class="mo-room-note-link">내용열람</a></td>
+                    </tr>
+                    <tr>
+                        <td class="mo-room-td-schedule">중간고사</td>
+                        <td class="mo-room-td-period">10-02~10-05</td>
+                        <td class="mo-room-td-status">기간전</td>
+                        <td class="mo-room-td-note"><span class="mo-room-note-muted">PC 전용</span></td>
+                    </tr>
+                    <tr>
+                        <td class="mo-room-td-schedule">과제물</td>
+                        <td class="mo-room-td-period">10-22~11-04</td>
+                        <td class="mo-room-td-status">기간전</td>
+                        <td class="mo-room-td-note"><a href="task.html" class="mo-room-note-link">내용열람</a></td>
+                    </tr>
+                    <tr>
+                        <td class="mo-room-td-schedule">퀴즈</td>
+                        <td class="mo-room-td-period">11-06~11-09</td>
+                        <td class="mo-room-td-status">기간전</td>
+                        <td class="mo-room-td-note"><span class="mo-room-note-muted">PC 전용</span></td>
+                    </tr>
+                    <tr>
+                        <td class="mo-room-td-schedule">기말고사</td>
+                        <td class="mo-room-td-period">11-20~11-23</td>
+                        <td class="mo-room-td-status">기간전</td>
+                        <td class="mo-room-td-note"><span class="mo-room-note-muted">PC 전용</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 4) 나의강의실로 이동 버튼 -->
+        <a href="main.html" class="tapx mo-room-btn-back">나의강의실로</a>
+
+    </main>
+
+    <!-- 5. 하단 고정 네비게이션 바 -->
+    <div class="mo-myclass-bottom-fixed">
+        <nav class="mo-myclass-bottom-nav" aria-label="하단 메뉴">
+            <a href="login.html" class="tapx mo-myclass-nav-item">
+                <span class="msi" aria-hidden="true">logout</span>
+                <div class="mo-myclass-nav-lbl">로그아웃</div>
+            </a>
+            <a href="main.html" class="tapx mo-myclass-nav-item">
+                <span class="msi" aria-hidden="true">home</span>
+                <div class="mo-myclass-nav-lbl">메인으로</div>
+            </a>
+            <a href="lecture_view.html" class="tapx mo-myclass-nav-item active">
+                <span class="msi" aria-hidden="true">play_circle</span>
+                <div class="mo-myclass-nav-lbl">강의수강하기</div>
+            </a>
+            <a href="#" id="btnRoomNoticeBox" class="tapx mo-myclass-nav-item">
+                <div class="mo-myclass-badge-wrap">
+                    <span class="msi" aria-hidden="true">notifications</span>
+                    <span class="mo-myclass-badge">0</span>
+                </div>
+                <div class="mo-myclass-nav-lbl">알림함</div>
+            </a>
+        </nav>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1420 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   Google Fonts & Material Symbols (Standalone)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+/* ==========================================================================
+   Base & Reset Styles (Standalone)
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #F1F3F6;
+  font-family: 'Noto Sans KR', 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #1A1D24;
+  word-break: keep-all;
+}
+
+a {
+  color: #00479D;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Material Symbols Icons & Tap Interaction
+   ========================================================================== */
+.msi {
+  font-family: 'Material Symbols Rounded';
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  display: inline-block;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+}
+
+.tapx {
+  transition: transform 0.12s ease, opacity 0.12s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tapx:active {
+  transform: scale(0.97);
+  opacity: 0.9;
+}
+
+/* ==========================================================================
+   KBS아카데미 원격평생교육원 - 나의 강의실 & 강의실 내부 스타일
+   ========================================================================== */
+
+/* 전체 페이지 레이아웃 */
+.mo-myclass-page {
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #F1F3F6;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* 1. 상단 헤더 */
+.mo-myclass-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #FFFFFF;
+  border-bottom: 1px solid #ECEEF2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.mo-myclass-btn-menu {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  border-radius: 6px;
+  color: #1A1D24;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+
+.mo-myclass-btn-menu:active {
+  background: #F2F4F7;
+  transform: scale(0.96);
+}
+
+.mo-myclass-btn-menu .msi {
+  font-size: 21px;
+  color: #1A1D24;
+}
+
+.mo-myclass-brand {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+}
+
+.mo-myclass-brand-logo {
+  height: 22px;
+  width: auto;
+  display: block;
+}
+
+.mo-myclass-brand-sub {
+  font-size: 12.9px;
+  font-weight: 800;
+  color: #00479D;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.mo-myclass-btn-home {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  border-radius: 6px;
+  color: #1A1D24;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+
+.mo-myclass-btn-home:active {
+  background: #F2F4F7;
+  transform: scale(0.96);
+}
+
+.mo-myclass-btn-home .msi {
+  font-size: 20px;
+  color: #1A1D24;
+}
+
+/* 2. 상단 배너 */
+.mo-myclass-banner {
+  background: linear-gradient(120deg, #00479D 0%, #00305F 100%);
+  padding: 12px 16px 14px;
+  font-size: 15.5px;
+  font-weight: 900;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+  flex: none;
+}
+
+/* 3. 사이드 메뉴 오버레이 드로어 */
+.mo-myclass-side-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(20, 24, 32, 0.55);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.mo-myclass-side-overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+.mo-myclass-side-box {
+  width: 80%;
+  max-width: 340px;
+  height: 100%;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  box-sizing: border-box;
+}
+
+.mo-myclass-side-overlay.active .mo-myclass-side-box {
+  transform: translateX(0);
+}
+
+.mo-myclass-side-user {
+  background: linear-gradient(120deg, #00479D 0%, #00305F 100%);
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: none;
+}
+
+.mo-myclass-side-user-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mo-myclass-side-user-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15.5px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.mo-myclass-side-user-name .msi {
+  font-size: 19px;
+  color: #FFFFFF;
+}
+
+.mo-myclass-side-btn-close {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.mo-myclass-side-btn-close .msi {
+  font-size: 22px;
+}
+
+.mo-myclass-side-user-msg {
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.mo-myclass-side-user-id {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mo-room-user-ip {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mo-myclass-side-nav {
+  padding: 6px 6px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.mo-myclass-side-nav-title {
+  padding: 12px 12px 6px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #00479D;
+}
+
+.mo-myclass-side-nav-link {
+  padding: 11px 12px;
+  font-size: 14px;
+  color: #1A1D24;
+  text-decoration: none;
+  display: block;
+  transition: background 0.12s ease;
+  border-radius: 6px;
+}
+
+.mo-myclass-side-nav-link.active {
+  color: #00479D;
+  font-weight: 700;
+  background: #F2F4F7;
+}
+
+.mo-myclass-side-nav-link:active {
+  background: #F2F4F7;
+  color: #00479D;
+}
+
+/* 아코디언 메뉴 스타일 */
+.mo-room-acc-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 12px 6px;
+  text-decoration: none;
+  user-select: none;
+}
+
+.mo-room-acc-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #00479D;
+}
+
+.mo-room-acc-icon {
+  font-size: 21px;
+  color: #00479D;
+}
+
+.mo-room-acc-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.mo-room-acc-panel.is-collapsed {
+  display: none;
+}
+
+.mo-myclass-side-logout-wrap {
+  padding: 0 12px;
+  margin-top: 6px;
+}
+
+.mo-myclass-side-btn-logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background: #F1F3F6;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #6B7280;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.mo-myclass-side-btn-logout:active {
+  background: #E5E7EB;
+}
+
+.mo-myclass-side-cs {
+  margin-top: auto;
+  padding: 14px 16px;
+  background: #F7F8FA;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: none;
+  border-top: 1px solid #ECEEF2;
+}
+
+.mo-myclass-side-cs-lbl {
+  font-size: 11.5px;
+  color: #98A2B3;
+}
+
+.mo-myclass-side-cs-phone {
+  font-family: 'Archivo', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #00479D;
+}
+
+/* 4. 본문 컨테이너 */
+.mo-myclass-content {
+  padding: 14px 14px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-sizing: border-box;
+}
+
+/* 카드 공통 */
+.mo-myclass-card {
+  background: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(16, 24, 40, 0.04);
+}
+
+.mo-myclass-card-title {
+  padding: 12px 14px;
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #1A1D24;
+  border-bottom: 2px solid #F1F3F6;
+}
+
+/* 학사일정공지 리스트 (main.html) */
+.mo-myclass-notice-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mo-myclass-notice-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #F2F3F5;
+  text-decoration: none;
+  transition: background 0.12s ease;
+}
+
+.mo-myclass-notice-item:last-child {
+  border-bottom: none;
+}
+
+.mo-myclass-notice-item:active {
+  background: #F8FAFC;
+}
+
+.mo-myclass-notice-title {
+  font-size: 12.5px;
+  color: #3A4152;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.mo-myclass-notice-date {
+  font-size: 11px;
+  color: #98A2B3;
+  flex: none;
+}
+
+/* 학습종료 주의 안내 박스 */
+.mo-myclass-warning-box {
+  background: #FFF7E8;
+  border: 1px solid #FBE4B4;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 11.5px;
+  line-height: 1.65;
+  color: #8A5A0E;
+  word-break: keep-all;
+}
+
+/* 학습가능한 과목 섹션 (main.html) */
+.mo-myclass-subject-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mo-myclass-sec-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14.5px;
+  font-weight: 800;
+  color: #1A1D24;
+}
+
+.mo-myclass-sec-title .msi {
+  font-size: 18px;
+  color: #00479D;
+}
+
+/* 기수별 과목 테이블 카드 (main.html) */
+.mo-myclass-table-card {
+  background: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(16, 24, 40, 0.04);
+}
+
+.mo-myclass-table-card.is-closed {
+  opacity: 0.75;
+}
+
+.mo-myclass-table-card-head {
+  padding: 9px 14px;
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #FFFFFF;
+  background: #4B5D78;
+}
+
+.mo-myclass-table-card.is-closed .mo-myclass-table-card-head {
+  background: #9BA3AF;
+}
+
+.mo-myclass-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11.5px;
+}
+
+.mo-myclass-table th {
+  background: #F7F8FA;
+  color: #3A4152;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 4px;
+  border-bottom: 1px solid #ECEEF2;
+}
+
+.mo-myclass-table th.mo-th-subject {
+  width: 38%;
+}
+
+.mo-myclass-table th.mo-th-progress {
+  width: 22%;
+}
+
+.mo-myclass-table th.mo-th-rate {
+  width: 20%;
+}
+
+.mo-myclass-table th.mo-th-action {
+  width: 20%;
+}
+
+.mo-myclass-table td {
+  padding: 9px 4px;
+  border-bottom: 1px solid #F2F3F5;
+  text-align: center;
+  color: #1A1D24;
+  vertical-align: middle;
+}
+
+.mo-myclass-table tr:last-child td {
+  border-bottom: none;
+}
+
+.mo-myclass-table td.subject-name {
+  text-align: left;
+  padding-left: 10px;
+  font-weight: 600;
+  color: #1A1D24;
+  word-break: keep-all;
+}
+
+.mo-myclass-table td.sub-info {
+  color: #6B7280;
+  line-height: 1.4;
+  font-size: 11px;
+}
+
+.mo-myclass-btn-enter {
+  display: inline-flex;
+  height: 26px;
+  padding: 0 8px;
+  align-items: center;
+  justify-content: center;
+  background: #00479D;
+  border-radius: 5px;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #FFFFFF;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.mo-myclass-btn-enter:hover {
+  background: #00387D;
+}
+
+.mo-myclass-btn-enter:active {
+  transform: scale(0.96);
+}
+
+.mo-myclass-btn-enter.disabled {
+  background: #6B7280;
+}
+
+.mo-myclass-btn-enter.disabled:hover {
+  background: #5A606D;
+}
+
+/* ==========================================================================
+   강의실 내부 메인 (main_lecture.html) 전용 스타일
+   ========================================================================== */
+
+/* 과목 정보 & 바로가기 버튼 카드 */
+.mo-room-info-row {
+  display: flex;
+  align-items: center;
+  padding: 11px 14px;
+  border-bottom: 1px solid #F2F3F5;
+  font-size: 12.5px;
+}
+
+.mo-room-info-lbl {
+  width: 78px;
+  flex: none;
+  font-weight: 700;
+  color: #6B7280;
+}
+
+.mo-room-info-val {
+  color: #1A1D24;
+}
+
+.mo-room-select {
+  flex: 1;
+  height: 30px;
+  border: 1px solid #DEE1E7;
+  border-radius: 6px;
+  font-size: 11px;
+  min-width: 0;
+  background: #FFFFFF;
+  padding: 0 6px;
+  color: #1A1D24;
+  outline: none;
+}
+
+.mo-room-btn-row {
+  display: flex;
+  padding: 11px 14px;
+  gap: 8px;
+}
+
+.mo-room-btn-outline {
+  flex: 1;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 1.5px solid #00479D;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #00479D;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.mo-room-btn-outline:active {
+  background: #F2F6FB;
+}
+
+.mo-room-btn-solid {
+  flex: 1;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00479D;
+  border: 1.5px solid #00479D;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.mo-room-btn-solid:active {
+  background: #00387D;
+}
+
+/* 과목 게시판 탭 & 공지 테이블 */
+.mo-room-tab-bar {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-bottom: 1px solid #ECEEF2;
+  scrollbar-width: none;
+}
+
+.mo-room-tab-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.mo-room-tab-item {
+  flex: none;
+  padding: 11px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6B7280;
+  white-space: nowrap;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.mo-room-tab-item.active {
+  font-weight: 700;
+  color: #00479D;
+  border-bottom: 2px solid #00479D;
+}
+
+.mo-room-tab-item:active {
+  color: #00479D;
+}
+
+.mo-room-notice-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11.5px;
+}
+
+.mo-room-notice-table th {
+  background: #F7F8FA;
+  color: #3A4152;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 4px;
+  border-bottom: 1px solid #ECEEF2;
+}
+
+.mo-room-notice-table th.mo-th-ntitle {
+  padding-left: 12px;
+  text-align: center;
+}
+
+.mo-room-notice-table th.mo-th-nauthor {
+  width: 64px;
+}
+
+.mo-room-notice-table th.mo-th-ndate {
+  width: 56px;
+}
+
+.mo-room-notice-table td {
+  padding: 9px 4px;
+  border-bottom: 1px solid #F2F3F5;
+  text-align: center;
+  color: #1A1D24;
+  vertical-align: middle;
+}
+
+.mo-room-notice-table tr:last-child td {
+  border-bottom: none;
+}
+
+.mo-room-td-title {
+  padding-left: 12px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 0;
+  color: #1A1D24;
+}
+
+.mo-room-td-author {
+  color: #6B7280;
+  font-size: 11px;
+}
+
+.mo-room-td-author.is-prof {
+  color: #00479D;
+  font-weight: 700;
+}
+
+.mo-room-td-date {
+  color: #98A2B3;
+  font-size: 11px;
+}
+
+/* 학사일정 테이블 (main_lecture.html) */
+.mo-room-schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11.5px;
+}
+
+.mo-room-schedule-table th {
+  background: #F7F8FA;
+  color: #3A4152;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 4px;
+  border-bottom: 1px solid #ECEEF2;
+}
+
+.mo-room-schedule-table td {
+  padding: 9px 4px;
+  border-bottom: 1px solid #F2F3F5;
+  text-align: center;
+  color: #1A1D24;
+  vertical-align: middle;
+}
+
+.mo-room-schedule-table tr:last-child td {
+  border-bottom: none;
+}
+
+.mo-room-td-schedule {
+  font-weight: 600;
+  color: #1A1D24;
+}
+
+.mo-room-td-period {
+  color: #6B7280;
+  font-size: 11px;
+}
+
+.mo-room-td-status {
+  color: #98A2B3;
+  font-size: 11px;
+}
+
+.mo-room-td-note {
+  font-size: 11px;
+}
+
+.mo-room-note-link {
+  color: #00479D;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mo-room-note-link:hover {
+  text-decoration: underline;
+}
+
+.mo-room-note-muted {
+  color: #98A2B3;
+}
+
+/* 나의강의실로 복귀 버튼 */
+.mo-room-btn-back {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 1.5px solid #DEE1E7;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #6B7280;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.mo-room-btn-back:hover {
+  background: #F9FAFB;
+  border-color: #D0D5DD;
+}
+
+.mo-room-btn-back:active {
+  background: #F2F4F7;
+  transform: scale(0.98);
+}
+
+/* ==========================================================================
+   1:1 학습상담 (view_list.html) 전용 스타일
+   ========================================================================== */
+
+/* 상단 과목 선택 바 */
+.mo-consult-selector-bar {
+  padding: 12px 14px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #ECEEF2;
+}
+
+.mo-consult-select {
+  width: 100%;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid #DEE1E7;
+  border-radius: 7px;
+  font-size: 12.5px;
+  color: #1A1D24;
+  background: #FFFFFF;
+  outline: none;
+}
+
+/* 상담 목록 테이블 */
+.mo-consult-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11.5px;
+}
+
+.mo-consult-table th {
+  background: #F7F8FA;
+  color: #3A4152;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 4px;
+  border-bottom: 1px solid #ECEEF2;
+}
+
+.mo-consult-th-title {
+  padding-left: 12px !important;
+  text-align: left !important;
+}
+
+.mo-consult-th-author {
+  width: 56px;
+}
+
+.mo-consult-th-date {
+  width: 56px;
+}
+
+.mo-consult-th-views {
+  width: 36px;
+}
+
+/* 등록된 상담 없을 때 빈 상태 메시지 */
+.mo-consult-empty {
+  padding: 30px 14px;
+  text-align: center;
+  font-size: 12.5px;
+  color: #6B7280;
+}
+
+/* 글쓰기 버튼 */
+.mo-consult-btn-write {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00479D;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+
+.mo-consult-btn-write:hover {
+  background: #00387D;
+}
+
+.mo-consult-btn-write:active {
+  transform: scale(0.98);
+}
+
+.mo-consult-btn-write.is-hidden {
+  display: none;
+}
+
+/* 글쓰기 폼 카드 */
+.mo-consult-form-card {
+  background: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(16, 24, 40, 0.04);
+}
+
+.mo-consult-form-card.is-hidden {
+  display: none;
+}
+
+.mo-consult-form-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.mo-consult-form-table th {
+  width: 68px;
+  padding: 11px 10px;
+  text-align: center;
+  background: #F7F8FA;
+  font-weight: 700;
+  color: #3A4152;
+  border-bottom: 1px solid #F2F3F5;
+}
+
+.mo-consult-form-table td {
+  padding: 11px 10px;
+  border-bottom: 1px solid #F2F3F5;
+}
+
+.mo-consult-form-table tr:last-child th,
+.mo-consult-form-table tr:last-child td {
+  border-bottom: none;
+}
+
+.mo-consult-form-th-top {
+  vertical-align: top;
+}
+
+.mo-consult-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 12.5px;
+  font-family: inherit;
+  color: #1A1D24;
+  background: transparent;
+}
+
+.mo-consult-input::placeholder {
+  color: #98A2B3;
+}
+
+.mo-consult-textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 12.5px;
+  resize: vertical;
+  font-family: inherit;
+  color: #1A1D24;
+  background: transparent;
+}
+
+.mo-consult-textarea::placeholder {
+  color: #98A2B3;
+}
+
+/* 글쓰기 완료 버튼 */
+.mo-consult-btn-submit {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00479D;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+
+.mo-consult-btn-submit:hover {
+  background: #00387D;
+}
+
+.mo-consult-btn-submit:active {
+  transform: scale(0.98);
+}
+
+.mo-consult-btn-submit.is-hidden {
+  display: none;
+}
+
+/* ==========================================================================
+   강의계획서 (lecture_plan.html) 전용 스타일
+   ========================================================================== */
+
+.mo-plan-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.mo-plan-table th {
+  padding: 11px 10px;
+  text-align: left;
+  background: #F7F8FA;
+  font-weight: 700;
+  color: #3A4152;
+  white-space: nowrap;
+  border-bottom: 1px solid #F2F3F5;
+}
+
+.mo-plan-table th.mo-plan-th-top {
+  vertical-align: top;
+}
+
+.mo-plan-table td {
+  padding: 11px 10px;
+  color: #3A4152;
+  line-height: 1.7;
+  border-bottom: 1px solid #F2F3F5;
+}
+
+.mo-plan-table tr:last-child th,
+.mo-plan-table tr:last-child td {
+  border-bottom: none;
+}
+
+.mo-plan-table td.mo-plan-td-dark {
+  color: #1A1D24;
+}
+
+.mo-plan-table td.mo-plan-td-score {
+  color: #1A1D24;
+  line-height: 1.8;
+}
+
+.mo-plan-table td.mo-plan-td-score b {
+  font-weight: 700;
+}
+
+.mo-plan-table td.mo-plan-td-empty {
+  color: #98A2B3;
+}
+
+.mo-plan-table td.mo-plan-td-week {
+  padding: 9px 10px;
+}
+
+/* 주차별 강의내용 토글 버튼 */
+.mo-plan-btn-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 34px;
+  background: #F1F3F6;
+  border: 1px solid #DEE1E7;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #3A4152;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.12s ease;
+}
+
+.mo-plan-btn-toggle:hover {
+  background: #E5E7EB;
+}
+
+.mo-plan-btn-toggle:active {
+  transform: scale(0.98);
+}
+
+/* 주차별 상세 내용 */
+.mo-plan-week-detail {
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 1.75;
+  color: #3A4152;
+}
+
+.mo-plan-week-detail.is-hidden {
+  display: none;
+}
+
+.mo-plan-week-ttl {
+  font-weight: 800;
+  color: #00479D;
+  margin-bottom: 4px;
+}
+
+.mo-plan-week-desc {
+  white-space: pre-wrap;
+  word-break: keep-all;
+}
+
+/* 강의수강 바로가기 버튼 */
+.mo-plan-btn-primary {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00479D;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+
+.mo-plan-btn-primary:hover {
+  background: #00387D;
+}
+
+.mo-plan-btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* ==========================================================================
+   강의수강 (lecture_unit.html) 전용 스타일
+   ========================================================================== */
+
+.mo-unit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mo-unit-card {
+  background: #FFFFFF;
+  border-radius: 9px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.04);
+  box-sizing: border-box;
+}
+
+.mo-unit-card.is-active {
+  background: #EAF7DC;
+}
+
+.mo-unit-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.mo-unit-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: none;
+}
+
+.mo-unit-week {
+  font-size: 13px;
+  font-weight: 800;
+  color: #1A1D24;
+}
+
+.mo-unit-date {
+  font-size: 10.5px;
+  color: #6B7280;
+}
+
+.mo-unit-title {
+  flex: 1;
+  font-size: 12.5px;
+  color: #1A1D24;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+.mo-unit-btn {
+  flex: none;
+  height: 26px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #FFFFFF;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+
+.mo-unit-btn:active {
+  transform: scale(0.96);
+}
+
+.mo-unit-btn-review {
+  background: #8A90A0;
+}
+
+.mo-unit-btn-review:hover {
+  background: #7A8090;
+}
+
+.mo-unit-btn-study {
+  background: #00479D;
+}
+
+.mo-unit-btn-study:hover {
+  background: #00387D;
+}
+
+.mo-unit-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 7px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  gap: 8px;
+}
+
+.mo-unit-progress {
+  font-size: 11px;
+  color: #6B7280;
+  flex: 1;
+  min-width: 0;
+}
+
+.mo-unit-pages {
+  display: flex;
+  gap: 2px;
+  flex: none;
+}
+
+.mo-unit-page-item {
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  font-weight: 700;
+  color: #FFFFFF;
+  flex: none;
+  background: #C9CFD9;
+}
+
+.mo-unit-page-item.is-on {
+  background: #E8862F;
+}
+
+.mo-unit-status {
+  font-size: 11.5px;
+  font-weight: 700;
+  flex: none;
+}
+
+.mo-unit-status.is-absent {
+  color: #B03A3A;
+}
+
+.mo-unit-status.is-available {
+  color: #2E7D46;
+}
+
+.mo-unit-status.is-upcoming {
+  color: #1D4ED8;
+}
+
+/* 5. 하단 고정 네비게이션 바 */
+.mo-myclass-bottom-fixed {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  max-width: 390px;
+  z-index: 100;
+}
+
+.mo-myclass-bottom-nav {
+  background: #FFFFFF;
+  border-top: 1px solid #ECEEF2;
+  display: flex;
+  align-items: stretch;
+  height: 58px;
+  box-shadow: 0 -6px 20px rgba(16, 24, 40, 0.06);
+}
+
+.mo-myclass-nav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5px;
+  text-decoration: none;
+  transition: background 0.12s ease;
+}
+
+.mo-myclass-nav-item:active {
+  background: #F8FAFC;
+}
+
+.mo-myclass-nav-item .msi {
+  font-size: 21px;
+  color: #8A90A0;
+}
+
+.mo-myclass-nav-item.active .msi {
+  color: #00479D;
+}
+
+.mo-myclass-nav-lbl {
+  font-size: 10px;
+  font-weight: 500;
+  color: #6B7280;
+}
+
+.mo-myclass-nav-item.active .mo-myclass-nav-lbl {
+  font-weight: 700;
+  color: #00479D;
+}
+
+.mo-myclass-badge-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.mo-myclass-badge {
+  position: absolute;
+  top: -3px;
+  right: -6px;
+  min-width: 14px;
+  height: 14px;
+  padding: 0 3px;
+  border-radius: 7px;
+  background: #D9541E;
+  font-size: 9px;
+  font-weight: 800;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}

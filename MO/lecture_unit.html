@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>강의수강 - 가족상담및가족치료 | KBS아카데미 원격평생교육원</title>
+    <meta name="description" content="KBS아카데미 원격평생교육원 - 가족상담및가족치료 강의수강 차시 목록입니다.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/a940c586-733e-4110-94d3-a7267230c4a5.png">
+
+    <!-- CSS Stylesheet (단독 myclass.css) -->
+    <link rel="stylesheet" href="css/myclass.css">
+
+    <!-- JavaScript (단독 myclass.js) -->
+    <script src="js/myclass.js"></script>
+</head>
+<body>
+
+<div class="mo-myclass-page">
+
+    <!-- 1. 상단 헤더 -->
+    <header class="mo-myclass-header">
+        <a href="#" id="btnOpenUnitMenu" class="tapx mo-myclass-btn-menu" aria-label="강의실 전체메뉴 열기">
+            <span class="msi" aria-hidden="true">menu</span>
+        </a>
+        <a href="main.html" class="mo-myclass-brand" aria-label="KBS아카데미 원격평생교육원 나의강의실로 이동">
+            <img src="assets/4a8c512e-0a9d-4dcb-ab29-ce660091834d.png" alt="KBS아카데미" class="mo-myclass-brand-logo">
+            <div class="mo-myclass-brand-sub">원격평생교육원</div>
+        </a>
+        <a href="main.html" class="tapx mo-myclass-btn-home" aria-label="나의 강의실로 이동">
+            <span class="msi" aria-hidden="true">home</span>
+        </a>
+    </header>
+
+    <!-- 2. '가족상담및가족치료 강의수강' 배너 -->
+    <div class="mo-myclass-banner">가족상담및가족치료 강의수강</div>
+
+    <!-- 3. 상단 과목 선택 드롭다운 바 -->
+    <div class="mo-consult-selector-bar">
+        <select class="mo-consult-select" aria-label="과목 선택">
+            <option>2026년 2학기 3기 - 가족상담및가족치료</option>
+        </select>
+    </div>
+
+    <!-- 4. 사이드 메뉴 오버레이 드로어 -->
+    <aside id="sideMenuUnitOverlay" class="mo-myclass-side-overlay" aria-label="강의실 메뉴">
+        <nav id="sideMenuUnitContainer" class="mo-myclass-side-box">
+            <!-- 유저 프로필 영역 -->
+            <div class="mo-myclass-side-user">
+                <div class="mo-myclass-side-user-row">
+                    <div class="mo-myclass-side-user-name">
+                        <span class="msi" aria-hidden="true">account_circle</span>
+                        <span>천세현 학습자님</span>
+                    </div>
+                    <a href="#" id="btnCloseUnitMenu" class="tapx mo-myclass-side-btn-close" aria-label="메뉴 닫기">
+                        <span class="msi" aria-hidden="true">close</span>
+                    </a>
+                </div>
+                <div class="mo-myclass-side-user-msg">오늘도 즐거운 수업 되시기 바랍니다.</div>
+                <div class="mo-myclass-side-user-id">ID : cshyun33</div>
+                <div class="mo-room-user-ip">접속중 : 117.111.150.61</div>
+            </div>
+
+            <!-- 아코디언 메뉴 리스트 -->
+            <div class="mo-myclass-side-nav">
+                <!-- 1) 학습메뉴 -->
+                <a href="#" id="btnUnitToggleM1" class="tapx mo-room-acc-btn" aria-expanded="true">
+                    <span class="mo-room-acc-title">학습메뉴</span>
+                    <span id="iconUnitM1" class="msi mo-room-acc-icon" aria-hidden="true">expand_less</span>
+                </a>
+                <div id="panelUnitM1" class="mo-room-acc-panel">
+                    <a href="lecture_plan.html" class="tapx mo-myclass-side-nav-link">강의계획서</a>
+                    <a href="lecture_unit.html" class="tapx mo-myclass-side-nav-link active">강의수강</a>
+                    <a href="task.html" class="tapx mo-myclass-side-nav-link">과제방</a>
+                    <a href="debate.html" class="tapx mo-myclass-side-nav-link">토론방</a>
+                </div>
+
+                <!-- 2) 과목게시판 -->
+                <a href="#" id="btnUnitToggleM2" class="tapx mo-room-acc-btn" aria-expanded="true">
+                    <span class="mo-room-acc-title">과목게시판</span>
+                    <span id="iconUnitM2" class="msi mo-room-acc-icon" aria-hidden="true">expand_less</span>
+                </a>
+                <div id="panelUnitM2" class="mo-room-acc-panel">
+                    <a href="main_lecture.html" class="tapx mo-myclass-side-nav-link">과목공지사항</a>
+                    <a href="subject_data.html" class="tapx mo-myclass-side-nav-link">과목자료실</a>
+                    <a href="subject_qna.html" class="tapx mo-myclass-side-nav-link">과목질의응답</a>
+                    <a href="view_list.html" class="tapx mo-myclass-side-nav-link">1:1 학습상담</a>
+                    <a href="board_free.html" class="tapx mo-myclass-side-nav-link">자유게시판</a>
+                </div>
+            </div>
+
+            <!-- 원격지원센터 안내 -->
+            <div class="mo-myclass-side-cs">
+                <div class="mo-myclass-side-cs-lbl">원격지원센터</div>
+                <div class="mo-myclass-side-cs-phone">1661-6726</div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- 5. 본문 메인 콘텐츠 -->
+    <main class="mo-myclass-content" aria-label="강의 차시 목록 본문">
+
+        <div class="mo-unit-list">
+            <!-- 1주 1차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">1주1차</div>
+                        <div class="mo-unit-date">08.13~08.26</div>
+                    </div>
+                    <div class="mo-unit-title">가족상담 및 치료의 정의와 의의</div>
+                    <a href="#" class="tapx mo-unit-btn mo-unit-btn-review">복습하기</a>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">미수강</div>
+                    <div class="mo-unit-status is-absent">결석</div>
+                </div>
+            </article>
+
+            <!-- 1주 2차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">1주2차</div>
+                        <div class="mo-unit-date">08.13~08.26</div>
+                    </div>
+                    <div class="mo-unit-title">가족상담 및 치료의 발달에 영향을 준 이론</div>
+                    <a href="#" class="tapx mo-unit-btn mo-unit-btn-review">복습하기</a>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">미수강</div>
+                    <div class="mo-unit-status is-absent">결석</div>
+                </div>
+            </article>
+
+            <!-- 1주 3차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">1주3차</div>
+                        <div class="mo-unit-date">08.13~08.26</div>
+                    </div>
+                    <div class="mo-unit-title">서구와 한국에서의 가족상담 및 치료의 발달과정</div>
+                    <a href="#" class="tapx mo-unit-btn mo-unit-btn-review">복습하기</a>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">미수강</div>
+                    <div class="mo-unit-status is-absent">결석</div>
+                </div>
+            </article>
+
+            <!-- 2주 1차 (Active) -->
+            <article class="mo-unit-card is-active">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">2주1차</div>
+                        <div class="mo-unit-date">08.20~09.02</div>
+                    </div>
+                    <div class="mo-unit-title">가족체계에 대한 이해</div>
+                    <a href="#" class="tapx mo-unit-btn mo-unit-btn-study">학습하기</a>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">출석 기준시간 1.71% 충족</div>
+                    <div class="mo-unit-pages" aria-label="학습 진도 페이지">
+                        <div class="mo-unit-page-item is-on">1</div>
+                        <div class="mo-unit-page-item is-on">2</div>
+                        <div class="mo-unit-page-item is-on">3</div>
+                        <div class="mo-unit-page-item is-on">4</div>
+                        <div class="mo-unit-page-item is-on">5</div>
+                        <div class="mo-unit-page-item is-on">6</div>
+                        <div class="mo-unit-page-item">7</div>
+                        <div class="mo-unit-page-item">8</div>
+                    </div>
+                    <div class="mo-unit-status is-available">출석가능</div>
+                </div>
+            </article>
+
+            <!-- 2주 2차 (Active) -->
+            <article class="mo-unit-card is-active">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">2주2차</div>
+                        <div class="mo-unit-date">08.20~09.02</div>
+                    </div>
+                    <div class="mo-unit-title">가족체계의 건강성과 가족발달에 대한 이해</div>
+                    <a href="#" class="tapx mo-unit-btn mo-unit-btn-study">학습하기</a>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">미수강</div>
+                    <div class="mo-unit-status is-available">출석가능</div>
+                </div>
+            </article>
+
+            <!-- 2주 3차 (Active) -->
+            <article class="mo-unit-card is-active">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">2주3차</div>
+                        <div class="mo-unit-date">08.20~09.02</div>
+                    </div>
+                    <div class="mo-unit-title">성인지와 문화적 관점에서 가족이해</div>
+                    <a href="#" class="tapx mo-unit-btn mo-unit-btn-study">학습하기</a>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">미수강</div>
+                    <div class="mo-unit-status is-available">출석가능</div>
+                </div>
+            </article>
+
+            <!-- 3주 1차 (Active) -->
+            <article class="mo-unit-card is-active">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">3주1차</div>
+                        <div class="mo-unit-date">08.27~09.09</div>
+                    </div>
+                    <div class="mo-unit-title">정신분석적 가족치료의 발달배경과 주요개념</div>
+                    <a href="#" class="tapx mo-unit-btn mo-unit-btn-study">학습하기</a>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">미수강</div>
+                    <div class="mo-unit-status is-available">출석가능</div>
+                </div>
+            </article>
+
+            <!-- 3주 2차 (Active) -->
+            <article class="mo-unit-card is-active">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">3주2차</div>
+                        <div class="mo-unit-date">08.27~09.09</div>
+                    </div>
+                    <div class="mo-unit-title">정신분석적 가족치료의 치료목표와 기법</div>
+                    <a href="#" class="tapx mo-unit-btn mo-unit-btn-study">학습하기</a>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">미수강</div>
+                    <div class="mo-unit-status is-available">출석가능</div>
+                </div>
+            </article>
+
+            <!-- 3주 3차 (Active) -->
+            <article class="mo-unit-card is-active">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">3주3차</div>
+                        <div class="mo-unit-date">08.27~09.09</div>
+                    </div>
+                    <div class="mo-unit-title">보웬의 다세대 가족치료의 발달배경과 주요개념</div>
+                    <a href="#" class="tapx mo-unit-btn mo-unit-btn-study">학습하기</a>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">미수강</div>
+                    <div class="mo-unit-status is-available">출석가능</div>
+                </div>
+            </article>
+
+            <!-- 4주 1차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">4주1차</div>
+                        <div class="mo-unit-date">09.03~09.16</div>
+                    </div>
+                    <div class="mo-unit-title">보웬의 다세대 가족치료의 치료목표와 기법</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 4주 2차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">4주2차</div>
+                        <div class="mo-unit-date">09.03~09.16</div>
+                    </div>
+                    <div class="mo-unit-title">경험적 가족치료의 발달배경과 주요개념</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 4주 3차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">4주3차</div>
+                        <div class="mo-unit-date">09.03~09.16</div>
+                    </div>
+                    <div class="mo-unit-title">경험적 가족치료의 치료목표와 기법</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 5주 1차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">5주1차</div>
+                        <div class="mo-unit-date">09.10~09.23</div>
+                    </div>
+                    <div class="mo-unit-title">구조적 가족치료의 발달배경과 주요개념</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 5주 2차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">5주2차</div>
+                        <div class="mo-unit-date">09.10~09.23</div>
+                    </div>
+                    <div class="mo-unit-title">구조적 가족치료의 치료목표와 기법</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 5주 3차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">5주3차</div>
+                        <div class="mo-unit-date">09.10~09.23</div>
+                    </div>
+                    <div class="mo-unit-title">전략적 가족치료의 발달배경과 주요개념</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 6주 1차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">6주1차</div>
+                        <div class="mo-unit-date">09.17~09.30</div>
+                    </div>
+                    <div class="mo-unit-title">전략적 가족치료의 치료목표와 기법</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 6주 2차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">6주2차</div>
+                        <div class="mo-unit-date">09.17~09.30</div>
+                    </div>
+                    <div class="mo-unit-title">인지행동주의 가족치료의 발달배경과 주요개념</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 6주 3차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">6주3차</div>
+                        <div class="mo-unit-date">09.17~09.30</div>
+                    </div>
+                    <div class="mo-unit-title">인지행동주의 가족치료의 치료목표와 기법</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 7주 1차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">7주1차</div>
+                        <div class="mo-unit-date">09.24~10.07</div>
+                    </div>
+                    <div class="mo-unit-title">해결중심 단기가족치료의 발달배경과 주요개념</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 7주 2차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">7주2차</div>
+                        <div class="mo-unit-date">09.24~10.07</div>
+                    </div>
+                    <div class="mo-unit-title">해결중심 단기가족치료의 치료목표와 기법</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 7주 3차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">7주3차</div>
+                        <div class="mo-unit-date">09.24~10.07</div>
+                    </div>
+                    <div class="mo-unit-title">이야기 가족치료의 발달배경과 치료목표</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 8주 (중간고사) -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">8주</div>
+                        <div class="mo-unit-date">10.02~10.05</div>
+                    </div>
+                    <div class="mo-unit-title">중간고사</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">시험 응시시 자동출석처리</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 9주 1차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">9주1차</div>
+                        <div class="mo-unit-date">10.08~10.21</div>
+                    </div>
+                    <div class="mo-unit-title">가족사정과 평가척도에 대한 이해</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 9주 2차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">9주2차</div>
+                        <div class="mo-unit-date">10.08~10.21</div>
+                    </div>
+                    <div class="mo-unit-title">가족상담 및 치료의 과정에 대한 이해</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 9주 3차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">9주3차</div>
+                        <div class="mo-unit-date">10.08~10.21</div>
+                    </div>
+                    <div class="mo-unit-title">가족상담 및 치료의 주요기법에 대한 습득</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 10주 1차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">10주1차</div>
+                        <div class="mo-unit-date">10.15~10.28</div>
+                    </div>
+                    <div class="mo-unit-title">부부관계 문제 및 상담사례</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 10주 2차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">10주2차</div>
+                        <div class="mo-unit-date">10.15~10.28</div>
+                    </div>
+                    <div class="mo-unit-title">이혼위기 문제와 상담사례</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 10주 3차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">10주3차</div>
+                        <div class="mo-unit-date">10.15~10.28</div>
+                    </div>
+                    <div class="mo-unit-title">이혼 후 문제와 상담사례</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 11주 1차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">11주1차</div>
+                        <div class="mo-unit-date">10.22~11.04</div>
+                    </div>
+                    <div class="mo-unit-title">자녀의 비행문제와 상담사례</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 11주 2차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">11주2차</div>
+                        <div class="mo-unit-date">10.22~11.04</div>
+                    </div>
+                    <div class="mo-unit-title">자녀의 인터넷중독문제와 상담사례</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 11주 3차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">11주3차</div>
+                        <div class="mo-unit-date">10.22~11.04</div>
+                    </div>
+                    <div class="mo-unit-title">자녀의 신경장애문제와 상담사례</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 12주 1차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">12주1차</div>
+                        <div class="mo-unit-date">10.29~11.11</div>
+                    </div>
+                    <div class="mo-unit-title">가정폭력에 대한 이해</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 12주 2차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">12주2차</div>
+                        <div class="mo-unit-date">10.29~11.11</div>
+                    </div>
+                    <div class="mo-unit-title">가정폭력의 영향과 상담시 유의점</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 12주 3차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">12주3차</div>
+                        <div class="mo-unit-date">10.29~11.11</div>
+                    </div>
+                    <div class="mo-unit-title">가정폭력 가족상담 개입모델 및 사례</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 13주 1차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">13주1차</div>
+                        <div class="mo-unit-date">11.05~11.18</div>
+                    </div>
+                    <div class="mo-unit-title">노인문제에 대한 이해</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 13주 2차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">13주2차</div>
+                        <div class="mo-unit-date">11.05~11.18</div>
+                    </div>
+                    <div class="mo-unit-title">노인가족 상담의 기본원리 및 주요 상담영역</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 13주 3차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">13주3차</div>
+                        <div class="mo-unit-date">11.05~11.18</div>
+                    </div>
+                    <div class="mo-unit-title">노인문제 유형별 특징과 가족상담 사례</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 14주 1차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">14주1차</div>
+                        <div class="mo-unit-date">11.12~11.25</div>
+                    </div>
+                    <div class="mo-unit-title">가족상담자의 역할에 대한 이해</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 14주 2차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">14주2차</div>
+                        <div class="mo-unit-date">11.12~11.25</div>
+                    </div>
+                    <div class="mo-unit-title">가족상담자의 자질, 훈련 및 윤리</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 14주 3차 -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">14주3차</div>
+                        <div class="mo-unit-date">11.12~11.25</div>
+                    </div>
+                    <div class="mo-unit-title">가족상담 및 치료의 미래와 과제</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">-</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 15주 (기말고사) -->
+            <article class="mo-unit-card">
+                <div class="mo-unit-card-top">
+                    <div class="mo-unit-info">
+                        <div class="mo-unit-week">15주</div>
+                        <div class="mo-unit-date">11.20~11.23</div>
+                    </div>
+                    <div class="mo-unit-title">기말고사</div>
+                </div>
+                <div class="mo-unit-card-bottom">
+                    <div class="mo-unit-progress">시험 응시시 자동출석처리</div>
+                    <div class="mo-unit-status is-upcoming">예정</div>
+                </div>
+            </article>
+
+            <!-- 복귀 버튼 -->
+            <a href="main_lecture.html" class="tapx mo-room-btn-back">과목 메인으로 돌아가기</a>
+        </div>
+
+    </main>
+
+    <!-- 6. 하단 고정 네비게이션 바 -->
+    <div class="mo-myclass-bottom-fixed">
+        <nav class="mo-myclass-bottom-nav" aria-label="하단 메뉴">
+            <a href="login.html" class="tapx mo-myclass-nav-item">
+                <span class="msi" aria-hidden="true">logout</span>
+                <div class="mo-myclass-nav-lbl">로그아웃</div>
+            </a>
+            <a href="main.html" class="tapx mo-myclass-nav-item">
+                <span class="msi" aria-hidden="true">home</span>
+                <div class="mo-myclass-nav-lbl">메인으로</div>
+            </a>
+            <a href="lecture_unit.html" class="tapx mo-myclass-nav-item active">
+                <span class="msi" aria-hidden="true">play_circle</span>
+                <div class="mo-myclass-nav-lbl">강의수강하기</div>
+            </a>
+            <a href="#" id="btnUnitNoticeBox" class="tapx mo-myclass-nav-item">
+                <div class="mo-myclass-badge-wrap">
+                    <span class="msi" aria-hidden="true">notifications</span>
+                    <span class="mo-myclass-badge">0</span>
+                </div>
+                <div class="mo-myclass-nav-lbl">알림함</div>
+            </a>
+        </nav>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>나의 강의실 - KBS아카데미 원격평생교육원</title>
+    <meta name="description" content="KBS아카데미 원격평생교육원 나의 강의실 - 수강 중인 과목 학습 및 강의실 입장, 학사일정 공지를 확인하실 수 있습니다.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/a940c586-733e-4110-94d3-a7267230c4a5.png">
+
+    <!-- CSS Stylesheet (단독 myclass.css) -->
+    <link rel="stylesheet" href="css/myclass.css">
+
+    <!-- JavaScript (단독 myclass.js) -->
+    <script src="js/myclass.js"></script>
+</head>
+<body>
+
+<div class="mo-myclass-page">
+
+    <!-- 1. 상단 헤더 -->
+    <header class="mo-myclass-header">
+        <a href="#" id="btnOpenMyclassMenu" class="tapx mo-myclass-btn-menu" aria-label="전체메뉴 열기">
+            <span class="msi" aria-hidden="true">menu</span>
+        </a>
+        <a href="main.html" class="mo-myclass-brand" aria-label="KBS아카데미 원격평생교육원 홈으로 이동">
+            <img src="assets/4a8c512e-0a9d-4dcb-ab29-ce660091834d.png" alt="KBS아카데미" class="mo-myclass-brand-logo">
+            <div class="mo-myclass-brand-sub">원격평생교육원</div>
+        </a>
+        <a href="main_02.html" class="tapx mo-myclass-btn-home" aria-label="메인 홈으로 이동">
+            <span class="msi" aria-hidden="true">home</span>
+        </a>
+    </header>
+
+    <!-- 2. '나의 강의실' 배너 -->
+    <div class="mo-myclass-banner">나의 강의실</div>
+
+    <!-- 3. 사이드 메뉴 오버레이 드로어 -->
+    <aside id="sideMenuMyclassOverlay" class="mo-myclass-side-overlay" aria-label="나의 강의실 메뉴">
+        <nav id="sideMenuMyclassContainer" class="mo-myclass-side-box">
+            <!-- 유저 프로필 영역 -->
+            <div class="mo-myclass-side-user">
+                <div class="mo-myclass-side-user-row">
+                    <div class="mo-myclass-side-user-name">
+                        <span class="msi" aria-hidden="true">account_circle</span>
+                        <span>천세현 학습자님</span>
+                    </div>
+                    <a href="#" id="btnCloseMyclassMenu" class="tapx mo-myclass-side-btn-close" aria-label="메뉴 닫기">
+                        <span class="msi" aria-hidden="true">close</span>
+                    </a>
+                </div>
+                <div class="mo-myclass-side-user-msg">오늘도 즐거운 수업 되시기 바랍니다.</div>
+                <div class="mo-myclass-side-user-id">ID : cshyun33</div>
+            </div>
+
+            <!-- 네비게이션 링크 -->
+            <div class="mo-myclass-side-nav">
+                <div class="mo-myclass-side-nav-title">수강방법</div>
+                <a href="guide.html" class="tapx mo-myclass-side-nav-link">모바일 수강 방법</a>
+                <a href="#" class="tapx mo-myclass-side-nav-link">전자도서관</a>
+            </div>
+
+            <!-- 로그아웃 버튼 -->
+            <div class="mo-myclass-side-logout-wrap">
+                <a href="login.html" class="tapx mo-myclass-side-btn-logout">로그아웃</a>
+            </div>
+
+            <!-- 원격지원센터 안내 -->
+            <div class="mo-myclass-side-cs">
+                <div class="mo-myclass-side-cs-lbl">원격지원센터</div>
+                <div class="mo-myclass-side-cs-phone">1661-6726</div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- 4. 본문 메인 콘텐츠 -->
+    <main class="mo-myclass-content" aria-label="나의 강의실 본문">
+
+        <!-- 학사일정공지 카드 -->
+        <section class="mo-myclass-card" aria-label="학사일정공지">
+            <h2 class="mo-myclass-card-title">학사일정공지</h2>
+            <div class="mo-myclass-notice-list">
+                <a href="#" class="tapx mo-myclass-notice-item">
+                    <div class="mo-myclass-notice-title">2학기(06월04일 개강반) 기말고사 안내</div>
+                    <time class="mo-myclass-notice-date" datetime="2026-08-27">2026-08-27</time>
+                </a>
+                <a href="#" class="tapx mo-myclass-notice-item">
+                    <div class="mo-myclass-notice-title">2학기 A기(6월 11일 개강) 퀴즈 안내</div>
+                    <time class="mo-myclass-notice-date" datetime="2026-08-20">2026-08-20</time>
+                </a>
+                <a href="#" class="tapx mo-myclass-notice-item">
+                    <div class="mo-myclass-notice-title">2학기(07월09일개강) 중간고사 안내</div>
+                    <time class="mo-myclass-notice-date" datetime="2026-08-20">2026-08-20</time>
+                </a>
+                <a href="#" class="tapx mo-myclass-notice-item">
+                    <div class="mo-myclass-notice-title">[필독] 2026년 2학기 3기(08월13일개강) 학사일정 안내</div>
+                    <time class="mo-myclass-notice-date" datetime="2026-08-12">2026-08-12</time>
+                </a>
+                <a href="#" class="tapx mo-myclass-notice-item">
+                    <div class="mo-myclass-notice-title">1학기(05월14일 개강반) 기말고사 안내</div>
+                    <time class="mo-myclass-notice-date" datetime="2026-08-05">2026-08-05</time>
+                </a>
+            </div>
+        </section>
+
+        <!-- 학습종료 주의 안내 박스 -->
+        <aside class="mo-myclass-warning-box" aria-label="학습 주의사항">
+            학습 후에는 [학습정보 기록 후 창닫기]를 꼭 눌러주세요.<br>
+            비정상종료시 학습시간이 저장되지 않을 수 있습니다.
+        </aside>
+
+        <!-- 학습가능한 과목 섹션 -->
+        <section class="mo-myclass-subject-sec" aria-label="학습가능한 과목 목록">
+            <div class="mo-myclass-sec-title">
+                <span class="msi" aria-hidden="true">school</span>
+                <h2>학습가능한 과목</h2>
+            </div>
+
+            <!-- 기수 테이블 1: 2026년 2학기 3기 -->
+            <div class="mo-myclass-table-card">
+                <div class="mo-myclass-table-card-head">2026년 2학기 3기</div>
+                <table class="mo-myclass-table" aria-label="2026년 2학기 3기 수강 과목">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="mo-th-subject">과목명</th>
+                            <th scope="col" class="mo-th-progress">학습진행사항</th>
+                            <th scope="col" class="mo-th-rate">진도율</th>
+                            <th scope="col" class="mo-th-action">강의실이동</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="subject-name">가족상담및가족치료</td>
+                            <td class="sub-info">2주:0%<br>3주:0%</td>
+                            <td class="sub-info">현재:0%<br>예상:93%</td>
+                            <td>
+                                <a href="room_main.html" class="tapx mo-myclass-btn-enter">강의실입장</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="subject-name">노인복지론</td>
+                            <td class="sub-info">2주:0%<br>3주:0%</td>
+                            <td class="sub-info">현재:0%<br>예상:93%</td>
+                            <td>
+                                <a href="room_main.html" class="tapx mo-myclass-btn-enter">강의실입장</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 기수 테이블 2: 2026년 2학기 2기 -->
+            <div class="mo-myclass-table-card">
+                <div class="mo-myclass-table-card-head">2026년 2학기 2기</div>
+                <table class="mo-myclass-table" aria-label="2026년 2학기 2기 수강 과목">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="mo-th-subject">과목명</th>
+                            <th scope="col" class="mo-th-progress">학습진행사항</th>
+                            <th scope="col" class="mo-th-rate">진도율</th>
+                            <th scope="col" class="mo-th-action">강의실이동</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="subject-name">가족상담및가족치료</td>
+                            <td class="sub-info">7주:0%</td>
+                            <td class="sub-info">현재:0%<br>예상:53%</td>
+                            <td>
+                                <a href="room_main.html" class="tapx mo-myclass-btn-enter">강의실입장</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 기수 테이블 3: 2026년 1학기 6기 (종강) -->
+            <div class="mo-myclass-table-card is-closed">
+                <div class="mo-myclass-table-card-head">2026년 1학기 6기</div>
+                <table class="mo-myclass-table" aria-label="2026년 1학기 6기 수강 과목 (종강)">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="mo-th-subject">과목명</th>
+                            <th scope="col" class="mo-th-progress">학습진행사항</th>
+                            <th scope="col" class="mo-th-rate">진도율</th>
+                            <th scope="col" class="mo-th-action">강의실이동</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="subject-name">가족상담및가족치료</td>
+                            <td class="sub-info">종강</td>
+                            <td class="sub-info">최종진도율:0%</td>
+                            <td>
+                                <a href="room_main.html" class="tapx mo-myclass-btn-enter disabled">강의실입장</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- 5. 하단 고정 네비게이션 바 -->
+    <div class="mo-myclass-bottom-fixed">
+        <nav class="mo-myclass-bottom-nav" aria-label="하단 메뉴">
+            <a href="login.html" class="tapx mo-myclass-nav-item">
+                <span class="msi" aria-hidden="true">logout</span>
+                <div class="mo-myclass-nav-lbl">로그아웃</div>
+            </a>
+            <a href="main_02.html" class="tapx mo-myclass-nav-item">
+                <span class="msi" aria-hidden="true">home</span>
+                <div class="mo-myclass-nav-lbl">메인으로</div>
+            </a>
+            <a href="guide.html" class="tapx mo-myclass-nav-item">
+                <span class="msi" aria-hidden="true">menu_book</span>
+                <div class="mo-myclass-nav-lbl">이용방법</div>
+            </a>
+            <a href="#" id="btnMyclassNoticeBox" class="tapx mo-myclass-nav-item active">
+                <div class="mo-myclass-badge-wrap">
+                    <span class="msi" aria-hidden="true">notifications</span>
+                    <span class="mo-myclass-badge">0</span>
+                </div>
+                <div class="mo-myclass-nav-lbl">알림함</div>
+            </a>
+        </nav>
+    </div>
+
+</div>
+
+</body>
+</html>

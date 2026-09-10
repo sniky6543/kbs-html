@@ -1,0 +1,595 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>학점인정대상 - KBS아카데미 원격평생교육원</title>
+    <meta name="description" content="KBS아카데미 원격평생교육원 학점인정대상 - 평가인정 학습과목, 학점인정대상학교, 시간제등록, 자격, 독학학위제, 중요무형문화재 등 학점인정 기준과 절차를 안내합니다.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/a940c586-733e-4110-94d3-a7267230c4a5.png">
+
+    <!-- CSS Stylesheets (기본 main.css + 서브 sub.css) -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub.css">
+
+    <!-- JavaScript (기본 main.js + 서브 sub.js) -->
+    <script src="js/main.js"></script>
+    <script src="js/sub.js"></script>
+</head>
+<body>
+
+<div class="mo-page-wrapper">
+
+    <!-- 1. 상단 유틸 -->
+    <div class="mo-top-util">
+        <div class="mo-top-util-status">
+            <div class="mo-status-dot"></div>
+            <div class="mo-status-text">지금 상담 가능 · 09:30~18:30</div>
+        </div>
+        <a href="tel:1661-6723" class="mo-top-util-call"><span class="msi" aria-hidden="true">call</span>1661-6723</a>
+    </div>
+
+    <!-- 2. 상단 헤더 -->
+    <header class="mo-header">
+        <a href="#" id="btnOpenMenu" class="tapx mo-btn-menu"><span class="msi" aria-hidden="true">menu</span></a>
+        <a href="main.html" class="mo-header-brand">
+            <div class="mo-brand-row">
+                <img src="assets/4a8c512e-0a9d-4dcb-ab29-ce660091834d.png" alt="KBS아카데미" class="mo-brand-logo">
+                <div class="mo-brand-divider"></div>
+                <div class="mo-brand-sub">원격평생교육원</div>
+            </div>
+            <div class="mo-cert-row">
+                <img src="assets/8c08767d-8f53-4ba9-a020-2c73d7648de6.png" alt="교육부" class="mo-cert-icon">
+                <div class="mo-cert-text">교육부 인증 학점은행제 원격교육기관</div>
+            </div>
+        </a>
+        <div class="mo-header-right">
+            <a href="login.html" class="tapx mo-btn-login"><span class="msi" aria-hidden="true">lock</span><div class="mo-btn-login-text">통합로그인</div></a>
+        </div>
+    </header>
+
+    <!-- 브레드크럼 -->
+    <nav class="mo-breadcrumb-bar" aria-label="경로">
+        HOME <span class="sep">&gt;</span> 학점은행제 <span class="sep">&gt;</span> <span class="current">학점인정대상</span>
+    </nav>
+
+    <!-- 3. 사이드 메뉴 오버레이 -->
+    <aside id="sideMenuOverlay">
+        <nav id="sideMenuContainer">
+            <div class="mo-side-account-bar">
+                <div class="mo-side-account-info"><span class="msi" aria-hidden="true">account_circle</span><div class="mo-side-account-title">로그인이 필요합니다</div></div>
+                <a href="#" id="btnCloseMenu" class="tapx mo-side-btn-close"><span class="msi" aria-hidden="true">close</span></a>
+            </div>
+            <div class="mo-side-auth-btns">
+                <a href="login.html" class="tapx mo-side-btn-primary">로그인</a>
+                <a href="sign_up.html" class="tapx mo-side-btn-secondary">회원가입</a>
+            </div>
+            <div class="mo-side-section-sep"></div>
+
+            <div>
+                <a href="#" id="btnAcc1" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">교육원소개</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc1">expand_more</span></span></a>
+                <ul id="panelAcc1" class="acc-panel">
+                    <li><a href="m1s1.html" class="acc-panel-link">교육원안내</a></li>
+                    <li><a href="m1s2.html" class="acc-panel-link">인사말</a></li>
+                    <li><a href="m1s3.html" class="acc-panel-link">이용약관</a></li>
+                    <li><a href="m1s4.html" class="acc-panel-link">개인정보처리방침</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc2" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">학점은행제</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc2">expand_more</span></span></a>
+                <ul id="panelAcc2" class="acc-panel">
+                    <li><a href="m2s1.html" class="acc-panel-link">학점은행제란?</a></li>
+                    <li><a href="m2s3.html" class="acc-panel-link active">학점인정대상</a></li>
+                    <li><a href="m2s4.html" class="acc-panel-link">신청방법안내</a></li>
+                    <li><a href="m2s5.html" class="acc-panel-link">관련법규</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc3" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">교육과정</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc3">expand_more</span></span></a>
+                <ul id="panelAcc3" class="acc-panel">
+                    <li><a href="https://www.lcyber.co.kr/html/event/event1_1.asp" class="acc-panel-link">사회복지사</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event2_1.asp" class="acc-panel-link">사회복지사 현장실습</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event3_1.asp" class="acc-panel-link">한국어교원</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event8.asp" class="acc-panel-link">건강가정사</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event4.asp" class="acc-panel-link">학위과정</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/LIC/" class="acc-panel-link">민간자격증</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc4" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">수강신청</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc4">expand_more</span></span></a>
+                <ul id="panelAcc4" class="acc-panel">
+                    <li><a href="m4s1.html" class="acc-panel-link">개설과목안내</a></li>
+                    <li><a href="m4s2.html" class="acc-panel-link">등록절차안내</a></li>
+                    <li><a href="course.html" class="acc-panel-link">수강신청</a></li>
+                    <li><a href="payment.html" class="acc-panel-link">수강료결제</a></li>
+                    <li><a href="payment_check.html" class="acc-panel-link">결제확인</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/curriculum/curriculum6.asp" class="acc-panel-link">환불신청</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc5" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">학습지원센터</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc5">expand_more</span></span></a>
+                <ul id="panelAcc5" class="acc-panel">
+                    <li><a href="m5list_notice.html" class="acc-panel-link">공지사항</a></li>
+                    <li><a href="https://www.lcyber.co.kr/bbs/board_list.asp?tb_name=faq" class="acc-panel-link">자주하는질문</a></li>
+                    <li><a href="https://www.lcyber.co.kr/bbs/board_list.asp?tb_name=qna" class="acc-panel-link">질문과답변</a></li>
+                    <li><a href="https://www.lcyber.co.kr/bbs/board_list.asp?tb_name=review" class="acc-panel-link">장학생 수강후기</a></li>
+                </ul>
+            </div>
+
+            <a href="https://www.lcyber.co.kr/myclass/myclass.asp" class="tapx mo-side-direct-link">온라인강의실</a>
+
+            <div class="mo-side-cs-box">
+                <div class="mo-side-cs-phones">
+                    <div class="mo-side-cs-col">
+                        <div class="mo-side-cs-lbl">입학상담문의</div>
+                        <div class="mo-side-cs-num">1661-6723</div>
+                    </div>
+                    <div class="mo-side-cs-sep"></div>
+                    <div class="mo-side-cs-col">
+                        <div class="mo-side-cs-lbl">학습지원센터</div>
+                        <div class="mo-side-cs-num dark">1661-6726</div>
+                    </div>
+                </div>
+                <div class="mo-side-cs-time">평일 09:30~18:30 · 점심 12:30~13:30</div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- 서브 타이틀 배너 -->
+    <header class="mo-sub-page-title-box">
+        <div class="mo-sub-title-eng">CREDIT BANK</div>
+        <h1 class="mo-sub-title-kor">학점인정대상</h1>
+    </header>
+
+    <!-- 4. 학점인정대상 본문 탭 & 내용 -->
+    <main class="mo-credit-scope-sec">
+
+        <!-- 6개 탭 네비게이션 -->
+        <nav class="mo-credit-tab-bar" aria-label="학점인정대상 탭">
+            <button type="button" class="mo-credit-tab-btn active" data-tab="tabScope1">평가인정 학습과목</button>
+            <button type="button" class="mo-credit-tab-btn" data-tab="tabScope2">학점인정대상학교</button>
+            <button type="button" class="mo-credit-tab-btn" data-tab="tabScope3">시간제등록</button>
+            <button type="button" class="mo-credit-tab-btn" data-tab="tabScope4">자격</button>
+            <button type="button" class="mo-credit-tab-btn" data-tab="tabScope5">독학학위제</button>
+            <button type="button" class="mo-credit-tab-btn" data-tab="tabScope6">중요무형문화재</button>
+        </nav>
+
+        <!-- [탭 1] 평가인정 학습과목 -->
+        <section id="tabScope1" class="mo-credit-tab-panel active">
+            <h2 class="mo-credit-tab-title">평가인정 학습과목이란?</h2>
+            <p class="mo-credit-tab-desc">평가인정 학습과목은 교육기관(대학 부설 평생교육원, 직업전문학교, 학원, 각종 평생교육시설 등)에서 개설한 학습과정에 대하여 대학에 상응하는 질적 수준을 갖추었는가를 평가하여 학점으로 인정하는 과목입니다.</p>
+
+            <div class="mo-credit-subheading">이수방법</div>
+            <div class="mo-credit-info-card">
+                <div class="mo-credit-info-txt">학점은행제 홈페이지 상단의 [표준교육과정 - 교육훈련기관 조회]에서 평가인정 학습과목이 개설된 교육기관을 검색할 수 있습니다.</div>
+                <a href="https://www.cb.or.kr/creditbank/eduOrg/nEduOrg1_1.do?m_szOrgId=2013B031" target="_blank" class="mo-credit-info-btn">바로가기 <span class="msi" class="mo-credit-icon-sm">open_in_new</span></a>
+            </div>
+            <div class="mo-credit-note-txt">※ 단, 평가인정학습과목의 운영 제반 사항(이수기간, 수강비용 등)은 각 교육기관의 자체적인 방침에 의해 결정됩니다. 따라서 평가인정 학습과목 수강에 대한 세부적인 사항은 각 교육기관 홈페이지를 통해 확인하시고 학습을 진행하여야 합니다.</div>
+
+            <div class="mo-credit-subheading">학점인정기준</div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge blue">1</div>
+                <div class="mo-credit-num-content">
+                    100점 만점에 60점 이상, 출석률 80% 이상인 학습과목에 한해 인정
+                    <span class="mo-credit-num-note">※ 단, 2005년 10월 27일 이전에 종강한 학습과목은 성적 70점 이상, 출석률 80% 이상이면 학점인정이 가능함.</span>
+                </div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge blue">2</div>
+                <div class="mo-credit-num-content">
+                    학습구분 결정기준 — 표준교육과정에 근거하여 전공필수, 전공선택, 교양, 일반선택 중 하나의 학습구분으로 결정됨.
+                    <span class="mo-credit-num-note">※ 단, 전공·교양호환과목은 학습자의 선택에 따라 전공(전공필수/전공선택) 혹은 교양으로 인정 가능함.</span>
+                </div>
+            </div>
+
+            <div class="mo-credit-subheading">주의사항</div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge orange">1</div>
+                <div class="mo-credit-num-content">1학기/1년 최대 이수학점 제한이 적용되므로, 기타 수업을 통한 학점원과 합하여 1년에 42학점(1학기는 24학점)을 초과하여 인정받으실 수 없습니다.</div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge orange">2</div>
+                <div class="mo-credit-num-content">1개의 교육기관에서 이수하고 인정받을 수 있는 최대 학점은 학사학위과정은 105학점, 전문학사학위과정은 60학점으로 제한됩니다.</div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge orange">3</div>
+                <div class="mo-credit-num-content">평가인정학습과목, 학점인정대상학교 학습과목, 시간제등록 이수과목, 독학학위제 시험합격 혹은 시험면제교육과정 이수과목 간 중복과목이 있을 경우, 학습자가 선택하는 한 과목만 인정 가능합니다.</div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge orange">4</div>
+                <div class="mo-credit-num-content">표준교육과정 개정에 따라 과목명이 변경 혹은 통합된 경우, 변경(통합) 전/후 과목은 중복과목으로 간주하므로 중복과목을 수강하지 않도록 주의하시기 바랍니다. (매해 고시되는 표준교육과정 참조)</div>
+            </div>
+        </section>
+
+        <!-- [탭 2] 학점인정대상학교 -->
+        <section id="tabScope2" class="mo-credit-tab-panel">
+            <h2 class="mo-credit-tab-title">학점인정대상학교란?</h2>
+            <p class="mo-credit-tab-desc">학점인정대상학교(전적대학)는 「고등교육법」에 따른 대학 등으로, 해당 학교를 중퇴하거나 졸업한 경우 학점은행제 학점으로 인정받을 수 있습니다.</p>
+
+            <div class="mo-credit-subheading">학점인정대상학교</div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge blue">1</div>
+                <div class="mo-credit-num-content">「고등교육법」 제2조제1호부터 제6호까지의 규정에 의한 대학 — 대학, 산업대학, 교육대학, 전문대학, 방송대학·통신대학·방송통신대학 및 사이버대학, 기술대학</div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge blue">2</div>
+                <div class="mo-credit-num-content">대학과 동등한 학력이 인정되는 각종학교</div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge blue">3</div>
+                <div class="mo-credit-num-content">다음의 학교 및 평생교육시설 — 「사관학교설치법」에 따른 사관학교, 「경찰대학설치법」에 따른 경찰대학, 「육군3사관학교 설치법」에 따른 육군3사관학교, 「국군간호사관학교 설치법」에 따른 국군간호사관학교, 「한국과학기술원법」에 따른 한국과학기술원, 「산업교육진흥 및 산학연협력촉진에 관한 법률」 제6조에 따른 단기 산업교육시설(교육부장관이 전문대학에 상응하는 교원·시설을 갖추었다고 인정한 경우에 한함), 「근로자직업능력 개발법」에 따른 기능대학(다기능기술자과정에 한함), 「평생교육법」 제32조에 따른 사내대학형태의 평생교육시설 및 같은 법 제33조제3항에 따른 원격대학형태의 평생교육시설</div>
+            </div>
+
+            <div class="mo-credit-subheading">학점인정기준</div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge blue">1</div>
+                <div class="mo-credit-num-content">
+                    학점인정의 기준 — 성적이 60점 또는 D- 이상인 학습과목만 인정. 전문대학은 제적 혹은 졸업 시 최대 80학점(수업연한 3년제는 최대 120학점)까지 인정
+                    <span class="mo-credit-num-note">※ 최대 인정학점을 초과하여 이수한 경우 학습자가 선택하여 학습과목 제외 혹은 절사 가능(예: 2년제 전문학사학위과정에서 81학점 이수 시, 1학점 과목이 없으면 2·3학점 과목을 1학점 절사하여 80학점 인정 가능함).</span>
+                    4년제 대학의 경우 제적 시 최대 140학점까지 인정. 단, 중퇴한 학점에 한하여 인정되고 졸업한 4년제 대학에서 이수한 학점은 인정되지 않음.
+                </div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge blue">2</div>
+                <div class="mo-credit-num-content">
+                    학습구분 결정기준 — 학점은행제와 동일한 학위과정 및 전공을 한 경우, 원칙적으로 대상학교의 학점부여방식에 따라 대상학교의 학습구분(교양, 전필, 전선, 일선)대로 인정(예: 4년제 대학 영어영문학과 제적 후 학점은행제 학사학위과정 영어영문학 전공 희망 시 대학의 학습구분대로 학점인정 가능함). 학습과목의 분류가 분명하지 않거나 동일학위과정 및 전공이 아닌 경우, 희망 학위 및 전공의 표준교육과정을 기준으로 분과위원회의 심의를 거쳐 학습구분이 결정됨.
+                    <span class="mo-credit-num-note">※ 단, 대상학교에서 교양(교양필수, 교양선택 등)으로 이수한 학습과목은 그대로 교양으로 인정 가능함.</span>
+                </div>
+            </div>
+
+            <div class="mo-credit-subheading">주의사항</div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge orange">1</div>
+                <div class="mo-credit-num-content">학점인정대상학교 재적학기 중 타학점원(평가인정학습과목, 시간제등록, 독학학위제 시험면제교육과정)을 동시에 이수하거나, 학점인정대상학교 제적 후 같은 해(혹은 학기)에 타 학점원을 이수한 경우에 한하여 '1년/1학기 인정 제한학점' 기준이 적용됩니다.</div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge orange">2</div>
+                <div class="mo-credit-num-content">
+                    평가인정학습과목, 학점인정대상학교 학습과목, 시간제등록 이수과목, 독학학위제 시험합격 혹은 시험면제교육과정 이수과목 간 중복과목이 있을 경우, 학습자가 선택하는 한 과목만 인정됩니다.
+                    <span class="mo-credit-num-note">※ 단, 1개 학점인정대상학교 내에서 동일한 과목을 여러 번 수강한 경우(재수강 제외), 과목명이 같더라도 중복과목으로 보지 않고 다른 과목으로 간주하여 학점 인정됩니다(예: A대학에서 [유체역학]을 1학년 1학기부터 2학년 2학기까지 4번 수강하여 총 취득학점에 모두 포함된 경우, 유체역학Ⅰ·Ⅱ·Ⅲ·Ⅳ로 간주하여 학점 인정).</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- [탭 3] 시간제등록 -->
+        <section id="tabScope3" class="mo-credit-tab-panel">
+            <h2 class="mo-credit-tab-title">시간제등록이란?</h2>
+            <p class="mo-credit-tab-desc">시간제등록이란, 「고등교육법」 제36조제1항 및 「평생교육법」 제21조 또는 제22조에 따라, 대학(산업대학, 전문대학 및 원격대학 포함) 혹은 평생교육시설에서 입학생 외 일반인이 당해 대학의 수업을 이수할 수 있는 제도로서, 학점은행제 교육기관에서 개설하는 평가인정학습과목과는 차이가 있습니다.</p>
+
+            <div class="mo-credit-subheading">시간제등록 이수 안내</div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge blue">1</div>
+                <div class="mo-credit-num-content">
+                    각 대학(산업대학, 전문대학 및 사이버대학 포함) 및 평생교육시설 홈페이지 혹은 입학관리처를 통해 시간제등록의 실시여부, 개설과목, 수강료 등을 문의하시기 바랍니다.
+                    <span class="mo-credit-num-note">※ 시간제등록 관련 사항은 해당 대학 학칙 및 방침에 따라 결정·시행되므로, 해당 대학으로 직접 문의하여야 함.</span>
+                </div>
+            </div>
+
+            <div class="mo-credit-table-card">
+                <div class="mo-credit-table-head">
+                    <div class="mo-credit-col-title">구분(근거조항)</div>
+                    <div class="mo-credit-col-desc">이수 한도</div>
+                </div>
+                <div class="mo-credit-table-row">
+                    <div class="mo-credit-col-title">고등교육법에 근거한 대학<br><span class="mo-credit-note-sub">(고등교육법 시행령 제53조제9항)</span></div>
+                    <div class="mo-credit-col-desc">매학기 12학점 및 연간 24학점을 초과할 수 없음.</div>
+                </div>
+                <div class="mo-credit-table-row">
+                    <div class="mo-credit-col-title">평생교육법 시행령<br><span class="mo-credit-note-sub">(제44조제5항, 제57조제2항)</span></div>
+                    <div class="mo-credit-col-desc">해당대학의 매 학기 취득기준 학점의 2분의 1을 초과할 수 없음.</div>
+                </div>
+            </div>
+
+            <div class="mo-credit-note-txt">※ 단, 2개 이상 대학에서 시간제 등록으로 수업을 이수할 경우, 아래와 같이 '1년/1학기 인정 제한학점'을 초과하지 않는 범위 내에서 인정받을 수 있음. (예: 시간제 등록을 통해서만 1년에 42학점을 이수할 경우)</div>
+
+            <div class="mo-credit-table-card">
+                <div class="mo-credit-table-head mo-credit-table-grid5">
+                    <div >학기</div>
+                    <div >A대학</div>
+                    <div >B대학</div>
+                    <div >C대학</div>
+                    <div >합계</div>
+                </div>
+                <div class="mo-credit-table-row mo-credit-table-grid5">
+                    <div >1,2학기</div>
+                    <div >24</div>
+                    <div >3</div>
+                    <div >15</div>
+                    <div class="u-fw-bold">42</div>
+                </div>
+                <div class="mo-credit-table-row mo-credit-table-grid5">
+                    <div >1학기</div>
+                    <div >12</div>
+                    <div >3</div>
+                    <div >9</div>
+                    <div class="u-fw-bold">21</div>
+                </div>
+                <div class="mo-credit-table-row mo-credit-table-grid5">
+                    <div >2학기</div>
+                    <div >12</div>
+                    <div >0</div>
+                    <div >9</div>
+                    <div class="u-fw-bold">21</div>
+                </div>
+            </div>
+
+            <div class="mo-credit-subheading">학점인정기준</div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge blue">1</div>
+                <div class="mo-credit-num-content">성적이 60점 또는 D- 이상인 학습과목만 인정(단, 성적이 60점 이상이더라도 F학점은 학점인정불가)</div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge blue">2</div>
+                <div class="mo-credit-num-content">해당 대학의 교육과정에 따른 학습과목을 이수하기 때문에 [학점인정대상학교]의 인정방법과 같음.</div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge blue">3</div>
+                <div class="mo-credit-num-content">
+                    학점은행제와 동일한 학위과정 및 전공을 제적한 경우, 원칙적으로 대상학교의 학점부여방식에 따라 대상학교의 학습구분(교양, 전필, 전선, 일선)대로 인정
+                    <span class="mo-credit-num-note">(예) 4년제 대학 영어영문학과 제적 후 학점은행제 학사학위과정 영어영문학 전공을 희망할 경우, 대학의 학습구분대로 학점인정 가능함.</span>
+                </div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge blue">4</div>
+                <div class="mo-credit-num-content">
+                    학습과목의 분류가 분명하지 않거나, 동일학위과정 및 전공이 아닌 경우, 희망 학위 및 전공의 표준교육과정을 기준으로 분과위원회의 심의를 거쳐 학습구분이 결정됨.
+                    <span class="mo-credit-num-note">※ 단, 대상학교에서 교양(교양필수, 교양선택 등)으로 이수한 학습과목은 그대로 교양으로 인정 가능함.</span>
+                </div>
+            </div>
+
+            <div class="mo-credit-subheading">주의사항</div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge orange">1</div>
+                <div class="mo-credit-num-content">1학기/1년 최대 이수학점 제한이 적용되므로, 기타 수업을 통한 학점원과 합하여 1학기에 24학점, 1년에 42학점을 초과하여 인정받으실 수 없습니다.</div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge orange">2</div>
+                <div class="mo-credit-num-content">평가인정학습과목, 학점인정대상학교 학습과목, 시간제등록 이수과목, 독학학위제 시험합격 혹은 시험면제교육과정 이수과목 간 중복과목이 있을 경우, 학습자가 선택하는 한 과목만 인정 가능합니다.</div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge orange">3</div>
+                <div class="mo-credit-num-content">원격교육기관(예: 방송통신대학, 사이버대학 등) 외의 대학 및 평생교육시설에서의 원격교육은 전체 수업일수의 40% 이내에서 운영할 수 있습니다. 즉, 수업일수의 60% 이상을 출석수업으로 진행한 학습과목에 한하여 학점인정 가능합니다. 또한 「고등교육법 시행령 제53조제6항」에 의한 시간제등록생만을 대상으로 하는 수업의 경우, 전체 수업일수의 40% 이상을 출석해야 합니다.</div>
+            </div>
+        </section>
+
+        <!-- [탭 4] 자격 -->
+        <section id="tabScope4" class="mo-credit-tab-panel">
+            <h2 class="mo-credit-tab-title">자격 학점인정이란?</h2>
+            <p class="mo-credit-tab-desc">자격 학점인정 기준이란 「학점인정 등에 관한 법률」 제7조제2항제4호에 의거하여 국가자격과 국가의 공인을 받은 민간자격 중 대학의 학점과 동등하게 인정될 수 있는 수준을 지닌 자격에 대하여 학점을 인정해 주기 위한 기준을 의미합니다.</p>
+
+            <div class="mo-credit-info-card">
+                <div class="mo-credit-info-txt">자격별 학점인정의 세부기준은 교육부장관의 승인을 받아 국가평생교육진흥원의 장이 매년 새롭게 고시하므로 [알림마당 - 자료실]에 탑재되어 있는 자격 학점인정기준을 참고하시기 바랍니다.</div>
+                <a href="https://www.cb.or.kr/creditbank/impartion/nImpartion2_List.do" target="_blank" class="mo-credit-info-btn">바로가기 <span class="msi" class="mo-credit-icon-sm">open_in_new</span></a>
+            </div>
+
+            <div class="mo-credit-subheading">학위종류별 인정 가능 자격 개수</div>
+            <div class="mo-credit-grid-cols-3">
+                <div class="mo-credit-grid-card"><div class="mo-credit-grid-val">2개</div><div class="mo-credit-grid-lbl">전문학사</div></div>
+                <div class="mo-credit-grid-card"><div class="mo-credit-grid-val">3개</div><div class="mo-credit-grid-lbl">학사</div></div>
+                <div class="mo-credit-grid-card"><div class="mo-credit-grid-val">1개</div><div class="mo-credit-grid-lbl">타전공 학위</div></div>
+            </div>
+            <div class="u-text-sm-muted">전공과 연계되지 않은 자격은 최대 1개까지 인정됩니다.</div>
+
+            <div class="mo-credit-subheading">자격 등급별 인정학점 (예시)</div>
+            <div class="mo-table-cell-text-loose">1등급 45학점(대학원 석사 졸업 후 현장경력 요구) · 2등급 37학점(공인노무사·법무사 등) · 3등급 30학점(대학원 석사 졸업 예정자·대학 졸업 후 경력) · 4등급 25학점(전자상거래관리사1급 등) · 5등급 20학점(대학 졸업자 예정자) · 6등급 18학점(항공정비사 등) · 7등급 16학점(전문대학 졸업자 예정자) · 8등급 14학점(컴퓨터활용능력1급 등) · 9등급 10학점(전문대학 1년 수료자) · 10등급 8학점(TEPS 1급 등) · 11등급 6학점(컴퓨터활용능력2급 등) · 12등급 5학점(리눅스마스터2급 등) · 13등급 4학점(워드1급 등) · 14등급 3학점(무역영어1급 등) · 15등급 2학점(한자급수인증2급 등)으로 자격별 세분화되어 있습니다.</div>
+
+            <div class="mo-credit-subheading">그 외 인정 기준</div>
+            <div class="mo-table-cell-text-loose">
+                · 동일직무(대분류-중분류-직무번호 동일) 내 여러 자격을 취득해도 학습자가 선택한 1개 자격만 학점인정됩니다.<br>
+                · 자격과 전공이 연계된 경우 해당 전공의 "전공필수" 학점으로, 연계 전공이 없으면 "일반선택" 학점으로 인정되며 "교양" 학점으로는 인정되지 않습니다.<br>
+                · 국가기술자격법 개정에 따른 통폐합 자격은 폐지 시 종전 규정을 적용하고, 명칭변경 시 변경된 자격 기준을 적용하며, 통합 시 통합된 자격 하나에 대해서만 학점이 인정됩니다.<br>
+                · 국가공인 민간자격은 공인 유효기간 내에 취득한 자격만 학점인정 가능합니다.
+            </div>
+        </section>
+
+        <!-- [탭 5] 독학학위제 -->
+        <section id="tabScope5" class="mo-credit-tab-panel">
+            <h2 class="mo-credit-tab-title">독학학위제란?</h2>
+            <p class="mo-credit-tab-desc">독학학위제는 독학자에게 학사학위 취득 기회를 부여하는 국가시험 제도로, 「독학에 의한 학위취득에 관한 법률」에 근거하여 국가평생교육진흥원 독학학위본부가 주관합니다. 시험에 합격하면 대학에서 취득한 학위와 동등한 대우를 받습니다.</p>
+
+            <div class="mo-credit-subheading">독학학위제 시험 응시 방법</div>
+            <div class="mo-credit-info-card">
+                <div class="mo-credit-info-txt">독학학위제 제도전반, 응시요건, 시험일정, 시험과목 등에 대한 자세한 사항은 독학학위제 홈페이지 [<a href="http://bdes.nile.or.kr/" target="_blank" class="u-text-link-blue">http://bdes.nile.or.kr/</a>]를 통해 확인하실 수 있습니다.</div>
+            </div>
+
+            <div class="mo-credit-subheading">단계별 인정학점</div>
+            <div class="mo-credit-grid-cols-2">
+                <div class="mo-credit-grid-card">
+                    <div class="mo-credit-grid-lbl" class="u-fw-bold">1단계 · 교양</div>
+                    <div class="mo-credit-grid-val" class="u-text-caption">과목당 4학점</div>
+                    <div class="u-text-xs-muted">최대 20학점</div>
+                </div>
+                <div class="mo-credit-grid-card">
+                    <div class="mo-credit-grid-lbl" class="u-fw-bold">2단계 · 전공기초</div>
+                    <div class="mo-credit-grid-val" class="u-text-caption">과목당 5학점</div>
+                    <div class="u-text-xs-muted">최대 30학점</div>
+                </div>
+                <div class="mo-credit-grid-card">
+                    <div class="mo-credit-grid-lbl" class="u-fw-bold">3단계 · 전공심화</div>
+                    <div class="mo-credit-grid-val" class="u-text-caption">과목당 5학점</div>
+                    <div class="u-text-xs-muted">최대 30학점</div>
+                </div>
+                <div class="mo-credit-grid-card">
+                    <div class="mo-credit-grid-lbl" class="u-fw-bold">4단계 · 학위취득종합</div>
+                    <div class="mo-credit-grid-val" class="u-text-caption">과목당 5학점</div>
+                    <div class="u-text-xs-muted">최대 30학점</div>
+                </div>
+            </div>
+
+            <div class="mo-credit-subheading">학습구분 결정기준</div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge blue">·</div>
+                <div class="mo-credit-num-content">
+                    1단계(교양과정인정시험) : 교양학점으로 인정 가능함.
+                    <span class="mo-credit-num-note">※ 단, 일부 과목의 경우, 학점은행제 희망전공의 표준교육과정에 기초하여 전공필수 혹은 전공선택으로 인정 가능함. (예) 학점은행제 경영학(학사) 전공의 학습자가 [경영학개론] 과목 합격 시 전공필수와 교양 중 학습자가 원하는 학습구분으로 인정 가능</span>
+                </div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge blue">·</div>
+                <div class="mo-credit-num-content">2단계~4단계 : 희망 학위 및 전공의 표준교육과정을 기준으로 분과위원회의 심의를 거쳐 학습구분이 결정됨.</div>
+            </div>
+
+            <div class="mo-credit-subheading warn">주의사항</div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge orange">1</div>
+                <div class="mo-credit-num-content">독학학위제 학위취득자의 경우 단계별 학습과목에 대한 학점인정이 불가합니다.</div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge orange">2</div>
+                <div class="mo-credit-num-content">시험면제교육과정 이수 학습과목에 한하여 1년/1학기 최대 이수학점, 1개 교육훈련기관 최대 인정학점 제한이 적용됩니다.</div>
+            </div>
+            <div class="mo-credit-num-row">
+                <div class="mo-credit-num-badge orange">3</div>
+                <div class="mo-credit-num-content">
+                    평가인정학습과목, 학점인정대상학교 학습과목, 시간제등록 이수과목, 독학학위제 시험합격 혹은 시험면제교육과정 이수과목간 중복과목이 있을 경우, 학습자가 선택하는 한 과목만 인정 가능합니다.
+                    <span class="mo-credit-num-note">※ 단, 독학학위제 학위취득종합시험(4단계)과 1~3단계 과목 간에는 중복을 보지 않습니다.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- [탭 6] 중요무형문화재 -->
+        <section id="tabScope6" class="mo-credit-tab-panel">
+            <h2 class="mo-credit-tab-title">중요무형문화재란?</h2>
+            <p class="mo-credit-tab-desc">문화재청장이 문화재위원회의 심의를 거쳐 무형문화재 중 중요한 것을 지정한 것을 중요무형문화재라고 하며, 학점은행제에서는 중요무형문화재(시·도지정 문화재 제외) 보유자 및 그 문하생의 전수교육에 대한 경험을 학점으로 인정하고 있습니다.</p>
+
+            <div class="mo-credit-subheading">학점인정기준</div>
+            <div class="u-text-body-bold">[1] 학점인정의 기준</div>
+            <div class="mo-credit-table-card">
+                <div class="mo-credit-table-head mo-credit-table-grid5">
+                    <div class="mo-credit-col-head-bold">등급</div>
+                    <div class="mo-credit-col-title-sm">인정학점</div>
+                    <div class="mo-credit-col-full">비고</div>
+                </div>
+                <div class="mo-credit-table-row">
+                    <div class="mo-credit-col-head-bold">보유자</div>
+                    <div class="mo-credit-col-head-blue-sm">140학점</div>
+                    <div class="mo-credit-col-desc-loose">고졸(동등학력) 이상 보유자는 140학점 인정, 학점인정과 동시 학사학위 취득 가능</div>
+                </div>
+                <div class="mo-credit-table-row">
+                    <div class="mo-credit-col-head-bold">전수교육조교</div>
+                    <div class="mo-credit-col-head-blue-sm">50학점</div>
+                    <div class="mo-credit-col-desc-loose">보유자·보유단체 전수교육 보조 목적으로 이수증 발급받은 자 중 조교로 선정된 자</div>
+                </div>
+                <div class="mo-credit-table-row">
+                    <div class="mo-credit-col-head-bold">이수자</div>
+                    <div class="mo-credit-col-head-blue-sm">30학점</div>
+                    <div class="mo-credit-col-desc-loose">보유자·보유단체에서 3년 이상 전수교육 받고 기능·예능이 상당한 수준에 이르러 이수증 발급받은 자</div>
+                </div>
+                <div class="mo-credit-table-row">
+                    <div class="mo-credit-col-head-bold">전수생</div>
+                    <div class="mo-credit-col-stack">
+                        <div class="mo-credit-col-cell-bordered">3년↑ <span class="active">21</span></div>
+                        <div class="mo-credit-col-cell-bordered">2년↑ <span class="active">14</span></div>
+                        <div class="mo-credit-col-cell-bordered">1년↑ <span class="active">7</span></div>
+                        <div class="mo-credit-col-cell-last">6개월 <span class="active">4</span></div>
+                    </div>
+                    <div class="mo-credit-col-desc-loose">
+                        보유자·보유단체에서 6개월 이상 전수교육 받은 자, 기간에 따라 학점 인정
+                        <div class="mo-credit-desc-mt">※ 보유자·보유단체가 지정된 후 전수생을 문화재청에 보고·관리한 경우에 한해 인정(일반회원 자격 전수경험은 불인정)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mo-credit-desc-loose-sm">※ 문화재보호법 개정에 따라 [전수교육조교] 명칭이 변경되었으며, 선정일에 따라 세부 인정기준이 다릅니다(~1999.7.19: 보유자후보60/전수교육조교53/전수교육보조자50, 1999.7.20~2001.9.7: 전수교육보조자50, 2001.9.8~현재: 전수교육조교50).</div>
+
+            <div class="mo-credit-subheading">학습구분 결정기준</div>
+            <div class="mo-table-cell-text-loose">
+                전수교육 경험과 동일한 전공을 선택할 경우 전공필수 학점으로 인정되며, 전수교육 경험과 동일하지 않은 전공을 선택할 경우 일반선택 학점으로 인정됩니다.
+                <span class="mo-credit-num-note">(예) 강령탈춤 이수자가 학점은행제 전통연희와 강령탈춤 전공을 선택할 경우 전공필수 30학점 인정, 그 외의 전공을 선택할 경우에는 일반선택 30학점으로 인정.</span>
+            </div>
+
+            <div class="mo-credit-subheading">주의사항</div>
+            <div class="mo-table-cell-text">중요무형문화재에 한해서만 학점인정이 가능하며, 시·도 지정 무형문화재는 학점인정되지 않습니다.</div>
+        </section>
+
+    </main>
+
+    <!-- 5. 푸터 -->
+    <footer class="mo-footer">
+        <div class="mo-footer-info">
+            <div class="mo-footer-logo-row">
+                <img src="assets/4a8c512e-0a9d-4dcb-ab29-ce660091834d.png" alt="KBS아카데미" class="mo-footer-logo-img">
+                <div class="mo-footer-logo-title">원격평생교육원</div>
+            </div>
+            (주)리더스에듀 · 리더스원격평생교육원 · 사업자등록번호 209-81-56148 · 통신판매 제2013-부산사상구-0148호<br>
+            대표자 권영숙 · 개인정보 보호책임자 윤대영 · 본원소재지 (47007) 부산광역시 사상구 가야대로 348 KL빌딩 5층<br>
+            대표전화 1661-6726 · 팩스 070-8233-7077
+        </div>
+    </footer>
+
+    <!-- 6. 하단 고정 바 -->
+    <div class="mo-bottom-fixed">
+        <a href="#" class="btn-open-consult mo-btn-float-consult">
+            <span class="msi">bolt</span>
+            <div class="mo-btn-float-consult-txt">상담접수</div>
+        </a>
+        <nav class="mo-bottom-nav">
+            <a href="main.html" class="tapx mo-nav-item"><span class="msi" aria-hidden="true">home</span><div class="mo-nav-lbl">홈</div></a>
+            <a href="tel:1661-6723" class="tapx mo-nav-item"><span class="msi" aria-hidden="true">call</span><div class="mo-nav-lbl">전화상담</div></a>
+            <div class="mo-nav-spacer"></div>
+            <a href="course.html" class="tapx mo-nav-item"><span class="msi" aria-hidden="true">edit_calendar</span><div class="mo-nav-lbl">수강신청</div></a>
+            <a href="sign_up.html" class="tapx mo-nav-item"><span class="msi" aria-hidden="true">person_add</span><div class="mo-nav-lbl">회원가입</div></a>
+        </nav>
+    </div>
+
+</div>
+
+<!-- ----------------------------------------------------
+          10분 빠른상담 모달
+          ---------------------------------------------------- -->
+<div id="modalQuickConsult" class="mo-modal-overlay">
+    <div class="mo-consult-modal-card">
+        <div class="mo-consult-modal-head">
+            <div class="mo-consult-modal-title-row">
+                <span class="msi">bolt</span>
+                <div class="mo-consult-modal-title">10분이면 OK, 빠른상담 신청</div>
+            </div>
+            <a href="#" id="btnCloseQuickConsult" class="tapx" class="mo-side-acc-icon-svg"><span class="msi" >close</span></a>
+        </div>
+        <div class="mo-consult-modal-desc">
+            전문 학사설계팀이 10분 안에 과정을 설계해드립니다.<br>
+            원하는 상담시간을 남겨주세요. 친절하게 안내드리겠습니다.
+        </div>
+        <form class="mo-consult-modal-body" onsubmit="event.preventDefault(); alert('상담 신청이 완료되었습니다.'); document.getElementById('modalQuickConsult').classList.remove('active');">
+            <input type="text" placeholder="이름" class="mo-consult-input" required>
+            <div class="mo-intro-step-col">
+                <select class="mo-consult-select" class="mo-intro-step-badge">
+                    <option>010</option>
+                    <option>011</option>
+                </select>
+                <input type="text" maxlength="4" class="mo-consult-input" class="mo-privacy-dialog-cell" required>
+                <input type="text" maxlength="4" class="mo-consult-input" class="mo-privacy-dialog-cell" required>
+            </div>
+            <select class="mo-consult-select">
+                <option>희망과정 · 사회복지사</option>
+                <option>희망과정 · 사회복지사 현장실습</option>
+                <option>희망과정 · 한국어교원</option>
+                <option>희망과정 · 건강가정사</option>
+                <option>희망과정 · 학위과정</option>
+                <option>희망과정 · 민간자격증</option>
+            </select>
+            <select class="mo-consult-select">
+                <option>희망시간 · 항상 가능</option>
+                <option>희망시간 · 오전</option>
+                <option>희망시간 · 오후</option>
+                <option>희망시간 · 저녁</option>
+            </select>
+            <label class="mo-privacy-dialog-label">
+                <span class="mo-privacy-dialog-left">
+                    <input type="checkbox" class="mo-privacy-dialog-chk" checked required>
+                    개인정보제공에 동의합니다.
+                </span>
+                <a href="#" class="mo-privacy-dialog-link">보기</a>
+            </label>
+            <button type="submit" class="tapx mo-consult-btn-submit">무료 상담 신청하기</button>
+            <div class="mo-privacy-dialog-footer">*위 내용은 학습상담을 위해서만 사용됩니다.</div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

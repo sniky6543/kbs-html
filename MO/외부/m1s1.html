@@ -1,0 +1,446 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>교육원안내 - KBS아카데미 원격평생교육원</title>
+    <meta name="description" content="KBS아카데미 원격평생교육원 교육원안내 - 교육부 평가인정 학점은행제 원격교육기관으로 학위 취득 및 다양한 자격과정을 온라인으로 제공합니다.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/a940c586-733e-4110-94d3-a7267230c4a5.png">
+
+    <!-- CSS Stylesheets (기본 main.css + 서브 sub.css) -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub.css">
+
+    <!-- JavaScript (기본 main.js + 서브 sub.js) -->
+    <script src="js/main.js"></script>
+    <script src="js/sub.js"></script>
+</head>
+<body>
+
+<div class="mo-page-wrapper">
+
+    <!-- 1. 상단 유틸 -->
+    <div class="mo-top-util">
+        <div class="mo-top-util-status">
+            <div class="mo-status-dot"></div>
+            <div class="mo-status-text">지금 상담 가능 · 09:30~18:30</div>
+        </div>
+        <a href="tel:1661-6723" class="mo-top-util-call"><span class="msi" aria-hidden="true">call</span>1661-6723</a>
+    </div>
+
+    <!-- 2. 상단 헤더 -->
+    <header class="mo-header">
+        <a href="#" id="btnOpenMenu" class="tapx mo-btn-menu"><span class="msi" aria-hidden="true">menu</span></a>
+        <a href="main.html" class="mo-header-brand">
+            <div class="mo-brand-row">
+                <img src="assets/4a8c512e-0a9d-4dcb-ab29-ce660091834d.png" alt="KBS아카데미" class="mo-brand-logo">
+                <div class="mo-brand-divider"></div>
+                <div class="mo-brand-sub">원격평생교육원</div>
+            </div>
+            <div class="mo-cert-row">
+                <img src="assets/8c08767d-8f53-4ba9-a020-2c73d7648de6.png" alt="교육부" class="mo-cert-icon">
+                <div class="mo-cert-text">교육부 인증 학점은행제 원격교육기관</div>
+            </div>
+        </a>
+        <div class="mo-header-right">
+            <a href="login.html" class="tapx mo-btn-login"><span class="msi" aria-hidden="true">lock</span><div class="mo-btn-login-text">통합로그인</div></a>
+        </div>
+    </header>
+
+    <!-- 브레드크럼 -->
+    <nav class="mo-breadcrumb-bar" aria-label="경로">
+        HOME <span class="sep">&gt;</span> 교육원소개 <span class="sep">&gt;</span> <span class="current">교육원안내</span>
+    </nav>
+
+    <!-- 3. 사이드 메뉴 오버레이 -->
+    <aside id="sideMenuOverlay">
+        <nav id="sideMenuContainer">
+            <div class="mo-side-account-bar">
+                <div class="mo-side-account-info"><span class="msi" aria-hidden="true">account_circle</span><div class="mo-side-account-title">로그인이 필요합니다</div></div>
+                <a href="#" id="btnCloseMenu" class="tapx mo-side-btn-close"><span class="msi" aria-hidden="true">close</span></a>
+            </div>
+            <div class="mo-side-auth-btns">
+                <a href="login.html" class="tapx mo-side-btn-primary">로그인</a>
+                <a href="sign_up.html" class="tapx mo-side-btn-secondary">회원가입</a>
+            </div>
+            <div class="mo-side-section-sep"></div>
+
+            <div>
+                <a href="#" id="btnAcc1" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">교육원소개</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc1">expand_more</span></span></a>
+                <ul id="panelAcc1" class="acc-panel">
+                    <li><a href="m1s1.html" class="acc-panel-link active">교육원안내</a></li>
+                    <li><a href="m1s2.html" class="acc-panel-link">인사말</a></li>
+                    <li><a href="m1s3.html" class="acc-panel-link">이용약관</a></li>
+                    <li><a href="m1s4.html" class="acc-panel-link">개인정보처리방침</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc2" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">학점은행제</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc2">expand_more</span></span></a>
+                <ul id="panelAcc2" class="acc-panel">
+                    <li><a href="m2s1.html" class="acc-panel-link">학점은행제란?</a></li>
+                    <li><a href="m2s3.html" class="acc-panel-link">학점인정대상</a></li>
+                    <li><a href="m2s4.html" class="acc-panel-link">신청방법안내</a></li>
+                    <li><a href="m2s5.html" class="acc-panel-link">관련법규</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc3" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">교육과정</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc3">expand_more</span></span></a>
+                <ul id="panelAcc3" class="acc-panel">
+                    <li><a href="https://www.lcyber.co.kr/html/event/event1_1.asp" class="acc-panel-link">사회복지사</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event2_1.asp" class="acc-panel-link">사회복지사 현장실습</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event3_1.asp" class="acc-panel-link">한국어교원</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event8.asp" class="acc-panel-link">건강가정사</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event4.asp" class="acc-panel-link">학위과정</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/LIC/" class="acc-panel-link">민간자격증</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc4" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">수강신청</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc4">expand_more</span></span></a>
+                <ul id="panelAcc4" class="acc-panel">
+                    <li><a href="m4s1.html" class="acc-panel-link">개설과목안내</a></li>
+                    <li><a href="m4s2.html" class="acc-panel-link">등록절차안내</a></li>
+                    <li><a href="course.html" class="acc-panel-link">수강신청</a></li>
+                    <li><a href="payment.html" class="acc-panel-link">수강료결제</a></li>
+                    <li><a href="payment_check.html" class="acc-panel-link">결제확인</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/curriculum/curriculum6.asp" class="acc-panel-link">환불신청</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc5" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">학습지원센터</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc5">expand_more</span></span></a>
+                <ul id="panelAcc5" class="acc-panel">
+                    <li><a href="m5list_notice.html" class="acc-panel-link">공지사항</a></li>
+                    <li><a href="https://www.lcyber.co.kr/bbs/board_list.asp?tb_name=faq" class="acc-panel-link">자주하는질문</a></li>
+                    <li><a href="https://www.lcyber.co.kr/bbs/board_list.asp?tb_name=qna" class="acc-panel-link">질문과답변</a></li>
+                    <li><a href="https://www.lcyber.co.kr/bbs/board_list.asp?tb_name=review" class="acc-panel-link">장학생 수강후기</a></li>
+                </ul>
+            </div>
+
+            <a href="https://www.lcyber.co.kr/myclass/myclass.asp" class="tapx mo-side-direct-link">온라인강의실</a>
+
+            <div class="mo-side-cs-box">
+                <div class="mo-side-cs-phones">
+                    <div class="mo-side-cs-col">
+                        <div class="mo-side-cs-lbl">입학상담문의</div>
+                        <div class="mo-side-cs-num">1661-6723</div>
+                    </div>
+                    <div class="mo-side-cs-sep"></div>
+                    <div class="mo-side-cs-col">
+                        <div class="mo-side-cs-lbl">학습지원센터</div>
+                        <div class="mo-side-cs-num dark">1661-6726</div>
+                    </div>
+                </div>
+                <div class="mo-side-cs-time">평일 09:30~18:30 · 점심 12:30~13:30</div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- 서브 타이틀 배너 -->
+    <header class="mo-sub-page-title-box">
+        <div class="mo-sub-title-eng">INTRODUCE</div>
+        <h1 class="mo-sub-title-kor">교육원안내</h1>
+        <div class="mo-sub-title-sub">KBS아카데미 원격평생교육원을 소개합니다</div>
+    </header>
+
+    <!-- 4. 교육원안내 본문 섹션 -->
+    <main class="mo-intro-body-sec">
+
+        <!-- 히어로 이미지 -->
+        <img src="assets/29bb1c96-5226-41d8-8fed-98941864e291.png" alt="KBS아카데미 원격평생교육원" class="mo-intro-hero-img">
+
+        <!-- 소개 글 박스 -->
+        <section class="mo-intro-intro-sec">
+            <p class="mo-intro-p-primary">KBS아카데미 원격평생교육원은 교육부 평가인정 학습과정을 운영하는 학점은행제 원격교육기관으로, 학위 취득 및 다양한 자격과정을 온라인으로 제공합니다.</p>
+            <p class="mo-intro-p-primary">시간과 장소의 제약 없이 누구나 자신의 목표를 향해 배움을 이어갈 수 있도록 체계적인 교육과정과 편리한 온라인 학습환경, 전문적인 학습지원 서비스를 제공합니다.</p>
+            <p class="mo-intro-p-sub">사회복지사 2급, 한국어교원 2급, 건강가정사 등 자격 취득에 필요한 교육과정을 비롯하여 전문학사 및 학사학위 취득을 위한 학점은행제 과정을 운영하고 있습니다.</p>
+            <p class="mo-intro-p-sub">수업은 온라인을 기반으로 진행되며 출석, 강의수강, 시험, 과제 및 성적관리 등 학점은행제 학사과정을 체계적으로 운영합니다.</p>
+        </section>
+
+        <!-- KBS 교육 브랜드 가치 섹션 -->
+        <section class="mo-intro-brand-sec">
+            <h2 class="mo-intro-sec-title">KBS 교육 브랜드의 가치와 함께합니다</h2>
+            <div class="mo-intro-quote-box">
+                <div class="mo-intro-quote-bar"></div>
+                <div class="mo-intro-quote-txts">
+                    <p class="mo-intro-quote-p">KBS아카데미는 교육을 통해 전문 인재를 양성하고 새로운 배움의 기회를 제공해 온 KBS의 교육 브랜드입니다.</p>
+                    <p class="mo-intro-quote-p">이러한 브랜드의 가치와 전문성을 바탕으로 평생교육 시대에 필요한 다양한 학습과정을 제공하고 있습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 믿을 수 있는 학점은행제 교육기관 -->
+        <section class="mo-intro-trust-sec">
+            <h2 class="mo-intro-sec-title">믿을 수 있는 학점은행제 교육기관</h2>
+            <p class="mo-intro-desc-p">교육부 평가인정을 받은 학습과정을 운영하며, 국가평생교육진흥원 학점은행제를 통해 학위 및 자격 취득에 필요한 학점을 이수할 수 있도록 지원합니다.</p>
+            <div class="mo-intro-grid-2x2">
+                <div class="mo-intro-grid-card">
+                    <span class="mso">verified</span>
+                    <div class="mo-intro-grid-card-title">교육부 평가인정</div>
+                    <div class="mo-intro-grid-card-desc">평가인정 학습과정 운영</div>
+                </div>
+                <div class="mo-intro-grid-card">
+                    <span class="mso">school</span>
+                    <div class="mo-intro-grid-card-title">학점은행제</div>
+                    <div class="mo-intro-grid-card-desc">학위·자격 취득 학점 이수</div>
+                </div>
+                <div class="mo-intro-grid-card">
+                    <span class="mso">devices</span>
+                    <div class="mo-intro-grid-card-title">온라인 학습</div>
+                    <div class="mo-intro-grid-card-desc">제약 없는 학습환경</div>
+                </div>
+                <div class="mo-intro-grid-card">
+                    <span class="mso">fact_check</span>
+                    <div class="mo-intro-grid-card-title">체계적인 학사관리</div>
+                    <div class="mo-intro-grid-card-desc">출석·시험·과제·성적</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 다양한 목표를 위한 전문 교육과정 -->
+        <section class="mo-intro-courses-sec">
+            <h2 class="mo-intro-sec-title">다양한 목표를 위한 전문 교육과정</h2>
+            <div class="mo-intro-courses-list">
+                <a href="https://www.lcyber.co.kr/html/event/event1_1.asp" class="tapx mo-intro-course-card">
+                    <span class="mso">volunteer_activism</span>
+                    <div class="mo-intro-course-card-title">사회복지사 2급</div>
+                    <div class="mo-intro-course-card-desc">사회복지 분야의 전문성을 갖추고 자격 취득을 준비할 수 있는 교육과정을 제공합니다.</div>
+                </a>
+                <a href="https://www.lcyber.co.kr/html/event/event3_1.asp" class="tapx mo-intro-course-card">
+                    <span class="mso">chat</span>
+                    <div class="mo-intro-course-card-title">한국어교원 2급</div>
+                    <div class="mo-intro-course-card-desc">외국어로서의 한국어 교육에 필요한 전문 지식과 역량을 갖추기 위한 교육과정을 제공합니다.</div>
+                </a>
+                <a href="https://www.lcyber.co.kr/html/event/event8.asp" class="tapx mo-intro-course-card">
+                    <span class="mso">family_restroom</span>
+                    <div class="mo-intro-course-card-title">건강가정사</div>
+                    <div class="mo-intro-course-card-desc">건강가정사 자격요건 충족에 필요한 관련 교과목을 이수할 수 있는 교육과정을 제공합니다.</div>
+                </a>
+                <a href="https://www.lcyber.co.kr/html/event/event4.asp" class="tapx mo-intro-course-card">
+                    <span class="mso">workspace_premium</span>
+                    <div class="mo-intro-course-card-title">학위취득</div>
+                    <div class="mo-intro-course-card-desc">학점은행제를 활용하여 전문학사 및 학사학위 취득에 필요한 학점을 체계적으로 준비할 수 있도록 지원합니다.</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 시작부터 목표 달성까지 함께합니다 (스텝 프로세스) -->
+        <section class="mo-intro-step-sec">
+            <h2 class="mo-intro-sec-title">시작부터 목표 달성까지 함께합니다</h2>
+            <p class="mo-intro-desc-p">처음 학점은행제를 시작하는 학습자도 어렵지 않게 목표를 준비할 수 있도록 학습과정 전반을 체계적으로 지원합니다.</p>
+            <div class="mo-intro-timeline">
+                <div class="mo-intro-timeline-item">
+                    <div class="mo-intro-timeline-left">
+                        <div class="mo-intro-timeline-badge">01</div>
+                        <div class="mo-intro-timeline-line"></div>
+                    </div>
+                    <div class="mo-intro-timeline-content">
+                        <div class="mo-intro-timeline-title">학습상담</div>
+                        <div class="mo-intro-timeline-desc">학습자의 목표와 학력·이수내역을 확인합니다</div>
+                    </div>
+                </div>
+
+                <div class="mo-intro-timeline-item">
+                    <div class="mo-intro-timeline-left">
+                        <div class="mo-intro-timeline-badge">02</div>
+                        <div class="mo-intro-timeline-line"></div>
+                    </div>
+                    <div class="mo-intro-timeline-content">
+                        <div class="mo-intro-timeline-title">맞춤 학습설계</div>
+                        <div class="mo-intro-timeline-desc">필요 과목과 학습기간을 확인해 학습계획을 안내합니다</div>
+                    </div>
+                </div>
+
+                <div class="mo-intro-timeline-item">
+                    <div class="mo-intro-timeline-left">
+                        <div class="mo-intro-timeline-badge">03</div>
+                        <div class="mo-intro-timeline-line"></div>
+                    </div>
+                    <div class="mo-intro-timeline-content">
+                        <div class="mo-intro-timeline-title">수강신청</div>
+                        <div class="mo-intro-timeline-desc">설계된 학습계획에 따라 교육과정을 선택합니다</div>
+                    </div>
+                </div>
+
+                <div class="mo-intro-timeline-item">
+                    <div class="mo-intro-timeline-left">
+                        <div class="mo-intro-timeline-badge">04</div>
+                        <div class="mo-intro-timeline-line"></div>
+                    </div>
+                    <div class="mo-intro-timeline-content">
+                        <div class="mo-intro-timeline-title">온라인 학습</div>
+                        <div class="mo-intro-timeline-desc">PC와 모바일로 시간·장소 제약 없이 학습합니다</div>
+                    </div>
+                </div>
+
+                <div class="mo-intro-timeline-item">
+                    <div class="mo-intro-timeline-left">
+                        <div class="mo-intro-timeline-badge">05</div>
+                        <div class="mo-intro-timeline-line"></div>
+                    </div>
+                    <div class="mo-intro-timeline-content">
+                        <div class="mo-intro-timeline-title">학사관리</div>
+                        <div class="mo-intro-timeline-desc">출석·시험·과제·성적을 체계적으로 관리합니다</div>
+                    </div>
+                </div>
+
+                <div class="mo-intro-timeline-item">
+                    <div class="mo-intro-timeline-left">
+                        <div class="mo-intro-timeline-badge highlight">06</div>
+                    </div>
+                    <div class="mo-intro-timeline-content">
+                        <div class="mo-intro-timeline-title">목표 달성</div>
+                        <div class="mo-intro-timeline-desc">학점인정과 자격·학위 취득 절차를 안내합니다</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 학습자를 생각한 교육환경 -->
+        <section class="mo-intro-env-sec">
+            <h2 class="mo-intro-sec-title">학습자를 생각한 교육환경</h2>
+            <div class="mo-intro-env-list">
+                <div class="mo-intro-env-item">
+                    <span class="mso">verified</span>
+                    <div>
+                        <div class="mo-intro-env-title">교육부 평가인정</div>
+                        <div class="mo-intro-env-desc">학점은행제 기준에 따른 평가인정 학습과정 운영</div>
+                    </div>
+                </div>
+                <div class="mo-intro-env-item">
+                    <span class="mso">devices</span>
+                    <div>
+                        <div class="mo-intro-env-title">100% 온라인 학습</div>
+                        <div class="mo-intro-env-desc">PC와 모바일을 활용한 편리한 학습환경</div>
+                    </div>
+                </div>
+                <div class="mo-intro-env-item">
+                    <span class="mso">route</span>
+                    <div>
+                        <div class="mo-intro-env-title">맞춤 학습설계</div>
+                        <div class="mo-intro-env-desc">학습자의 목표에 맞춘 체계적인 학습계획 안내</div>
+                    </div>
+                </div>
+                <div class="mo-intro-env-item">
+                    <span class="mso">menu_book</span>
+                    <div>
+                        <div class="mo-intro-env-title">다양한 교육과정</div>
+                        <div class="mo-intro-env-desc">자격 취득부터 학위 취득까지 폭넓은 과정 운영</div>
+                    </div>
+                </div>
+                <div class="mo-intro-env-item">
+                    <span class="mso">support_agent</span>
+                    <div>
+                        <div class="mo-intro-env-title">체계적인 학습지원</div>
+                        <div class="mo-intro-env-desc">수강부터 학사관리까지 학습과정 전반 지원</div>
+                    </div>
+                </div>
+                <div class="mo-intro-env-item">
+                    <span class="mso">handshake</span>
+                    <div>
+                        <div class="mo-intro-env-title">실습과정 지원</div>
+                        <div class="mo-intro-env-desc">실습이 필요한 과정의 원활한 준비를 위한 학습지원</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 슬로건 배너 -->
+        <section class="mo-intro-slogan-banner">
+            <img src="assets/5d2eef4e-ae12-4c88-bde7-b59b37c0c25c.png" alt="KBS아카데미" class="mo-intro-slogan-logo">
+            <div class="mo-intro-slogan-title">배움의 시작부터<br>목표를 이루는 순간까지</div>
+            <div class="mo-intro-slogan-divider"></div>
+            <p class="mo-intro-slogan-desc">새로운 자격에 도전하는 순간부터<br>학위 취득을 준비하는 과정까지<br>KBS아카데미 원격평생교육원이<br>학습자의 새로운 시작과 함께합니다.</p>
+        </section>
+
+    </main>
+
+    <!-- 5. 푸터 -->
+    <footer class="mo-footer">
+        <div class="mo-footer-info">
+            <div class="mo-footer-logo-row">
+                <img src="assets/4a8c512e-0a9d-4dcb-ab29-ce660091834d.png" alt="KBS아카데미" class="mo-footer-logo-img">
+                <div class="mo-footer-logo-title">원격평생교육원</div>
+            </div>
+            (주)리더스에듀 · 리더스원격평생교육원 · 사업자등록번호 209-81-56148 · 통신판매 제2013-부산사상구-0148호<br>
+            대표자 권영숙 · 개인정보 보호책임자 윤대영 · 본원소재지 (47007) 부산광역시 사상구 가야대로 348 KL빌딩 5층<br>
+            대표전화 1661-6726 · 팩스 070-8233-7077
+        </div>
+    </footer>
+
+    <!-- 6. 하단 고정 바 -->
+    <div class="mo-bottom-fixed">
+        <a href="#" class="btn-open-consult mo-btn-float-consult">
+            <span class="msi">bolt</span>
+            <div class="mo-btn-float-consult-txt">상담접수</div>
+        </a>
+        <nav class="mo-bottom-nav">
+            <a href="main.html" class="tapx mo-nav-item"><span class="msi" aria-hidden="true">home</span><div class="mo-nav-lbl">홈</div></a>
+            <a href="tel:1661-6723" class="tapx mo-nav-item"><span class="msi" aria-hidden="true">call</span><div class="mo-nav-lbl">전화상담</div></a>
+            <div class="mo-nav-spacer"></div>
+            <a href="course.html" class="tapx mo-nav-item"><span class="msi" aria-hidden="true">edit_calendar</span><div class="mo-nav-lbl">수강신청</div></a>
+            <a href="sign_up.html" class="tapx mo-nav-item"><span class="msi" aria-hidden="true">person_add</span><div class="mo-nav-lbl">회원가입</div></a>
+        </nav>
+    </div>
+
+</div>
+
+<!-- ----------------------------------------------------
+          10분 빠른상담 모달
+          ---------------------------------------------------- -->
+<div id="modalQuickConsult" class="mo-modal-overlay">
+    <div class="mo-consult-modal-card">
+        <div class="mo-consult-modal-head">
+            <div class="mo-consult-modal-title-row">
+                <span class="msi">bolt</span>
+                <div class="mo-consult-modal-title">10분이면 OK, 빠른상담 신청</div>
+            </div>
+            <a href="#" id="btnCloseQuickConsult" class="tapx" class="mo-side-acc-icon-svg"><span class="msi" >close</span></a>
+        </div>
+        <div class="mo-consult-modal-desc">
+            전문 학사설계팀이 10분 안에 과정을 설계해드립니다.<br>
+            원하는 상담시간을 남겨주세요. 친절하게 안내드리겠습니다.
+        </div>
+        <form class="mo-consult-modal-body" onsubmit="event.preventDefault(); alert('상담 신청이 완료되었습니다.'); document.getElementById('modalQuickConsult').classList.remove('active');">
+            <input type="text" placeholder="이름" class="mo-consult-input" required>
+            <div class="mo-intro-step-col">
+                <select class="mo-consult-select" class="mo-intro-step-badge">
+                    <option>010</option>
+                    <option>011</option>
+                </select>
+                <input type="text" maxlength="4" class="mo-consult-input" class="mo-privacy-dialog-cell" required>
+                <input type="text" maxlength="4" class="mo-consult-input" class="mo-privacy-dialog-cell" required>
+            </div>
+            <select class="mo-consult-select">
+                <option>희망과정 · 사회복지사</option>
+                <option>희망과정 · 사회복지사 현장실습</option>
+                <option>희망과정 · 한국어교원</option>
+                <option>희망과정 · 건강가정사</option>
+                <option>희망과정 · 학위과정</option>
+                <option>희망과정 · 민간자격증</option>
+            </select>
+            <select class="mo-consult-select">
+                <option>희망시간 · 항상 가능</option>
+                <option>희망시간 · 오전</option>
+                <option>희망시간 · 오후</option>
+                <option>희망시간 · 저녁</option>
+            </select>
+            <label class="mo-privacy-dialog-label">
+                <span class="mo-privacy-dialog-left">
+                    <input type="checkbox" class="mo-privacy-dialog-chk" checked required>
+                    개인정보제공에 동의합니다.
+                </span>
+                <a href="#" class="mo-privacy-dialog-link">보기</a>
+            </label>
+            <button type="submit" class="tapx mo-consult-btn-submit">무료 상담 신청하기</button>
+            <div class="mo-privacy-dialog-footer">*위 내용은 학습상담을 위해서만 사용됩니다.</div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

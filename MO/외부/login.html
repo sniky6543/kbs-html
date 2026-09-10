@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>로그인 - KBS아카데미 원격평생교육원</title>
+    <meta name="description" content="KBS아카데미 원격평생교육원 통합로그인 - 사회복지사2급, 사회복지사 현장실습, 한국어교원2급, 건강가정사, 학점은행제 학위취득 교육부 평가인정 기관">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/a940c586-733e-4110-94d3-a7267230c4a5.png">
+
+    <!-- CSS Stylesheets (기본 main.css + 서브 sub.css) -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub.css">
+
+    <!-- JavaScript (기본 main.js + 서브 sub.js) -->
+    <script src="js/main.js"></script>
+    <script src="js/sub.js"></script>
+</head>
+<body>
+
+<div class="mo-page-wrapper">
+
+    <!-- 1. 상단 유틸 -->
+    <aside class="mo-top-util" aria-label="고객센터 운영안내">
+        <div class="mo-top-util-status">
+            <div class="mo-status-dot" aria-hidden="true"></div>
+            <div class="mo-status-text">지금 상담 가능 · 09:30~18:30</div>
+        </div>
+        <a href="tel:1661-6723" class="mo-top-util-call" aria-label="입학상담 전화걸기 1661-6723"><span class="msi" aria-hidden="true">call</span>1661-6723</a>
+    </aside>
+
+    <!-- 2. 상단 헤더 -->
+    <header class="mo-header">
+        <a href="#" id="btnOpenMenu" class="tapx mo-btn-menu" aria-label="전체메뉴 열기"><span class="msi" aria-hidden="true">menu</span></a>
+        <a href="main.html" class="mo-header-brand" aria-label="KBS아카데미 원격평생교육원 홈으로 이동">
+            <div class="mo-brand-row">
+                <img src="assets/4a8c512e-0a9d-4dcb-ab29-ce660091834d.png" alt="KBS아카데미" class="mo-brand-logo">
+                <div class="mo-brand-divider" aria-hidden="true"></div>
+                <div class="mo-brand-sub">원격평생교육원</div>
+            </div>
+            <div class="mo-cert-row">
+                <img src="assets/8c08767d-8f53-4ba9-a020-2c73d7648de6.png" alt="" class="mo-cert-icon" aria-hidden="true">
+                <div class="mo-cert-text">교육부 인증 학점은행제 원격교육기관</div>
+            </div>
+        </a>
+        <div class="mo-header-right">
+            <a href="login.html" class="tapx mo-btn-login active" aria-label="통합로그인 페이지"><span class="msi" aria-hidden="true">lock</span><div class="mo-btn-login-text">통합로그인</div></a>
+        </div>
+    </header>
+
+    <!-- 3. 사이드 메뉴 오버레이 -->
+    <aside id="sideMenuOverlay" aria-label="전체 메뉴">
+        <nav id="sideMenuContainer">
+            <div class="mo-side-account-bar">
+                <div class="mo-side-account-info"><span class="msi" aria-hidden="true">account_circle</span><div class="mo-side-account-title">로그인이 필요합니다</div></div>
+                <a href="#" id="btnCloseMenu" class="tapx mo-side-btn-close" aria-label="전체메뉴 닫기"><span class="msi" aria-hidden="true">close</span></a>
+            </div>
+            <div class="mo-side-auth-btns">
+                <a href="login.html" class="tapx mo-side-btn-primary">로그인</a>
+                <a href="sign_up.html" class="tapx mo-side-btn-secondary">회원가입</a>
+            </div>
+            <div class="mo-side-section-sep" aria-hidden="true"></div>
+
+            <div>
+                <a href="#" id="btnAcc1" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">교육원소개</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc1">expand_more</span></span></a>
+                <ul id="panelAcc1" class="acc-panel">
+                    <li><a href="m1s1.html" class="acc-panel-link">교육원안내</a></li>
+                    <li><a href="m1s2.html" class="acc-panel-link">인사말</a></li>
+                    <li><a href="m1s3.html" class="acc-panel-link">이용약관</a></li>
+                    <li><a href="m1s4.html" class="acc-panel-link">개인정보처리방침</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc2" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">학점은행제</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc2">expand_more</span></span></a>
+                <ul id="panelAcc2" class="acc-panel">
+                    <li><a href="m2s1.html" class="acc-panel-link">학점은행제란?</a></li>
+                    <li><a href="m2s3.html" class="acc-panel-link">학점인정대상</a></li>
+                    <li><a href="m2s4.html" class="acc-panel-link">신청방법안내</a></li>
+                    <li><a href="m2s5.html" class="acc-panel-link">관련법규</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc3" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">교육과정</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc3">expand_more</span></span></a>
+                <ul id="panelAcc3" class="acc-panel">
+                    <li><a href="https://www.lcyber.co.kr/html/event/event1_1.asp" class="acc-panel-link">사회복지사</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event2_1.asp" class="acc-panel-link">사회복지사 현장실습</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event3_1.asp" class="acc-panel-link">한국어교원</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event8.asp" class="acc-panel-link">건강가정사</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/event/event4.asp" class="acc-panel-link">학위과정</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/LIC/" class="acc-panel-link">민간자격증</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc4" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">수강신청</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc4">expand_more</span></span></a>
+                <ul id="panelAcc4" class="acc-panel">
+                    <li><a href="m4s1.html" class="acc-panel-link">개설과목안내</a></li>
+                    <li><a href="m4s2.html" class="acc-panel-link">등록절차안내</a></li>
+                    <li><a href="course.html" class="acc-panel-link">수강신청</a></li>
+                    <li><a href="payment.html" class="acc-panel-link">수강료결제</a></li>
+                    <li><a href="payment_check.html" class="acc-panel-link">결제확인</a></li>
+                    <li><a href="https://www.lcyber.co.kr/html/curriculum/curriculum6.asp" class="acc-panel-link">환불신청</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a href="#" id="btnAcc5" class="tapx mo-side-acc-header"><div class="mo-side-acc-title">학습지원센터</div><span class="msi mo-side-acc-icon" aria-hidden="true"><span id="iconAcc5">expand_more</span></span></a>
+                <ul id="panelAcc5" class="acc-panel">
+                    <li><a href="m5list_notice.html" class="acc-panel-link">공지사항</a></li>
+                    <li><a href="m5s7.html" class="acc-panel-link">무료학습설계</a></li>
+                    <li><a href="https://www.lcyber.co.kr/bbs/board_list.asp?tb_name=faq" class="acc-panel-link">자주하는질문</a></li>
+                    <li><a href="https://www.lcyber.co.kr/bbs/board_list.asp?tb_name=qna" class="acc-panel-link">질문과답변</a></li>
+                    <li><a href="https://www.lcyber.co.kr/bbs/board_list.asp?tb_name=review" class="acc-panel-link">장학생 수강후기</a></li>
+                </ul>
+            </div>
+
+            <a href="https://www.lcyber.co.kr/myclass/myclass.asp" class="tapx mo-side-direct-link">온라인강의실</a>
+
+            <div class="mo-side-cs-box">
+                <div class="mo-side-cs-phones">
+                    <div class="mo-side-cs-col">
+                        <div class="mo-side-cs-lbl">입학상담문의</div>
+                        <div class="mo-side-cs-num">1661-6723</div>
+                    </div>
+                    <div class="mo-side-cs-sep" aria-hidden="true"></div>
+                    <div class="mo-side-cs-col">
+                        <div class="mo-side-cs-lbl">학습지원센터</div>
+                        <div class="mo-side-cs-num dark">1661-6726</div>
+                    </div>
+                </div>
+                <div class="mo-side-cs-time">평일 09:30~18:30 · 점심 12:30~13:30</div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- 4. 로그인 본문 영역 -->
+    <main id="mainContent" class="mo-login-container">
+
+        <!-- 브랜드 환영 헤더 -->
+        <header class="mo-login-brand-sec">
+            <span class="msi mo-login-brand-icon" aria-hidden="true">shield_person</span>
+            <p class="mo-login-brand-text">KBS아카데미원격평생교육원을<br>방문해주셔서 감사합니다.</p>
+        </header>
+
+        <!-- 로그인 입력 폼 -->
+        <form id="loginForm" class="mo-login-form" method="post" action="main_02.html">
+            <div class="mo-login-input-group">
+                <label for="userId" class="sr-only">아이디</label>
+                <input type="text" id="userId" name="userId" placeholder="아이디" class="mo-login-input" required autocomplete="username">
+            </div>
+            <div class="mo-login-input-group">
+                <label for="userPw" class="sr-only">비밀번호</label>
+                <input type="password" id="userPw" name="userPw" placeholder="비밀번호" class="mo-login-input" required autocomplete="current-password">
+            </div>
+            <button type="submit" id="btnLoginSubmit" class="tapx mo-login-btn-submit">아이디로 로그인</button>
+
+            <!-- 계정 링크 행 (아이디 찾기 / 비밀번호 찾기 / 회원가입) -->
+            <nav class="mo-login-links-row" aria-label="계정 관리 링크">
+                <a href="help.html" class="mo-login-link-item">아이디 찾기</a>
+                <span class="mo-login-link-divider" aria-hidden="true"></span>
+                <a href="help.html" class="mo-login-link-item">비밀번호 찾기</a>
+                <span class="mo-login-link-divider" aria-hidden="true"></span>
+                <a href="sign_up.html" class="mo-login-link-item primary">회원가입</a>
+            </nav>
+
+            <!-- 유의사항 문구 -->
+            <div class="mo-login-notice-text">
+                - 단, 회원로그인 시 강의수강 및 평가요소 참여는 불가합니다.<br>
+                - 학습진행 시 공동인증서로 로그인 활용바랍니다.
+            </div>
+        </form>
+
+        <!-- 섹션 구분선 -->
+        <div class="mo-login-divider" aria-hidden="true"></div>
+
+        <!-- 공동/간편 인증서 로그인 섹션 -->
+        <section class="mo-login-cert-group" aria-label="공동 및 간편 인증서 로그인">
+            <h2 class="mo-login-cert-title">공동/간편 인증서 로그인</h2>
+            <a href="#" id="btnCertLogin" class="tapx mo-login-btn-cert" aria-label="공동인증서(구 공인인증서)로 로그인">공동인증서(구 공인인증서)로 로그인</a>
+            <a href="#" id="btnKakaoLogin" class="tapx mo-login-btn-kakao" aria-label="3초 카카오톡 인증 로그인">
+                <svg class="mo-login-kakao-svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 3.2C6.5 3.2 2 6.9 2 11.4c0 2.9 1.9 5.4 4.7 6.9-.2.8-.9 3.1-1 3.5-.1.5.2.5.4.4.2-.1 3-2 4.2-2.8.5.1 1.1.1 1.7.1 5.5 0 10-3.7 10-8.1S17.5 3.2 12 3.2Z" fill="#3C1E1E"></path>
+                    <text x="12" y="14.3" font-family="Arial, sans-serif" font-size="7.6" font-weight="900" fill="#FEE500" text-anchor="middle">TALK</text>
+                </svg>
+                <span>3초 카카오톡 인증 로그인</span>
+            </a>
+        </section>
+
+        <!-- 공동인증서 안내 박스 -->
+        <aside class="mo-login-guide-box" aria-label="공동인증서 사용안내">
+            <h3 class="mo-login-guide-title">공동인증서 사용안내</h3>
+            <p class="mo-login-guide-desc">※ KBS아카데미원격평생교육원은 대리수강 및 부정학습 방지를 위해 범용공동인증서로 본인확인을 시행하고 있습니다.</p>
+        </aside>
+
+    </main>
+
+    <!-- 5. 푸터 -->
+    <footer class="mo-footer">
+        <div class="mo-footer-info">
+            <div class="mo-footer-logo-row">
+                <img src="assets/4a8c512e-0a9d-4dcb-ab29-ce660091834d.png" alt="KBS아카데미" class="mo-footer-logo-img">
+                <div class="mo-footer-logo-title">원격평생교육원</div>
+            </div>
+            (주)리더스에듀 · 리더스원격평생교육원 · 사업자등록번호 209-81-56148 · 통신판매 제2013-부산사상구-0148호<br>
+            대표자 권영숙 · 본원소재지 (47007) 부산광역시 사상구 가야대로 348 KL빌딩 5층<br>
+            대표전화 1661-6726 · 팩스 070-8233-7077
+        </div>
+    </footer>
+
+    <!-- 6. 하단 고정 바 -->
+    <nav class="mo-bottom-fixed" aria-label="하단 고정 메뉴">
+        <div class="mo-bottom-nav">
+            <a href="main.html" class="tapx mo-nav-item"><span class="msi" aria-hidden="true">home</span><div class="mo-nav-lbl">홈</div></a>
+            <a href="tel:1661-6723" class="tapx mo-nav-item"><span class="msi" aria-hidden="true">call</span><div class="mo-nav-lbl">전화상담</div></a>
+            <div class="mo-nav-spacer" aria-hidden="true"></div>
+            <a href="course.html" class="tapx mo-nav-item"><span class="msi" aria-hidden="true">edit_calendar</span><div class="mo-nav-lbl">수강신청</div></a>
+            <a href="login.html" class="tapx mo-nav-item active" aria-current="page"><span class="msi" aria-hidden="true">lock</span><div class="mo-nav-lbl">로그인</div></a>
+        </div>
+    </nav>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>1:1 학습상담 - 가족상담및가족치료 | KBS아카데미 원격평생교육원</title>
+    <meta name="description" content="KBS아카데미 원격평생교육원 - 가족상담및가족치료 1:1학습상담 게시판입니다.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/a940c586-733e-4110-94d3-a7267230c4a5.png">
+
+    <!-- CSS Stylesheet (단독 myclass.css) -->
+    <link rel="stylesheet" href="css/myclass.css">
+
+    <!-- JavaScript (단독 myclass.js) -->
+    <script src="js/myclass.js"></script>
+</head>
+<body>
+
+<div class="mo-myclass-page">
+
+    <!-- 1. 상단 헤더 -->
+    <header class="mo-myclass-header">
+        <a href="#" id="btnOpenConsultMenu" class="tapx mo-myclass-btn-menu" aria-label="강의실 전체메뉴 열기">
+            <span class="msi" aria-hidden="true">menu</span>
+        </a>
+        <a href="main.html" class="mo-myclass-brand" aria-label="KBS아카데미 원격평생교육원 나의강의실로 이동">
+            <img src="assets/4a8c512e-0a9d-4dcb-ab29-ce660091834d.png" alt="KBS아카데미" class="mo-myclass-brand-logo">
+            <div class="mo-myclass-brand-sub">원격평생교육원</div>
+        </a>
+        <a href="main.html" class="tapx mo-myclass-btn-home" aria-label="나의 강의실로 이동">
+            <span class="msi" aria-hidden="true">home</span>
+        </a>
+    </header>
+
+    <!-- 2. '가족상담및가족치료 1:1학습상담' 배너 -->
+    <div class="mo-myclass-banner">가족상담및가족치료 1:1학습상담</div>
+
+    <!-- 3. 상단 과목 선택 드롭다운 바 -->
+    <div class="mo-consult-selector-bar">
+        <select class="mo-consult-select" aria-label="과목 선택">
+            <option>2026년 2학기 3기 - 가족상담및가족치료</option>
+        </select>
+    </div>
+
+    <!-- 4. 사이드 메뉴 오버레이 드로어 -->
+    <aside id="sideMenuConsultOverlay" class="mo-myclass-side-overlay" aria-label="강의실 메뉴">
+        <nav id="sideMenuConsultContainer" class="mo-myclass-side-box">
+            <!-- 유저 프로필 영역 -->
+            <div class="mo-myclass-side-user">
+                <div class="mo-myclass-side-user-row">
+                    <div class="mo-myclass-side-user-name">
+                        <span class="msi" aria-hidden="true">account_circle</span>
+                        <span>천세현 학습자님</span>
+                    </div>
+                    <a href="#" id="btnCloseConsultMenu" class="tapx mo-myclass-side-btn-close" aria-label="메뉴 닫기">
+                        <span class="msi" aria-hidden="true">close</span>
+                    </a>
+                </div>
+                <div class="mo-myclass-side-user-msg">오늘도 즐거운 수업 되시기 바랍니다.</div>
+                <div class="mo-myclass-side-user-id">ID : cshyun33</div>
+                <div class="mo-room-user-ip">접속중 : 117.111.150.61</div>
+            </div>
+
+            <!-- 아코디언 메뉴 리스트 -->
+            <div class="mo-myclass-side-nav">
+                <!-- 1) 학습메뉴 -->
+                <a href="#" id="btnConsultToggleM1" class="tapx mo-room-acc-btn" aria-expanded="true">
+                    <span class="mo-room-acc-title">학습메뉴</span>
+                    <span id="iconConsultM1" class="msi mo-room-acc-icon" aria-hidden="true">expand_less</span>
+                </a>
+                <div id="panelConsultM1" class="mo-room-acc-panel">
+                    <a href="lecture_plan.html" class="tapx mo-myclass-side-nav-link">강의계획서</a>
+                    <a href="lecture_view.html" class="tapx mo-myclass-side-nav-link">강의수강</a>
+                    <a href="task.html" class="tapx mo-myclass-side-nav-link">과제방</a>
+                    <a href="debate.html" class="tapx mo-myclass-side-nav-link">토론방</a>
+                </div>
+
+                <!-- 2) 과목게시판 -->
+                <a href="#" id="btnConsultToggleM2" class="tapx mo-room-acc-btn" aria-expanded="true">
+                    <span class="mo-room-acc-title">과목게시판</span>
+                    <span id="iconConsultM2" class="msi mo-room-acc-icon" aria-hidden="true">expand_less</span>
+                </a>
+                <div id="panelConsultM2" class="mo-room-acc-panel">
+                    <a href="main_lecture.html" class="tapx mo-myclass-side-nav-link">과목공지사항</a>
+                    <a href="subject_data.html" class="tapx mo-myclass-side-nav-link">과목자료실</a>
+                    <a href="subject_qna.html" class="tapx mo-myclass-side-nav-link">과목질의응답</a>
+                    <a href="view_list.html" class="tapx mo-myclass-side-nav-link active">1:1 학습상담</a>
+                    <a href="board_free.html" class="tapx mo-myclass-side-nav-link">자유게시판</a>
+                </div>
+            </div>
+
+            <!-- 원격지원센터 안내 -->
+            <div class="mo-myclass-side-cs">
+                <div class="mo-myclass-side-cs-lbl">원격지원센터</div>
+                <div class="mo-myclass-side-cs-phone">1661-6726</div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- 5. 본문 메인 콘텐츠 -->
+    <main class="mo-myclass-content" aria-label="1:1 학습상담 본문">
+
+        <!-- 과목 게시판 탭 & 상담 목록 카드 -->
+        <section class="mo-myclass-card" aria-label="1:1 학습상담 게시판">
+            <nav class="mo-room-tab-bar" aria-label="게시판 탭">
+                <a href="main_lecture.html" class="mo-room-tab-item">과목공지사항</a>
+                <a href="subject_data.html" class="mo-room-tab-item">과목자료실</a>
+                <a href="subject_qna.html" class="mo-room-tab-item">과목질의응답</a>
+                <a href="#" class="mo-room-tab-item active" aria-current="page">1:1학습상담</a>
+                <a href="board_free.html" class="mo-room-tab-item">자유게시판</a>
+            </nav>
+            <table class="mo-consult-table" aria-label="1:1 학습상담 목록">
+                <thead>
+                    <tr>
+                        <th scope="col" class="mo-consult-th-title">제목</th>
+                        <th scope="col" class="mo-consult-th-author">작성자</th>
+                        <th scope="col" class="mo-consult-th-date">작성일</th>
+                        <th scope="col" class="mo-consult-th-views">조회</th>
+                    </tr>
+                </thead>
+            </table>
+            <div class="mo-consult-empty">등록된 학습상담이 없습니다.</div>
+        </section>
+
+        <!-- 글쓰기 버튼 (초기 상태 표시) -->
+        <a href="#" id="btnOpenConsultWrite" class="tapx mo-consult-btn-write">글쓰기</a>
+
+        <!-- 글쓰기 폼 카드 (초기 상태 숨김) -->
+        <section id="formConsultWriteCard" class="mo-consult-form-card is-hidden" aria-label="학습상담 글쓰기 양식">
+            <table class="mo-consult-form-table">
+                <tbody>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td>
+                            <input type="text" id="inputConsultTitle" class="mo-consult-input" placeholder="이곳에 제목을 입력해주세요." aria-label="제목">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="mo-consult-form-th-top">내용</th>
+                        <td>
+                            <textarea id="inputConsultContent" class="mo-consult-textarea" rows="8" placeholder="이곳에 내용을 입력해주세요." aria-label="내용"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 글쓰기 완료 버튼 (초기 상태 숨김) -->
+        <a href="#" id="btnSubmitConsultWrite" class="tapx mo-consult-btn-submit is-hidden">글쓰기완료</a>
+
+        <!-- 복귀 네비게이션 버튼 2종 -->
+        <div class="mo-consult-nav-btns">
+            <a href="main_lecture.html" class="tapx mo-room-btn-back">과목메인으로</a>
+            <a href="main.html" class="tapx mo-room-btn-back">나의강의실로</a>
+        </div>
+
+    </main>
+
+    <!-- 6. 하단 고정 네비게이션 바 -->
+    <div class="mo-myclass-bottom-fixed">
+        <nav class="mo-myclass-bottom-nav" aria-label="하단 메뉴">
+            <a href="login.html" class="tapx mo-myclass-nav-item">
+                <span class="msi" aria-hidden="true">logout</span>
+                <div class="mo-myclass-nav-lbl">로그아웃</div>
+            </a>
+            <a href="main.html" class="tapx mo-myclass-nav-item">
+                <span class="msi" aria-hidden="true">home</span>
+                <div class="mo-myclass-nav-lbl">메인으로</div>
+            </a>
+            <a href="lecture_view.html" class="tapx mo-myclass-nav-item active">
+                <span class="msi" aria-hidden="true">play_circle</span>
+                <div class="mo-myclass-nav-lbl">강의수강하기</div>
+            </a>
+            <a href="#" id="btnConsultNoticeBox" class="tapx mo-myclass-nav-item">
+                <div class="mo-myclass-badge-wrap">
+                    <span class="msi" aria-hidden="true">notifications</span>
+                    <span class="mo-myclass-badge">0</span>
+                </div>
+                <div class="mo-myclass-nav-lbl">알림함</div>
+            </a>
+        </nav>
+    </div>
+
+</div>
+
+</body>
+</html>
